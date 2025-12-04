@@ -39,9 +39,9 @@ def build_config(args: argparse.Namespace) -> dict:
         "seed": seed,
         "data_name": data_name,
         "add_prefix_space": add_prefix_space,
-        'train_file': f'{raw_data}/train/train.txt',
-        'validation_file': f'{raw_data}/dev/dev.txt',
-        'test_file': f'{raw_data}/test/test.txt',
+        'train_file': f'{raw_data}/train.txt',
+        'validation_file': f'{raw_data}/dev.txt',
+        'test_file': f'{raw_data}/test.txt',
         'save_dir': save_dir if not args.tokenizer_name else f'models/{args.tokenizer_name}',
         'model_name': model_name,
         'raw_data': raw_data,
@@ -98,9 +98,9 @@ def build_config(args: argparse.Namespace) -> dict:
         data= {"pretokenized_file_path": pretokenized_file_path}
     else:
         data = {
-            "train_file": f'{raw_data}/train/train.txt',
-            "validation_file": f'{raw_data}/dev/dev.txt',
-            "test_file": f'{raw_data}/test/test.txt'
+            "train_file": f'{raw_data}/train.txt',
+            "validation_file": f'{raw_data}/dev.txt',
+            "test_file": f'{raw_data}/test.txt'
         }
         pretokenized_file_path = None
     # training section
