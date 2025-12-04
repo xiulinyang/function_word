@@ -21,6 +21,7 @@ https://huggingface.co/models?filter=text-generation
 This script has been slightly modified by Kanishka Misra and Najoung Kim, and later Xiulin Yang for customized training.
 """
 # You can also adapt this script on your own causal language modeling task. Pointers for this are left as comments.
+
 import logging
 import math
 import os
@@ -35,6 +36,7 @@ import evaluate
 import torch
 from datasets import load_dataset
 import json
+import numpy as np
 import transformers
 from transformers import (
     CONFIG_MAPPING,
@@ -47,9 +49,11 @@ from transformers import (
     TrainingArguments,
     default_data_collator,
     set_seed,
+    EarlyStoppingCallback,
+    TrainerCallback,
 )
-from clm.models import RNNConfig, RNNForLanguageModeling
-from transformers.testing_utils import CaptureLogger
+from typing import List
+# from transformers.testing_utils import CaptureLogger
 from transformers.trainer_utils import get_last_checkpoint
 from transformers.utils import check_min_version, send_example_telemetry
 from transformers.utils.versions import require_version
@@ -68,6 +72,53 @@ logger = logging.getLogger(__name__)
 
 MODEL_CONFIG_CLASSES = list(MODEL_FOR_CAUSAL_LM_MAPPING.keys())
 MODEL_TYPES = tuple(conf.model_type for conf in MODEL_CONFIG_CLASSES)
+
+class SaveAtStepsCallback(TrainerCallback):
+    """Custom callback to save model checkpoints at specific training steps."""
+
+    def __init__(self, save_steps: List[int], output_dir: str):
+        """
+        Args:
+            save_steps: List of global steps at which to save the model.
+            output_dir: Base directory for saving checkpoints.
+        """
+        self.save_steps = sorted(save_steps)
+        self.output_dir = output_dir
+
+    def on_train_begin(self, args, state, control, **kwargs):
+        if 0 in self.save_steps:
+            ckpt_dir = os.path.join(self.output_dir, "checkpoint-0")
+            os.makedirs(ckpt_dir, exist_ok=True)
+            model = kwargs.get("model")
+            tokenizer = kwargs.get("tokenizer")
+            if model is not None:
+                model.save_pretrained(ckpt_dir)
+            if tokenizer is not None:
+                tokenizer.save_pretrained(ckpt_dir)
+            print(f"Saved initial model at step 0 → {ckpt_dir}")
+            self.save_steps.remove(0)
+
+    def on_step_end(self, args, state, control, **kwargs):
+        """
+        This hook runs after every optimizer step.
+        """
+        model = kwargs.get("model", None)
+        tokenizer = kwargs.get("tokenizer", None)
+
+        if model is None:
+            return control  # no model to save
+
+        if state.global_step in self.save_steps:
+            checkpoint_dir = os.path.join(self.output_dir, f"checkpoint-{state.global_step}")
+            os.makedirs(checkpoint_dir, exist_ok=True)
+
+            model.save_pretrained(checkpoint_dir)
+            if tokenizer is not None:
+                tokenizer.save_pretrained(checkpoint_dir)
+
+            print(f"Saved model at step {state.global_step} → {checkpoint_dir}")
+
+        return control
 
 
 @dataclass
@@ -330,7 +381,9 @@ def main():
         flat.update(cfg["data"])
         flat.update(cfg["training"])
 
-        model_args, data_args, training_args = parser.parse_dict(flat)
+        print(flat)
+
+        model_args, data_args, training_args = parser.parse_dict(flat, True)
     else:
         (
             model_args,
@@ -600,14 +653,14 @@ def main():
     )
 
     def tokenize_function(examples):
-        with CaptureLogger(tok_logger) as cl:
-            output = tokenizer(examples[text_column_name])
+        # with CaptureLogger(tok_logger) as cl:
+        output = tokenizer(examples[text_column_name])
         # clm input could be much much longer than block_size
-        if "Token indices sequence length is longer than the" in cl.out:
-            tok_logger.warning(
-                "^^^^^^^^^^^^^^^^ Please ignore the warning above - this long input will be chunked into smaller bits"
-                " before being passed to the models."
-            )
+        # if "Token indices sequence length is longer than the" in cl.out:
+        #     tok_logger.warning(
+        #         "^^^^^^^^^^^^^^^^ Please ignore the warning above - this long input will be chunked into smaller bits"
+        #         " before being passed to the models."
+        #     )
         return output
 
     vocab_size = len(tokenizer)
@@ -751,6 +804,37 @@ def main():
             preds = preds[:, :-1].reshape(-1)
             return metric.compute(predictions=preds, references=labels)
 
+        # def compute_metrics(eval_pred):
+        #     logits, labels = eval_pred
+        #     logits = torch.tensor(logits)
+        #     labels = torch.tensor(labels)
+        #
+        #     # Shift for next-token prediction
+        #     shift_logits = logits[..., :-1, :].contiguous()
+        #     shift_labels = labels[..., 1:].contiguous()
+        #
+        #     mask = shift_labels.ne(-100)
+        #     loss_fct = torch.nn.CrossEntropyLoss(reduction="none", ignore_index=-100)
+        #
+        #     # Per-token NLL in nats
+        #     nll = loss_fct(
+        #         shift_logits.view(-1, shift_logits.size(-1)),
+        #         shift_labels.view(-1)
+        #     ).view(shift_labels.size())
+        #
+        #     nll = nll * mask
+        #
+        #     # Sequence-level NLL: sum over tokens, not divided by length
+        #     seq_nll = nll.sum(dim=1)  # one scalar per sequence
+        #
+        #     # Report both mean and median across sequences
+        #     return {
+        #         "seq_nll": seq_nll.mean().item()
+        #     }
+    callback = SaveAtStepsCallback(
+        save_steps=list(range(0, 4000, 1000)) + list(range(4000, 100000, 4000)) + list(range(100000, 300000, 10000)),
+        output_dir=training_args.output_dir,
+    )
     # Initialize our Trainer
     trainer = Trainer(
         model=model,
@@ -764,6 +848,12 @@ def main():
         if training_args.do_eval else None,
         preprocess_logits_for_metrics=preprocess_logits_for_metrics
         if training_args.do_eval else None,
+        # callbacks=[callback],
+        # callbacks=[EarlyStoppingCallback(
+        #     early_stopping_patience=3,  # stop after 3 evals with no improvement
+        #     early_stopping_threshold=0.0  # require strictly better (set ~1e-4 if metric jitters)
+        # )]
+
     )
 
     # Training
