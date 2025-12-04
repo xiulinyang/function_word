@@ -22,7 +22,6 @@ def ensure_dir(p: str):
 def build_config(args: argparse.Namespace) -> dict:
     tokenizer_type = args.tokenizer_type
     seed = args.seed
-    dataset_size = args.dataset_size
     data_name = args.data_name
     model_name = args.model_name
     save_dir = f"models/{model_name}"
@@ -37,12 +36,11 @@ def build_config(args: argparse.Namespace) -> dict:
     tok = {
         "tokenizer_name": args.tokenizer_name,
         "type": tokenizer_type,
-        "dataset_size": dataset_size,
         "seed": seed,
         "add_prefix_space": add_prefix_space,
-        'train_file': f'{raw_data}/train/{dataset_size}.txt',
-        'validation_file': f'{raw_data}/dev/{dataset_size}.txt',
-        'test_file': f'{raw_data}/test/{dataset_size}.txt',
+        'train_file': f'{raw_data}/train/train.txt',
+        'validation_file': f'{raw_data}/dev/dev.txt',
+        'test_file': f'{raw_data}/test/test.txt',
         'save_dir': save_dir if not args.tokenizer_name else f'models/{args.tokenizer_name}',
         'model_name': model_name,
         'raw_data': raw_data,
@@ -158,7 +156,6 @@ def main():
     p = argparse.ArgumentParser(description="Generate JSON config for LM training")
 
     # naming & dirs
-    p.add_argument("--dataset_size", type=str, required=True, help="dataset size tag used in default model_name", choices=['10M', '30M', '50M', '10Mf', '30Mf', '50Mf', '100M'])
     p.add_argument("--data_name", type=str, required=True, help="dataset name")
 
     # model
