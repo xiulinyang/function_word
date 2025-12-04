@@ -191,7 +191,7 @@ def main():
     p.add_argument("--resume_from_checkpoint", type=str, default=None)
     # logging / saving / eval
     p.add_argument("--save_strategy", type=str, default="epoch", choices=["epoch", "steps"])
-    p.add_argument("--evaluation_strategy", type=str, default="steps", choices=["epoch", "steps"])
+    p.add_argument("--evaluation_strategy", type=str, default="epoch", choices=["epoch", "steps"])
     p.add_argument("--logging_steps", type=int, default=1000)
     p.add_argument("--hub_strategy", type=str, default="all_checkpoints")
     p.add_argument("--save_steps", type=int, default=4000,
