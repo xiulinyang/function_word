@@ -99,9 +99,9 @@ def build_config(args: argparse.Namespace) -> dict:
         data= {"pretokenized_file_path": pretokenized_file_path}
     else:
         data = {
-            "train_file": f'{raw_data}/train/{dataset_size}.txt',
-            "validation_file": f'{raw_data}/dev/{dataset_size}.txt',
-            "test_file": f'{raw_data}/test/{dataset_size}.txt'
+            "train_file": f'{raw_data}/train/train.txt',
+            "validation_file": f'{raw_data}/dev/dev.txt',
+            "test_file": f'{raw_data}/test/test.txt'
         }
         pretokenized_file_path = None
     # training section
