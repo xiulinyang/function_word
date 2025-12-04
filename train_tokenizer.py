@@ -53,7 +53,9 @@ def main(args):
 
     special_tokens = list(SPECIALS)
     if data_name == 'more_function':
+
         special_tokens += list(FUNCTION_WORDS)
+        print(special_tokens)
 
     base_tokenizer = ByteLevelBPETokenizer(add_prefix_space=True)
     base_tokenizer.train(
