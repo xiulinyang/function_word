@@ -121,7 +121,7 @@ def build_config(args: argparse.Namespace) -> dict:
         "load_best_model_at_end": True,
         "resume_from_checkpoint": args.resume_from_checkpoint,
         'eval_on_start': args.eval_on_start,
-        # "num_train_epochs": args.epochs,
+        "num_train_epochs": args.epochs,
         "max_steps": args.steps,
         "num_train_steps": args.steps,
         "save_strategy": args.save_strategy,
