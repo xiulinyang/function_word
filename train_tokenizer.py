@@ -50,14 +50,16 @@ def main(args):
 
     if not os.path.exists(tok_train_file):
         raise FileNotFoundError(f"train_file not found: {tok_train_file}")
+
+    special_tokens = list(SPECIALS)
     if data_name == 'more_function':
-        SPECIALS += list(FUNCTION_WORDS)
+        special_tokens += list(FUNCTION_WORDS)
 
     base_tokenizer = ByteLevelBPETokenizer(add_prefix_space=True)
     base_tokenizer.train(
         files=tok_train_file,
         vocab_size=32768,
-        special_tokens=SPECIALS,
+        special_tokens=special_tokens,
     )
     tok_json_path = os.path.join(save_dir, "tokenizer.json")
     base_tokenizer.save(tok_json_path)
