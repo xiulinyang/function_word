@@ -6,6 +6,7 @@ import json
 import pathlib
 from datetime import datetime
 import torch
+from torch.optim.optimizer import required
 
 if torch.cuda.is_available():
     num_devices = torch.cuda.device_count()
@@ -19,16 +20,52 @@ def ensure_dir(p: str):
     os.makedirs(p, exist_ok=True)
 
 def build_config(args: argparse.Namespace) -> dict:
+    tokenizer_type = args.tokenizer_type
     seed = args.seed
-    data_name= args.data_name
+    dataset_size = args.dataset_size
+    data_name = args.data_name
     model_name = args.model_name
     save_dir = f"models/{model_name}"
-    raw_data = f'data/{data_name}'
+    raw_data = f'data/{data_name}/'
+    dataset = f'data/{data_name}/{model_name}'
+    if 'bpe' in tokenizer_type:
+        add_prefix_space = True
+    else:
+        add_prefix_space = False
+
+    # tokenizer section
+    tok = {
+        "tokenizer_name": args.tokenizer_name,
+        "type": tokenizer_type,
+        "vocab_size": args.vocab,
+        "dataset_size": dataset_size,
+        "seed": seed,
+        "add_prefix_space": add_prefix_space,
+        'train_file': f'{raw_data}/train/{dataset_size}.txt',
+        'validation_file': f'{raw_data}/dev/{dataset_size}.txt',
+        'test_file': f'{raw_data}/test/{dataset_size}.txt',
+        'save_dir': save_dir if not args.tokenizer_name else f'models/{args.tokenizer_name}',
+        'model_name': model_name,
+        'raw_data': raw_data,
+    }
+
+
     # model section
     if args.model_type == 'gpt2_small':
         hidden_size = 768
         n_head = 12
         n_layer = 12
+
+    elif args.model_type == 'gpt2_xs':
+        hidden_size = 512
+        n_head = 8
+        n_layer = 10
+
+    elif args.model_type == 'gpt2_xxs':
+        hidden_size = 512
+        n_head = 8
+        n_layer = 6
+
     elif args.model_type == 'gpt2_mini':
         hidden_size = 512
         n_head = 8
@@ -48,36 +85,49 @@ def build_config(args: argparse.Namespace) -> dict:
         raise ValueError(f"Unknown model type: {args.model_type}")
 
     model = {
-        "model_name": model_name,
         "model_type": args.model_type.split('_')[0],
         "n_embd": hidden_size,
-        "num_layers": n_layer,
-        "n_head": n_head,
+        "num_layer": n_layer,
+        "n_heads": n_head,
         "n_positions": args.max_len,
         "dropout": args.dropout,
-        "tokenizer_name": args.tokenizer_name
     }
 
-    data = {
-        "train_file": f'{raw_data}/train.txt',
-        "validation_file": f'{raw_data}/dev.txt',
-        "test_file": f'{raw_data}/test.txt'
-    }
-    pretokenized_file_path = None
+
+    # data section
+    if args.pretokenized_file:
+        pretokenized_file_path= dataset
+        data= {"pretokenized_file_path": pretokenized_file_path}
+    else:
+        data = {
+            "train_file": f'{raw_data}/train/{dataset_size}.txt',
+            "validation_file": f'{raw_data}/dev/{dataset_size}.txt',
+            "test_file": f'{raw_data}/test/{dataset_size}.txt'
+        }
+        pretokenized_file_path = None
     # training section
     training = {
+        "config_name": f'models/{model_name}',
+        "tokenizer_name": f'models/{args.tokenizer_name}' if args.tokenizer_name else f'models/{model_name}',
         "output_dir": save_dir,
         "overwrite_output_dir": args.overwrite_output_dir,
         "do_train": True,
         "do_eval": True,
+        "metric_for_best_model": "eval_loss",
+        "greater_is_better":False,
         "pretokenized_file_path": pretokenized_file_path,
         "per_device_train_batch_size": int(args.train_bs/num_devices),
         "per_device_eval_batch_size": int(args.eval_bs/num_devices),
         "learning_rate": args.lr,
         "weight_decay": args.weight_decay,
-        "num_train_epochs": args.epochs,
+        "load_best_model_at_end": True,
+        "resume_from_checkpoint": args.resume_from_checkpoint,
+        'eval_on_start': args.eval_on_start,
+        # "num_train_epochs": args.epochs,
+        "max_steps": args.steps,
+        "num_train_steps": args.steps,
         "save_strategy": args.save_strategy,
-        "eval_strategy": args.evaluation_strategy,
+        "evaluation_strategy": args.evaluation_strategy,
         "logging_steps": args.logging_steps,
         "block_size": args.block_size,
         "fp16": args.fp16,
@@ -85,8 +135,8 @@ def build_config(args: argparse.Namespace) -> dict:
         "seed": seed,
         "report_to": args.report_to,
         "push_to_hub": args.push_to_hub,
+        "hub_strategy": args.hub_strategy,
         "hub_model_id": args.hub_model_id or model_name,
-        "tokenizer_name": args.tokenizer_name
     }
 
     if args.save_strategy == "steps" and args.save_steps is not None:
@@ -95,6 +145,7 @@ def build_config(args: argparse.Namespace) -> dict:
         training["eval_steps"] = args.eval_steps
 
     return {
+        "tokenizer": tok,
         "model": model,
         "data": data,
         "training": training,
@@ -108,41 +159,55 @@ def main():
     p = argparse.ArgumentParser(description="Generate JSON config for LM training")
 
     # naming & dirs
-    p.add_argument("--data_name", type=str, required=True, help="name of the dataset")
+    p.add_argument("--dataset_size", type=str, required=True, help="dataset size tag used in default model_name", choices=['10M', '30M', '50M', '10Mf', '30Mf', '50Mf', '100M'])
+    p.add_argument("--data_name", type=str, required=True, help="dataset name")
 
     # model
-    p.add_argument("--model_name", "-mn", type=str, required=True, help="name of the model")
-    p.add_argument("--model_type", "-mt", type=str, default="gpt2_small",choices=("gpt2", "gpt2_small", "gpt2_mini", "gpt2_tiny", "gpt2_large"))
+    p.add_argument("--model_type", "-mt", type=str, default="gpt2_small",choices=("gpt2", "gpt2_small", "gpt2_mini", "gpt2_xs", "gpt2_xxs", "gpt2_tiny", "gpt2_large"))
+
+
+    # p.add_argument("--hidden_size", "-hs", type=int, default=512)
+    # p.add_argument("--layers", "-y", type=int, default=2)
+    # p.add_argument("--attention_heads", "-a", type=int, default=8)
     p.add_argument("--max_len", "-l", type=int, default=512)
-    p.add_argument("--dropout", type=float, default=0.0)
+    p.add_argument("--dropout", type=float, default=0.1)
+
+    # tokenizer
+    p.add_argument("--tokenizer_type", type=str, default="bpe",
+                   choices=["bpe", "unigram"])
+    p.add_argument("--vocab", "-v", type=int, default=16000)
+    p.add_argument("--tokenizer_name", type=str, default=None)
 
     # training hyper params
-    p.add_argument("--tokenizer_name", type=str, default='gpt2')
+    p.add_argument("--model_name", type=str, required=True, help="model name to be saved")
     p.add_argument("--pretokenized_file", action="store_true")
     p.add_argument("--train_bs", type=int, default=32)
     p.add_argument("--eval_bs", type=int, default=32)
-    p.add_argument("--lr", type=float, default=6e-4)
+    p.add_argument("--lr", type=float, default=1e-4)
     p.add_argument("--weight_decay", type=float, default=0.1)
-    p.add_argument("--epochs", type=int, default=20)
+    p.add_argument("--epochs", type=int, default=None)
+    p.add_argument("--steps", type=int, default=100000)
     p.add_argument("--block_size", type=int, default=512)
-    p.add_argument("--warmup_steps", type=int, default=1000)
+    p.add_argument("--eval_on_start", type=bool, default=True)
+    p.add_argument("--warmup_steps", type=int, default=40000)
     p.add_argument("--fp16", type=str2bool, default=True)
     p.add_argument("--seed", type=int, default=42)
-
+    p.add_argument("--resume_from_checkpoint", type=str, default=None)
     # logging / saving / eval
-    p.add_argument("--save_strategy", type=str, default="epoch", choices=["epoch", "steps"])
-    p.add_argument("--evaluation_strategy", type=str, default="epoch", choices=["epoch", "steps"])
+    p.add_argument("--save_strategy", type=str, default="steps", choices=["epoch", "steps"])
+    p.add_argument("--evaluation_strategy", type=str, default="steps", choices=["epoch", "steps"])
     p.add_argument("--logging_steps", type=int, default=1000)
-    p.add_argument("--save_steps", type=int, default=None,
+    p.add_argument("--hub_strategy", type=str, default="all_checkpoints")
+    p.add_argument("--save_steps", type=int, default=4000,
                    help="only used when save_strategy=steps")
-    p.add_argument("--eval_steps", type=int, default=None,
+    p.add_argument("--eval_steps", type=int, default=2000,
                    help="only used when evaluation_strategy=steps")
 
     # hub / misc
     p.add_argument("--report_to", type=str, default="wandb")
-    p.add_argument("--push_to_hub", type=str2bool, default=True)
+    p.add_argument("--push_to_hub", type=str2bool, default=False)
     p.add_argument("--hub_model_id", type=str, default=None)
-    p.add_argument("--overwrite_output_dir", type=str2bool, default=True)
+    p.add_argument("--overwrite_output_dir", type=str2bool, default=False)
 
     # output path
     p.add_argument("--out", type=str, default=None,
@@ -154,13 +219,13 @@ def main():
     # pick output path
     out_dir = f'configs/{args.model_type}'
     ensure_dir(out_dir)
-    out_path = os.path.join(out_dir, f"{args.model_name}.json")
+    out_path = os.path.join(out_dir, f"{args.baby_or_wiki}_{args.dataset_size}_{args.vocab}_{args.seed}.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(cfg, f, ensure_ascii=False, indent=2, sort_keys=False)
 
     print(f"[OK] Config saved to: {out_path}")
-    print(f"model_name: {cfg['model']['model_name']}")
-    print(f"tokenizer:  {cfg['training']['tokenizer_name']}")
+    print(f"model_name: {cfg['tokenizer']['model_name']}")
+    print(f"tokenizer:  {cfg['tokenizer']['type']} (vocab={cfg['tokenizer']['vocab_size']})")
     print(f"data:{cfg['data']}")
     print(f"output_dir:{cfg['training']['output_dir']}")
     print(f"block_size:{cfg['training']['block_size']}  "

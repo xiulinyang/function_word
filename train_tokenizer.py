@@ -10,6 +10,14 @@ import pyarrow.compute as pc
 
 SPECIALS = [UNK_TOKEN, PAD_TOKEN, BOS_TOKEN, EOS_TOKEN]
 
+DET = ["the","this","a","an","no","all","another","each","that","any","those","these","both","every","either","neither"]
+CCONJ = ["and","but","or","yet"]
+SCONJ = ["that","if","although","after","whereas","while","before","as","though","until","because", "since","once","whether","unless","albeit","till","whilst"]
+AUX = ["will","be","had","were","being","is","would","was","do","could","are","have","been","has","did","should","might","can","does","'s","may","must","ca","'s","am","shall","art","ar","re","ought","need"]
+ADP = ["at","in","of","near","for","by","to","with","on","from","behind","into","within","despite","against","as","over","than","during","about","between","among","except","through","around","after","like","off","without","under","before","throughout","unlike","across","toward","along","above","aboard","until","upon","via","beneath","unto","beyond","per","below","amongst","till","beside","amid","onto","towards","underneath","alongside"]
+FUNCTION_WORDS = set(DET + CCONJ + SCONJ + AUX + ADP)
+
+
 def ensure_dir(p: str):
     pathlib.Path(p).mkdir(parents=True, exist_ok=True)
 
@@ -17,7 +25,7 @@ def load_json_cfg(path: str) -> dict:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-def build_fast_tokenizer(tok_file: str, tokenizer_type):
+def build_fast_tokenizer(tok_file: str):
     print(tok_file)
     return PreTrainedTokenizerFast(
         tokenizer_file=tok_file,
@@ -25,52 +33,45 @@ def build_fast_tokenizer(tok_file: str, tokenizer_type):
         pad_token=PAD_TOKEN,
         eos_token=EOS_TOKEN,
         bos_token=BOS_TOKEN,
-        add_prefix_space=True if 'bpe' in tokenizer_type else False,
+        add_prefix_space=True,
     )
 
 def main(args):
     cfg = load_json_cfg(args.config)
-    tok_cfg = cfg["tokenizer"]
-    model_name = cfg["tokenizer"]['model_name']
+    tok_cfg = cfg['tokenizer']
+    model_name = tok_cfg['model_name']
     raw_data = cfg['tokenizer']['raw_data']
-    tok_type = tok_cfg["type"]
-    tokenizer_name = cfg["tokenizer"]['tokenizer_name']
-    vocab_size = int(tok_cfg["vocab_size"])
-    add_prefix_space = bool(tok_cfg.get("add_prefix_space", False))
-    tok_train_file = tok_cfg.get("train_file")
-    save_dir = tok_cfg.get("save_dir")
-    tok_dir = f'models/{tokenizer_name}'
+    data_name = cfg['tokenizer']['data_name']
+    save_dir = tok_cfg['save_dir']
     print(save_dir)
+    tok_train_file = cfg['data']['train_file']
     ensure_dir(save_dir)
 
 
     if not os.path.exists(tok_train_file):
         raise FileNotFoundError(f"train_file not found: {tok_train_file}")
-    if not tokenizer_name:
-        base_tokenizer = ByteLevelBPETokenizer(add_prefix_space=True if add_prefix_space else False)
-        base_tokenizer.train(
-            files=tok_train_file,
-            vocab_size=vocab_size,
-            special_tokens=SPECIALS,
-        )
-        tok_json_path = os.path.join(save_dir, "tokenizer.json")
-        base_tokenizer.save(tok_json_path)
-        base_tokenizer.save_model(save_dir)
-        tokenizer = build_fast_tokenizer(tok_json_path, tok_type)
-        eos_id = tokenizer.eos_token_id
-    else:
-        print('loaded a pretrained tokenizer!')
-        tok_json_path = os.path.join(tok_dir, "tokenizer.json")
-        tokenizer = build_fast_tokenizer(tok_json_path, 'bpe')
-        eos_id = tokenizer.eos_token_id
+    if data_name == 'more_function':
+        SPECIALS += list(FUNCTION_WORDS)
+
+    base_tokenizer = ByteLevelBPETokenizer(add_prefix_space=True)
+    base_tokenizer.train(
+        files=tok_train_file,
+        vocab_size=32768,
+        special_tokens=SPECIALS,
+    )
+    tok_json_path = os.path.join(save_dir, "tokenizer.json")
+    base_tokenizer.save(tok_json_path)
+    base_tokenizer.save_model(save_dir)
+    tokenizer = build_fast_tokenizer(tok_json_path)
+    eos_id = tokenizer.eos_token_id
 
     def encode(ex):
         ids = tokenizer(ex["text"]).input_ids
         ids.append(eos_id)
         return {"input_ids": ids}
 
-    if len(tokenizer) != vocab_size:
-        raise ValueError(f"Vocab mismatch: tokenizer len={len(tokenizer)} vs config vocab_size={vocab_size}")
+    if len(tokenizer) != 32768:
+        raise ValueError(f"Vocab mismatch: tokenizer len={len(tokenizer)} vs config vocab_size=32768")
 
     files = {}
     if tok_cfg.get("train_file"): files["train"] = tok_cfg["train_file"]
