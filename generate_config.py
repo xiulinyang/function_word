@@ -215,7 +215,7 @@ def main():
     cfg = build_config(args)
 
     # pick output path
-    out_dir = f'configs/{args.model_type}'
+    out_dir = f'configs'
     ensure_dir(out_dir)
     out_path = os.path.join(out_dir, f"{args.model_name}.json")
     with open(out_path, "w", encoding="utf-8") as f:

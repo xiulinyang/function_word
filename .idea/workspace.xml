@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99574b03-c0c9-4c3a-9999-b8d771a55c2f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generate_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_model.sh" beforeDir="false" afterPath="$PROJECT_DIR$/train_model.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1764533900022</updated>
       <workItem from="1764533901334" duration="5000" />
-      <workItem from="1764533911468" duration="46761000" />
+      <workItem from="1764533911468" duration="47129000" />
     </task>
     <servers />
   </component>
