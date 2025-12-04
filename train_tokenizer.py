@@ -44,7 +44,7 @@ def main(args):
     data_name = cfg['tokenizer']['data_name']
     save_dir = tok_cfg['save_dir']
     print(save_dir)
-    tok_train_file = cfg['data']['train_file']
+    tok_train_file = tok_cfg['train_file']
     ensure_dir(save_dir)
 
 
