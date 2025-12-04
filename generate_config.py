@@ -37,6 +37,7 @@ def build_config(args: argparse.Namespace) -> dict:
         "tokenizer_name": args.tokenizer_name,
         "type": tokenizer_type,
         "seed": seed,
+        "data_name": data_name,
         "add_prefix_space": add_prefix_space,
         'train_file': f'{raw_data}/train/train.txt',
         'validation_file': f'{raw_data}/dev/dev.txt',
