@@ -37,7 +37,6 @@ def build_config(args: argparse.Namespace) -> dict:
     tok = {
         "tokenizer_name": args.tokenizer_name,
         "type": tokenizer_type,
-        "vocab_size": args.vocab,
         "dataset_size": dataset_size,
         "seed": seed,
         "add_prefix_space": add_prefix_space,
@@ -169,24 +168,23 @@ def main():
     # p.add_argument("--hidden_size", "-hs", type=int, default=512)
     # p.add_argument("--layers", "-y", type=int, default=2)
     # p.add_argument("--attention_heads", "-a", type=int, default=8)
-    p.add_argument("--max_len", "-l", type=int, default=512)
+    p.add_argument("--max_len", "-l", type=int, default=128)
     p.add_argument("--dropout", type=float, default=0.1)
 
     # tokenizer
     p.add_argument("--tokenizer_type", type=str, default="bpe",
                    choices=["bpe", "unigram"])
-    p.add_argument("--vocab", "-v", type=int, default=16000)
     p.add_argument("--tokenizer_name", type=str, default=None)
 
     # training hyper params
     p.add_argument("--model_name", type=str, required=True, help="model name to be saved")
     p.add_argument("--pretokenized_file", action="store_true")
-    p.add_argument("--train_bs", type=int, default=32)
-    p.add_argument("--eval_bs", type=int, default=32)
+    p.add_argument("--train_bs", type=int, default=128)
+    p.add_argument("--eval_bs", type=int, default=128)
     p.add_argument("--lr", type=float, default=1e-4)
     p.add_argument("--weight_decay", type=float, default=0.1)
-    p.add_argument("--epochs", type=int, default=None)
-    p.add_argument("--steps", type=int, default=100000)
+    p.add_argument("--epochs", type=int, default=10)
+    p.add_argument("--steps", type=int, default=None)
     p.add_argument("--block_size", type=int, default=512)
     p.add_argument("--eval_on_start", type=bool, default=True)
     p.add_argument("--warmup_steps", type=int, default=40000)
@@ -194,7 +192,7 @@ def main():
     p.add_argument("--seed", type=int, default=42)
     p.add_argument("--resume_from_checkpoint", type=str, default=None)
     # logging / saving / eval
-    p.add_argument("--save_strategy", type=str, default="steps", choices=["epoch", "steps"])
+    p.add_argument("--save_strategy", type=str, default="epoch", choices=["epoch", "steps"])
     p.add_argument("--evaluation_strategy", type=str, default="steps", choices=["epoch", "steps"])
     p.add_argument("--logging_steps", type=int, default=1000)
     p.add_argument("--hub_strategy", type=str, default="all_checkpoints")
@@ -219,13 +217,13 @@ def main():
     # pick output path
     out_dir = f'configs/{args.model_type}'
     ensure_dir(out_dir)
-    out_path = os.path.join(out_dir, f"{args.baby_or_wiki}_{args.dataset_size}_{args.vocab}_{args.seed}.json")
+    out_path = os.path.join(out_dir, f"{args.model_name}.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(cfg, f, ensure_ascii=False, indent=2, sort_keys=False)
 
     print(f"[OK] Config saved to: {out_path}")
     print(f"model_name: {cfg['tokenizer']['model_name']}")
-    print(f"tokenizer:  {cfg['tokenizer']['type']} (vocab={cfg['tokenizer']['vocab_size']})")
+    print(f"tokenizer:  {cfg['tokenizer']['type']}")
     print(f"data:{cfg['data']}")
     print(f"output_dir:{cfg['training']['output_dir']}")
     print(f"block_size:{cfg['training']['block_size']}  "
