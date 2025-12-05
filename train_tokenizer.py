@@ -7,7 +7,9 @@ from tokenizers import Tokenizer
 from clm.utils import UNK_TOKEN, PAD_TOKEN, EOS_TOKEN, BOS_TOKEN
 from tokenizers import AddedToken
 import pyarrow.compute as pc
-
+import random
+from pathlib import Path
+random.seed(42)
 SPECIALS = [UNK_TOKEN, PAD_TOKEN, BOS_TOKEN, EOS_TOKEN]
 
 DET = ["the","this","a","an","no","all","another","each","that","any","those","these","both","every","either","neither"]
@@ -17,6 +19,12 @@ AUX = ["will","be","had","were","being","is","would","was","do","could","are","h
 ADP = ["at","in","of","near","for","by","to","with","on","from","behind","into","within","despite","against","as","over","than","during","about","between","among","except","through","around","after","like","off","without","under","before","throughout","unlike","across","toward","along","above","aboard","until","upon","via","beneath","unto","beyond","per","below","amongst","till","beside","amid","onto","towards","underneath","alongside"]
 FUNCTION_WORDS = set(DET + CCONJ + SCONJ + AUX + ADP)
 
+pesudo_class = {x:[x] for x in FUNCTION_WORDS}
+pesudo_words = Path('function_word_pseudowords.txt').read_text().strip().split('\n')
+all_pesudo_words = []
+for line in pesudo_words:
+    word, pseudo = line.strip().split('\t')
+    all_pesudo_words.append(pseudo)
 
 def ensure_dir(p: str):
     pathlib.Path(p).mkdir(parents=True, exist_ok=True)
@@ -55,6 +63,7 @@ def main(args):
     if data_name == 'more_function':
 
         special_tokens += list(FUNCTION_WORDS)
+        special_tokens += all_pesudo_words
         print(special_tokens)
 
     base_tokenizer = ByteLevelBPETokenizer(add_prefix_space=True)
