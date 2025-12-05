@@ -22,6 +22,7 @@ def read_data(data_path):
         phenomenon_n = p.split('/')[1].split('.')[0]
         if phenomenon_n in empty_categories:
             continue
+        print(phenomenon_n)
         phenomenon = pd.read_json(p, lines=True).to_dict(orient='records')
         sent_pair = [(x['sentence_bad'], x['sentence_good']) for x in phenomenon]
         test_set[phenomenon_n] = sent_pair
