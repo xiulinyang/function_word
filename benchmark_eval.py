@@ -63,7 +63,7 @@ if __name__ == '__main__':
     refs = list_repo_refs(model_name, repo_type="model")
     num_checkpoints = refs.branches
     checkpoints = sorted([x.name for x in num_checkpoints if 'main' not in x.name], key=lambda x: int(x.split('-')[-1]))
-    test = read_data(f'{dataset}', dataset)
+    test = read_data(f'blimp/{dataset}')
 
     model_name_name = model_name.split('/')[-1]
     f_results = {}
