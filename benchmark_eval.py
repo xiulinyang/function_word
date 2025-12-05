@@ -17,6 +17,7 @@ empty_categories = ['superlative_quantifiers_1', 'determiner_noun_agreement_irre
 def read_data(data_path):
     test_set = {}
     phenomenon_paths = glob(f'{data_path}/*.jsonl')
+    print(len(phenomenon_paths))
     for p in tqdm(phenomenon_paths):
         phenomenon_n = p.split('/')[1].split('.')[0]
         if phenomenon_n in empty_categories:
