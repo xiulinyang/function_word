@@ -53,8 +53,9 @@ def eval_sent_pair(ilm_model, tokenizer, test_set):
 if __name__ == '__main__':
     args = argparse.ArgumentParser('eval language models')
     args.add_argument('model_name', type=str, help='model name')
+    args.add_argument('eval_dataset', type=str, help='dataset name', default='posh')
     args.add_argument('--best_checkpoint', action='store_true')
-    args.add_argument('--eval_dataset', type=str, help='dataset name', default='posh')
+
     args = args.parse_args()
     dataset = args.eval_dataset
     os.makedirs(f'{dataset}_results', exist_ok=True)
