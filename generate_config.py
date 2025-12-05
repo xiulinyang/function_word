@@ -182,7 +182,7 @@ def main():
     p.add_argument("--lr", type=float, default=1e-4)
     p.add_argument("--weight_decay", type=float, default=0.1)
     p.add_argument("--epochs", type=int, default=10)
-    p.add_argument("--steps", type=int, default=100000)
+    p.add_argument("--steps", type=int, default=-1)
     p.add_argument("--block_size", type=int, default=128)
     p.add_argument("--eval_on_start", type=bool, default=True)
     p.add_argument("--warmup_steps", type=int, default=10000)
