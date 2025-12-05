@@ -1,0 +1,741 @@
+{"original": "paula references robert.", "sentence_good": "paula references robert.", "sentence_bad": "paula reference robert."}
+{"original": "most legislatures haven't disliked children.", "sentence_good": "most legislatures haven't disliked children.", "sentence_bad": "most legislatures hasn't disliked children."}
+{"original": "some organizations aren't disturbing vanessa.", "sentence_good": "some organizations aren't disturbing vanessa.", "sentence_bad": "some organizations isn't disturbing vanessa."}
+{"original": "the cups alarm angela.", "sentence_good": "the cups alarm angela.", "sentence_bad": "the cups alarms angela."}
+{"original": "tina isn't ascending that mountain.", "sentence_good": "tina isn't ascending the mountain.", "sentence_bad": "tina weren't ascending the mountain."}
+{"original": "the borgias see veronica.", "sentence_good": "the borgias see veronica.", "sentence_bad": "the borgias sees veronica."}
+{"original": "jeffrey hasn't criticized donald.", "sentence_good": "jeffrey hasn't criticized donald.", "sentence_bad": "jeffrey haven't criticized donald."}
+{"original": "meredith researches this mountain.", "sentence_good": "meredith researches the mountain.", "sentence_bad": "meredith research the mountain."}
+{"original": "randolf hasn't fled from kayla.", "sentence_good": "randolf hasn't fled at kayla.", "sentence_bad": "randolf haven't fled at kayla."}
+{"original": "winston churchill wasn't embarrassing keith.", "sentence_good": "winston churchill wasn't embarrassing keith.", "sentence_bad": "winston churchill weren't embarrassing keith."}
+{"original": "all mirrors disgust suzanne.", "sentence_good": "the mirrors disgust suzanne.", "sentence_bad": "the mirrors disgusts suzanne."}
+{"original": "a spotlight worries jason.", "sentence_good": "the spotlight worries jason.", "sentence_bad": "the spotlight worry jason."}
+{"original": "carl hasn't irritated brett.", "sentence_good": "carl hasn't irritated brett.", "sentence_bad": "carl haven't irritated brett."}
+{"original": "bethany wasn't escaping from those men.", "sentence_good": "bethany wasn't escaping at the men.", "sentence_bad": "bethany aren't escaping at the men."}
+{"original": "walter tours some closets.", "sentence_good": "walter tours some closets.", "sentence_bad": "walter tour some closets."}
+{"original": "these dancers break every bicycle.", "sentence_good": "the dancers break the bicycle.", "sentence_bad": "the dancers breaks the bicycle."}
+{"original": "those rugs aggravate every woman.", "sentence_good": "the rugs aggravate the woman.", "sentence_bad": "the rugs aggravates the woman."}
+{"original": "most glasses scare martin.", "sentence_good": "most glasses scare martin.", "sentence_bad": "most glasses scares martin."}
+{"original": "a lot of dancers research a hospital.", "sentence_good": "the lot at dancers research the hospital.", "sentence_bad": "the lot at dancers researches the hospital."}
+{"original": "margaret returns to margaret.", "sentence_good": "margaret returns at margaret.", "sentence_bad": "margaret return at margaret."}
+{"original": "these casseroles disgust kayla.", "sentence_good": "the casseroles disgust kayla.", "sentence_bad": "the casseroles disgusts kayla."}
+{"original": "some legislature forgets janice.", "sentence_good": "some legislature forgets janice.", "sentence_bad": "some legislature forget janice."}
+{"original": "a lot of computers impress bradley.", "sentence_good": "the lot at computers impress bradley.", "sentence_bad": "the lot at computers impresses bradley."}
+{"original": "those dogs resemble some sketches.", "sentence_good": "the dogs resemble some sketches.", "sentence_bad": "the dogs resembles some sketches."}
+{"original": "erin hasn't taken some hill.", "sentence_good": "erin hasn't taken some hill.", "sentence_bad": "erin haven't taken some hill."}
+{"original": "all pedestrians fix some chairs.", "sentence_good": "the pedestrians fix some chairs.", "sentence_bad": "the pedestrians fixes some chairs."}
+{"original": "most actresses observe judy.", "sentence_good": "most actresses observe judy.", "sentence_bad": "most actresses observes judy."}
+{"original": "that teacher tours the hills.", "sentence_good": "the teacher tours the hills.", "sentence_bad": "the teacher tour the hills."}
+{"original": "that library conceals jeffrey.", "sentence_good": "the library conceals jeffrey.", "sentence_bad": "the library conceal jeffrey."}
+{"original": "schools criticize these glaciers.", "sentence_good": "schools criticize the glaciers.", "sentence_bad": "schools criticizes the glaciers."}
+{"original": "a cake shocks patrick.", "sentence_good": "the cake shocks patrick.", "sentence_bad": "the cake shock patrick."}
+{"original": "all hospitals resemble a lot of drawings.", "sentence_good": "the hospitals resemble the lot at drawings.", "sentence_bad": "the hospitals resembles the lot at drawings."}
+{"original": "galileo listens to elizabeth.", "sentence_good": "galileo listens at elizabeth.", "sentence_bad": "galileo listen at elizabeth."}
+{"original": "some movies sound like a student.", "sentence_good": "some movies sound at the student.", "sentence_bad": "some movies sounds at the student."}
+{"original": "the pedestrians reference charles.", "sentence_good": "the pedestrians reference charles.", "sentence_bad": "the pedestrians references charles."}
+{"original": "most associations buy those libraries.", "sentence_good": "most associations buy the libraries.", "sentence_bad": "most associations buys the libraries."}
+{"original": "suzanne dislikes these dancers.", "sentence_good": "suzanne dislikes the dancers.", "sentence_bad": "suzanne dislike the dancers."}
+{"original": "that customer dislikes heather.", "sentence_good": "the customer dislikes heather.", "sentence_bad": "the customer dislike heather."}
+{"original": "most girls aren't concealing kevin.", "sentence_good": "most girls aren't concealing kevin.", "sentence_bad": "most girls wasn't concealing kevin."}
+{"original": "the ladies break this plate.", "sentence_good": "the ladies break the plate.", "sentence_bad": "the ladies breaks the plate."}
+{"original": "gary leaves stacy.", "sentence_good": "gary leaves stacy.", "sentence_bad": "gary leave stacy."}
+{"original": "heidi lifts many socks.", "sentence_good": "heidi lifts many socks.", "sentence_bad": "heidi lift many socks."}
+{"original": "a lot of doctors scan a lot of movies.", "sentence_good": "the lot at doctors scan the lot at movies.", "sentence_bad": "the lot at doctors scans the lot at movies."}
+{"original": "carol boasts about ella.", "sentence_good": "carol boasts at ella.", "sentence_bad": "carol boast at ella."}
+{"original": "the impressionists aren't passing the river.", "sentence_good": "the impressionists aren't passing the river.", "sentence_bad": "the impressionists isn't passing the river."}
+{"original": "these cafes haven't upset patricia.", "sentence_good": "the cafes haven't upset patricia.", "sentence_bad": "the cafes hasn't upset patricia."}
+{"original": "kimberley approaches carl.", "sentence_good": "kimberley approaches carl.", "sentence_bad": "kimberley approach carl."}
+{"original": "bradley isn't selling this mushroom.", "sentence_good": "bradley isn't selling the mushroom.", "sentence_bad": "bradley weren't selling the mushroom."}
+{"original": "the committee hasn't bothered a lot of organizations.", "sentence_good": "the committee hasn't bothered the lot at organizations.", "sentence_bad": "the committee haven't bothered the lot at organizations."}
+{"original": "liam notices some skirts.", "sentence_good": "liam notices some skirts.", "sentence_bad": "liam notice some skirts."}
+{"original": "all museums weren't embarrassing natalie.", "sentence_good": "the museums weren't embarrassing natalie.", "sentence_bad": "the museums isn't embarrassing natalie."}
+{"original": "victoria breaks a bike.", "sentence_good": "victoria breaks the bike.", "sentence_bad": "victoria break the bike."}
+{"original": "a lot of ladies watch steve.", "sentence_good": "the lot at ladies watch steve.", "sentence_bad": "the lot at ladies watches steve."}
+{"original": "george hasn't appreciated that actor.", "sentence_good": "george hasn't appreciated the actor.", "sentence_bad": "george haven't appreciated the actor."}
+{"original": "emily lifts the closet.", "sentence_good": "emily lifts the closet.", "sentence_bad": "emily lift the closet."}
+{"original": "tracy fires sonia.", "sentence_good": "tracy fires sonia.", "sentence_bad": "tracy fire sonia."}
+{"original": "diana researches those restaurants.", "sentence_good": "diana researches the restaurants.", "sentence_bad": "diana research the restaurants."}
+{"original": "some actors kiss some teacher.", "sentence_good": "some actors kiss some teacher.", "sentence_bad": "some actors kisses some teacher."}
+{"original": "many dogs confuse those patients.", "sentence_good": "many dogs confuse the patients.", "sentence_bad": "many dogs confuses the patients."}
+{"original": "eric wasn't noticing daniel.", "sentence_good": "eric wasn't noticing daniel.", "sentence_bad": "eric weren't noticing daniel."}
+{"original": "tiffany passes all hospitals.", "sentence_good": "tiffany passes the hospitals.", "sentence_bad": "tiffany pass the hospitals."}
+{"original": "clyde wasn't selling malls.", "sentence_good": "clyde wasn't selling malls.", "sentence_bad": "clyde aren't selling malls."}
+{"original": "dana descends this ladder.", "sentence_good": "dana descends the ladder.", "sentence_bad": "dana descend the ladder."}
+{"original": "theodore explores most hills.", "sentence_good": "theodore explores most hills.", "sentence_bad": "theodore explore most hills."}
+{"original": "suzanne leaves carlos.", "sentence_good": "suzanne leaves carlos.", "sentence_bad": "suzanne leave carlos."}
+{"original": "some actresses haven't brought all forks.", "sentence_good": "some actresses haven't brought the forks.", "sentence_bad": "some actresses hasn't brought the forks."}
+{"original": "these actors skate around harvard university.", "sentence_good": "the actors skate at harvard university.", "sentence_bad": "the actors skates at harvard university."}
+{"original": "a lot of ladies examine a lot of documentaries.", "sentence_good": "the lot at ladies examine the lot at documentaries.", "sentence_bad": "the lot at ladies examines the lot at documentaries."}
+{"original": "a lot of adults listen to stacy.", "sentence_good": "the lot at adults listen at stacy.", "sentence_bad": "the lot at adults listens at stacy."}
+{"original": "dan conceals tracy.", "sentence_good": "dan conceals tracy.", "sentence_bad": "dan conceal tracy."}
+{"original": "anna scans these movies.", "sentence_good": "anna scans the movies.", "sentence_bad": "anna scan the movies."}
+{"original": "the government isn't arguing about heidi.", "sentence_good": "the government isn't arguing at heidi.", "sentence_bad": "the government aren't arguing at heidi."}
+{"original": "donald wasn't curing nancy.", "sentence_good": "donald wasn't curing nancy.", "sentence_bad": "donald aren't curing nancy."}
+{"original": "carrie buys many unicycles.", "sentence_good": "carrie buys many unicycles.", "sentence_bad": "carrie buy many unicycles."}
+{"original": "sheila exits some mall.", "sentence_good": "sheila exits some mall.", "sentence_bad": "sheila exit some mall."}
+{"original": "these pedestrians conceal that actor.", "sentence_good": "the pedestrians conceal the actor.", "sentence_bad": "the pedestrians conceals the actor."}
+{"original": "amy buys this grocery store.", "sentence_good": "amy buys the grocery store.", "sentence_bad": "amy buy the grocery store."}
+{"original": "the clintons visit the teachers.", "sentence_good": "the clintons visit the teachers.", "sentence_bad": "the clintons visits the teachers."}
+{"original": "some gates haven't alarmed roger.", "sentence_good": "some gates haven't alarmed roger.", "sentence_bad": "some gates hasn't alarmed roger."}
+{"original": "edward wasn't thinking about some slopes.", "sentence_good": "edward wasn't thinking at some slopes.", "sentence_bad": "edward weren't thinking at some slopes."}
+{"original": "debra scares some associations.", "sentence_good": "debra scares some associations.", "sentence_bad": "debra scare some associations."}
+{"original": "that pepper distracts lucille.", "sentence_good": "the pepper distracts lucille.", "sentence_bad": "the pepper distract lucille."}
+{"original": "the banks buy a lot of shawls.", "sentence_good": "the banks buy the lot at shawls.", "sentence_bad": "the banks buys the lot at shawls."}
+{"original": "many ladies see homer.", "sentence_good": "many ladies see homer.", "sentence_bad": "many ladies sees homer."}
+{"original": "claire wasn't curing mary.", "sentence_good": "claire wasn't curing mary.", "sentence_bad": "claire weren't curing mary."}
+{"original": "most patients conceal carla.", "sentence_good": "most patients conceal carla.", "sentence_bad": "most patients conceals carla."}
+{"original": "those drivers disgusts dan.", "sentence_good": "the drivers disgusts dan.", "sentence_bad": "the drivers disgust dan."}
+{"original": "karla thinks about ella.", "sentence_good": "karla thinks at ella.", "sentence_bad": "karla think at ella."}
+{"original": "kimberley respects rachel.", "sentence_good": "kimberley respects rachel.", "sentence_bad": "kimberley respect rachel."}
+{"original": "couches resemble some drawing.", "sentence_good": "couches resemble some drawing.", "sentence_bad": "couches resembles some drawing."}
+{"original": "cynthia passes all mountains.", "sentence_good": "cynthia passes the mountains.", "sentence_bad": "cynthia pass the mountains."}
+{"original": "that carriage aggravates angela.", "sentence_good": "the carriage aggravates angela.", "sentence_bad": "the carriage aggravate angela."}
+{"original": "the lutherans clean a lot of glasses.", "sentence_good": "the lutherans clean the lot at glasses.", "sentence_bad": "the lutherans cleans the lot at glasses."}
+{"original": "steven hires this child.", "sentence_good": "steven hires the child.", "sentence_bad": "steven hire the child."}
+{"original": "most eyes haven't hurt connie.", "sentence_good": "most eyes haven't hurt connie.", "sentence_bad": "most eyes hasn't hurt connie."}
+{"original": "that drawing disgusts the banks.", "sentence_good": "the drawing disgusts the banks.", "sentence_bad": "the drawing disgust the banks."}
+{"original": "elizabeth remembers edward.", "sentence_good": "elizabeth remembers edward.", "sentence_bad": "elizabeth remember edward."}
+{"original": "all teenagers run around a lot of college campuses.", "sentence_good": "the teenagers run at the lot at college campuses.", "sentence_bad": "the teenagers runs at the lot at college campuses."}
+{"original": "these newspaper articles aren't astounding kristen.", "sentence_good": "the newspaper articles aren't astounding kristen.", "sentence_bad": "the newspaper articles isn't astounding kristen."}
+{"original": "samuel hates aaron.", "sentence_good": "samuel hates aaron.", "sentence_bad": "samuel hate aaron."}
+{"original": "alicia hasn't ascended many mountains.", "sentence_good": "alicia hasn't ascended many mountains.", "sentence_bad": "alicia haven't ascended many mountains."}
+{"original": "tonya tours this grocery store.", "sentence_good": "tonya tours the grocery store.", "sentence_bad": "tonya tour the grocery store."}
+{"original": "lori talks to most pedestrians.", "sentence_good": "lori talks at most pedestrians.", "sentence_bad": "lori talk at most pedestrians."}
+{"original": "many patients sound like eric.", "sentence_good": "many patients sound at eric.", "sentence_bad": "many patients sounds at eric."}
+{"original": "some car alarms mitchell.", "sentence_good": "some car alarms mitchell.", "sentence_bad": "some car alarm mitchell."}
+{"original": "jennifer breaks the unicycle.", "sentence_good": "jennifer breaks the unicycle.", "sentence_bad": "jennifer break the unicycle."}
+{"original": "those guests haven't broken those cups.", "sentence_good": "the guests haven't broken the cups.", "sentence_bad": "the guests hasn't broken the cups."}
+{"original": "bethany hasn't cleaned this hat.", "sentence_good": "bethany hasn't cleaned the hat.", "sentence_bad": "bethany haven't cleaned the hat."}
+{"original": "judy hasn't escaped from diane.", "sentence_good": "judy hasn't escaped at diane.", "sentence_bad": "judy haven't escaped at diane."}
+{"original": "every teacher explores a lot of art galleries.", "sentence_good": "the teacher explores the lot at will galleries.", "sentence_bad": "the teacher explore the lot at will galleries."}
+{"original": "stacy hasn't fired april.", "sentence_good": "stacy hasn't fired april.", "sentence_bad": "stacy haven't fired april."}
+{"original": "many teenagers forget that boy.", "sentence_good": "many teenagers forget the boy.", "sentence_bad": "many teenagers forgets the boy."}
+{"original": "sara hasn't impressed the lutherans.", "sentence_good": "sara hasn't impressed the lutherans.", "sentence_bad": "sara haven't impressed the lutherans."}
+{"original": "the clintons hate every person.", "sentence_good": "the clintons hate the person.", "sentence_bad": "the clintons hates the person."}
+{"original": "homer isn't skated around every mountain.", "sentence_good": "homer isn't skated at the mountain.", "sentence_bad": "homer weren't skated at the mountain."}
+{"original": "lori conceals adam.", "sentence_good": "lori conceals adam.", "sentence_bad": "lori conceal adam."}
+{"original": "rachelle wasn't revealing karen.", "sentence_good": "rachelle wasn't revealing karen.", "sentence_bad": "rachelle weren't revealing karen."}
+{"original": "those actresses discuss steve.", "sentence_good": "the actresses discuss steve.", "sentence_bad": "the actresses discusses steve."}
+{"original": "dancers heal tonya.", "sentence_good": "dancers heal tonya.", "sentence_bad": "dancers heals tonya."}
+{"original": "this cashier buys many hamsters.", "sentence_good": "the cashier buys many hamsters.", "sentence_bad": "the cashier buy many hamsters."}
+{"original": "adam hasn't brought a lot of plates.", "sentence_good": "adam hasn't brought the lot at plates.", "sentence_bad": "adam haven't brought the lot at plates."}
+{"original": "chad remembers the borgias.", "sentence_good": "chad remembers the borgias.", "sentence_bad": "chad remember the borgias."}
+{"original": "clyde wasn't examining some newspaper article.", "sentence_good": "clyde wasn't examining some newspaper article.", "sentence_bad": "clyde weren't examining some newspaper article."}
+{"original": "christopher cares for that teenager.", "sentence_good": "christopher cares at the teenager.", "sentence_bad": "christopher care at the teenager."}
+{"original": "deanna hasn't biked to a lot of lakes.", "sentence_good": "deanna hasn't biked at the lot at lakes.", "sentence_bad": "deanna haven't biked at the lot at lakes."}
+{"original": "some teenagers return to walter.", "sentence_good": "some teenagers return at walter.", "sentence_bad": "some teenagers returns at walter."}
+{"original": "denise wasn't hiding the computers.", "sentence_good": "denise wasn't hiding the computers.", "sentence_bad": "denise aren't hiding the computers."}
+{"original": "stacy hasn't hugged wendy.", "sentence_good": "stacy hasn't hugged wendy.", "sentence_bad": "stacy haven't hugged wendy."}
+{"original": "christina admires michael.", "sentence_good": "christina admires michael.", "sentence_bad": "christina admire michael."}
+{"original": "these horses ascend a lot of ladders.", "sentence_good": "the horses ascend the lot at ladders.", "sentence_bad": "the horses ascends the lot at ladders."}
+{"original": "this association insults marcus.", "sentence_good": "the association insults marcus.", "sentence_bad": "the association insult marcus."}
+{"original": "barbara hasn't explored all cafes.", "sentence_good": "barbara hasn't explored the cafes.", "sentence_bad": "barbara haven't explored the cafes."}
+{"original": "david questions curtis.", "sentence_good": "david questions curtis.", "sentence_bad": "david question curtis."}
+{"original": "lawrence hasn't walked through the bank.", "sentence_good": "lawrence hasn't walked at the bank.", "sentence_bad": "lawrence haven't walked at the bank."}
+{"original": "all waitresses stuns some schools.", "sentence_good": "the waitresses stuns some schools.", "sentence_bad": "the waitresses stun some schools."}
+{"original": "kayla isn't researching some high schools.", "sentence_good": "kayla isn't researching some high schools.", "sentence_bad": "kayla aren't researching some high schools."}
+{"original": "the children care for this cashier.", "sentence_good": "the children care at the cashier.", "sentence_bad": "the children cares at the cashier."}
+{"original": "these waiters examine a play.", "sentence_good": "the waiters examine the play.", "sentence_bad": "the waiters examines the play."}
+{"original": "all drivers boycott some mall.", "sentence_good": "the drivers boycott some mall.", "sentence_bad": "the drivers boycotts some mall."}
+{"original": "every closet hasn't annoyed those banks.", "sentence_good": "the closet hasn't annoyed the banks.", "sentence_bad": "the closet haven't annoyed the banks."}
+{"original": "that actor isn't firing liam.", "sentence_good": "the actor isn't firing liam.", "sentence_bad": "the actor weren't firing liam."}
+{"original": "mark hasn't cleaned the spotlight.", "sentence_good": "mark hasn't cleaned the spotlight.", "sentence_bad": "mark haven't cleaned the spotlight."}
+{"original": "many teachers listen to denise.", "sentence_good": "many teachers listen at denise.", "sentence_bad": "many teachers listens at denise."}
+{"original": "some school hasn't worked with the student.", "sentence_good": "some school hasn't worked at the student.", "sentence_bad": "some school haven't worked at the student."}
+{"original": "caroline hasn't climbed down some mountains.", "sentence_good": "caroline hasn't climbed down some mountains.", "sentence_bad": "caroline haven't climbed down some mountains."}
+{"original": "grace hasn't hurt naomi.", "sentence_good": "grace hasn't hurt naomi.", "sentence_bad": "grace haven't hurt naomi."}
+{"original": "some companies work with sheila.", "sentence_good": "some companies work at sheila.", "sentence_bad": "some companies works at sheila."}
+{"original": "homer isn't walking through harvard university.", "sentence_good": "homer isn't walking at harvard university.", "sentence_bad": "homer weren't walking at harvard university."}
+{"original": "this waitress hasn't approached a lot of children.", "sentence_good": "the waitress hasn't approached the lot at children.", "sentence_bad": "the waitress haven't approached the lot at children."}
+{"original": "george hasn't worked with rhonda.", "sentence_good": "george hasn't worked at rhonda.", "sentence_bad": "george haven't worked at rhonda."}
+{"original": "theodore passes the hill.", "sentence_good": "theodore passes the hill.", "sentence_bad": "theodore pass the hill."}
+{"original": "deborah wasn't wearing the shirt.", "sentence_good": "deborah wasn't wearing the shirt.", "sentence_bad": "deborah weren't wearing the shirt."}
+{"original": "patrick wears those skirts.", "sentence_good": "patrick wears the skirts.", "sentence_bad": "patrick wear the skirts."}
+{"original": "laura cures tracy.", "sentence_good": "laura cures tracy.", "sentence_bad": "laura cure tracy."}
+{"original": "noah isn't boring all guys.", "sentence_good": "noah isn't boring the guys.", "sentence_bad": "noah weren't boring the guys."}
+{"original": "cashiers care for angela.", "sentence_good": "cashiers care at angela.", "sentence_bad": "cashiers cares at angela."}
+{"original": "this blouse isn't scaring clyde.", "sentence_good": "the blouse isn't scaring clyde.", "sentence_bad": "the blouse aren't scaring clyde."}
+{"original": "that scarf impresses lisa.", "sentence_good": "the scarf impresses lisa.", "sentence_bad": "the scarf impress lisa."}
+{"original": "christopher observes tina.", "sentence_good": "christopher observes tina.", "sentence_bad": "christopher observe tina."}
+{"original": "these dancers praise laurie.", "sentence_good": "the dancers praise laurie.", "sentence_bad": "the dancers praises laurie."}
+{"original": "bill criticizes george.", "sentence_good": "bill criticizes george.", "sentence_bad": "bill criticize george."}
+{"original": "the lutherans climb up a lot of hills.", "sentence_good": "the lutherans climb up the lot at hills.", "sentence_bad": "the lutherans climbs up the lot at hills."}
+{"original": "sara isn't irritating nancy.", "sentence_good": "sara isn't irritating nancy.", "sentence_bad": "sara aren't irritating nancy."}
+{"original": "melanie cures barbara.", "sentence_good": "melanie cures barbara.", "sentence_bad": "melanie cure barbara."}
+{"original": "some dancers boycott this glacier.", "sentence_good": "some dancers boycott the glacier.", "sentence_bad": "some dancers boycotts the glacier."}
+{"original": "theodore hasn't left vincent.", "sentence_good": "theodore hasn't left vincent.", "sentence_bad": "theodore haven't left vincent."}
+{"original": "some prints aggravate spain.", "sentence_good": "some prints aggravate spain.", "sentence_bad": "some prints aggravates spain."}
+{"original": "donald notices some rice.", "sentence_good": "donald notices some rice.", "sentence_bad": "donald notice some rice."}
+{"original": "many cashiers fire julie.", "sentence_good": "many cashiers fire julie.", "sentence_bad": "many cashiers fires julie."}
+{"original": "many students kiss frank.", "sentence_good": "many students kiss frank.", "sentence_bad": "many students kisses frank."}
+{"original": "alicia isn't biking to the river.", "sentence_good": "alicia isn't biking at the river.", "sentence_bad": "alicia weren't biking at the river."}
+{"original": "that screen confuses judy.", "sentence_good": "the screen confuses judy.", "sentence_bad": "the screen confuse judy."}
+{"original": "barbara hasn't noticed caroline.", "sentence_good": "barbara hasn't noticed caroline.", "sentence_bad": "barbara haven't noticed caroline."}
+{"original": "the clintons talk to patrick.", "sentence_good": "the clintons talk at patrick.", "sentence_bad": "the clintons talks at patrick."}
+{"original": "bethany hasn't gone to the mountain.", "sentence_good": "bethany hasn't gone at the mountain.", "sentence_bad": "bethany haven't gone at the mountain."}
+{"original": "those adults work with these patients.", "sentence_good": "the adults work at the patients.", "sentence_bad": "the adults works at the patients."}
+{"original": "jennifer wasn't upsetting dennis.", "sentence_good": "jennifer wasn't upsetting dennis.", "sentence_bad": "jennifer weren't upsetting dennis."}
+{"original": "a hospital wasn't criticizing stephen.", "sentence_good": "the hospital wasn't criticizing stephen.", "sentence_bad": "the hospital weren't criticizing stephen."}
+{"original": "eric kisses amelia.", "sentence_good": "eric kisses amelia.", "sentence_bad": "eric kiss amelia."}
+{"original": "some banks resemble that painting.", "sentence_good": "some banks resemble the painting.", "sentence_bad": "some banks resembles the painting."}
+{"original": "katherine hasn't sold a sweater.", "sentence_good": "katherine hasn't sold the sweater.", "sentence_bad": "katherine haven't sold the sweater."}
+{"original": "a committee confuses gina.", "sentence_good": "the committee confuses gina.", "sentence_bad": "the committee confuse gina."}
+{"original": "a lot of glaciers haven't bothered homer.", "sentence_good": "the lot at glaciers haven't bothered homer.", "sentence_bad": "the lot at glaciers hasn't bothered homer."}
+{"original": "these girls work with meredith.", "sentence_good": "the girls work at meredith.", "sentence_bad": "the girls works at meredith."}
+{"original": "melanie sounds like heather.", "sentence_good": "melanie sounds at heather.", "sentence_bad": "melanie sound at heather."}
+{"original": "the teachers pass a hill.", "sentence_good": "the teachers pass the hill.", "sentence_bad": "the teachers passes the hill."}
+{"original": "cheryl hasn't taken the coat.", "sentence_good": "cheryl hasn't taken the coat.", "sentence_bad": "cheryl haven't taken the coat."}
+{"original": "ellen investigates the committee.", "sentence_good": "ellen investigates the committee.", "sentence_bad": "ellen investigate the committee."}
+{"original": "richard wasn't thinking about lisa.", "sentence_good": "richard wasn't thinking at lisa.", "sentence_bad": "richard aren't thinking at lisa."}
+{"original": "those senators mess up every glass.", "sentence_good": "the senators mess up the glass.", "sentence_bad": "the senators messes up the glass."}
+{"original": "sarah sells this public park.", "sentence_good": "sarah sells the public park.", "sentence_bad": "sarah sell the public park."}
+{"original": "sherry conceals kirsten.", "sentence_good": "sherry conceals kirsten.", "sentence_bad": "sherry conceal kirsten."}
+{"original": "stephen hasn't bored patricia.", "sentence_good": "stephen hasn't bored patricia.", "sentence_bad": "stephen haven't bored patricia."}
+{"original": "most boys listen to anne.", "sentence_good": "most boys listen at anne.", "sentence_bad": "most boys listens at anne."}
+{"original": "a doctor hasn't insulted most newspaper articles.", "sentence_good": "the doctor hasn't insulted most newspaper articles.", "sentence_bad": "the doctor haven't insulted most newspaper articles."}
+{"original": "dan hasn't questioned william.", "sentence_good": "dan hasn't questioned william.", "sentence_bad": "dan haven't questioned william."}
+{"original": "danielle sells a bird.", "sentence_good": "danielle sells the bird.", "sentence_bad": "danielle sell the bird."}
+{"original": "many waitresses sound like becca.", "sentence_good": "many waitresses sound at becca.", "sentence_bad": "many waitresses sounds at becca."}
+{"original": "pedestrians weren't arguing about wayne.", "sentence_good": "pedestrians weren't arguing at wayne.", "sentence_bad": "pedestrians wasn't arguing at wayne."}
+{"original": "the doctors haven't arrived at every river.", "sentence_good": "the doctors haven't arrived at the river.", "sentence_bad": "the doctors hasn't arrived at the river."}
+{"original": "martin hasn't fixed most screens.", "sentence_good": "martin hasn't fixed most screens.", "sentence_bad": "martin haven't fixed most screens."}
+{"original": "guy hasn't lifted that book.", "sentence_good": "guy hasn't lifted the book.", "sentence_bad": "guy haven't lifted the book."}
+{"original": "natalie hasn't cared for daniel.", "sentence_good": "natalie hasn't cared at daniel.", "sentence_bad": "natalie haven't cared at daniel."}
+{"original": "rhonda hasn't cleaned that coat.", "sentence_good": "rhonda hasn't cleaned the coat.", "sentence_bad": "rhonda haven't cleaned the coat."}
+{"original": "all students haven't climbed up some slope.", "sentence_good": "the students haven't climbed up some slope.", "sentence_bad": "the students hasn't climbed up some slope."}
+{"original": "a lot of hamsters aren't climbing up every mountain.", "sentence_good": "the lot at hamsters aren't climbing up the mountain.", "sentence_bad": "the lot at hamsters isn't climbing up the mountain."}
+{"original": "bethany hasn't kissed laurie.", "sentence_good": "bethany hasn't kissed laurie.", "sentence_bad": "bethany haven't kissed laurie."}
+{"original": "all actresses listen to the teenagers.", "sentence_good": "the actresses listen at the teenagers.", "sentence_bad": "the actresses listens at the teenagers."}
+{"original": "gregory wasn't firing the borgias.", "sentence_good": "gregory wasn't firing the borgias.", "sentence_bad": "gregory weren't firing the borgias."}
+{"original": "harvard university isn't boring deborah.", "sentence_good": "harvard university isn't boring deborah.", "sentence_bad": "harvard university aren't boring deborah."}
+{"original": "holly hates roger.", "sentence_good": "holly hates roger.", "sentence_bad": "holly hate roger."}
+{"original": "this pedestrian escapes from a lot of movie theaters.", "sentence_good": "the pedestrian escapes at the lot at movie theaters.", "sentence_bad": "the pedestrian escape at the lot at movie theaters."}
+{"original": "lucille sells many college campuses.", "sentence_good": "lucille sells many college campuses.", "sentence_bad": "lucille sell many college campuses."}
+{"original": "david sounds like candice.", "sentence_good": "david sounds at candice.", "sentence_bad": "david sound at candice."}
+{"original": "irene wasn't observing most waiters.", "sentence_good": "irene wasn't observing most waiters.", "sentence_bad": "irene aren't observing most waiters."}
+{"original": "cheryl tours a bank.", "sentence_good": "cheryl tours the bank.", "sentence_bad": "cheryl tour the bank."}
+{"original": "sheila escapes from a teenager.", "sentence_good": "sheila escapes at the teenager.", "sentence_bad": "sheila escape at the teenager."}
+{"original": "stephanie isn't astounding kathleen.", "sentence_good": "stephanie isn't astounding kathleen.", "sentence_bad": "stephanie aren't astounding kathleen."}
+{"original": "every photograph looks like holly.", "sentence_good": "the photograph looks at holly.", "sentence_bad": "the photograph look at holly."}
+{"original": "many teachers return to that grocery store.", "sentence_good": "many teachers return at the grocery store.", "sentence_bad": "many teachers returns at the grocery store."}
+{"original": "lissa isn't helping raymond.", "sentence_good": "lissa isn't helping raymond.", "sentence_bad": "lissa weren't helping raymond."}
+{"original": "all children watch tiffany.", "sentence_good": "the children watch tiffany.", "sentence_bad": "the children watches tiffany."}
+{"original": "steven cures sally.", "sentence_good": "steven cures sally.", "sentence_bad": "steven cure sally."}
+{"original": "most guys haven't descended these hills.", "sentence_good": "most guys haven't descended the hills.", "sentence_bad": "most guys hasn't descended the hills."}
+{"original": "a lot of governments discuss spain.", "sentence_good": "the lot at governments discuss spain.", "sentence_bad": "the lot at governments discusses spain."}
+{"original": "michelle boycotts those glaciers.", "sentence_good": "michelle boycotts the glaciers.", "sentence_bad": "michelle boycott the glaciers."}
+{"original": "some boys hire benjamin.", "sentence_good": "some boys hire benjamin.", "sentence_bad": "some boys hires benjamin."}
+{"original": "some waitresses visit homer.", "sentence_good": "some waitresses visit homer.", "sentence_bad": "some waitresses visits homer."}
+{"original": "the lutherans climb down these hills.", "sentence_good": "the lutherans climb down the hills.", "sentence_bad": "the lutherans climbs down the hills."}
+{"original": "allison skates around some hospital.", "sentence_good": "allison skates at some hospital.", "sentence_bad": "allison skate at some hospital."}
+{"original": "donald wasn't bringing those grocery stores.", "sentence_good": "donald wasn't bringing the grocery stores.", "sentence_bad": "donald aren't bringing the grocery stores."}
+{"original": "bradley sees kevin.", "sentence_good": "bradley sees kevin.", "sentence_bad": "bradley see kevin."}
+{"original": "heidi questions deborah.", "sentence_good": "heidi questions deborah.", "sentence_bad": "heidi question deborah."}
+{"original": "this chicken isn't astounding helen.", "sentence_good": "the chicken isn't astounding helen.", "sentence_bad": "the chicken aren't astounding helen."}
+{"original": "many customers aren't talking to vincent.", "sentence_good": "many customers aren't talking at vincent.", "sentence_bad": "many customers wasn't talking at vincent."}
+{"original": "kayla walks through those art galleries.", "sentence_good": "kayla walks at the will galleries.", "sentence_bad": "kayla walk at the will galleries."}
+{"original": "the projector impresses tiffany.", "sentence_good": "the projector impresses tiffany.", "sentence_bad": "the projector impress tiffany."}
+{"original": "these hospitals forget alan.", "sentence_good": "the hospitals forget alan.", "sentence_bad": "the hospitals forgets alan."}
+{"original": "all ladders embarrass chad.", "sentence_good": "the ladders embarrass chad.", "sentence_bad": "the ladders embarrasses chad."}
+{"original": "jane admires some cashiers.", "sentence_good": "jane admires some cashiers.", "sentence_bad": "jane admire some cashiers."}
+{"original": "the waiters listen to timothy.", "sentence_good": "the waiters listen at timothy.", "sentence_bad": "the waiters listens at timothy."}
+{"original": "all pedestrians arrive at the high schools.", "sentence_good": "the pedestrians arrive at the high schools.", "sentence_bad": "the pedestrians arrives at the high schools."}
+{"original": "patients fire these actors.", "sentence_good": "patients fire the actors.", "sentence_bad": "patients fires the actors."}
+{"original": "jill boycotts the bank.", "sentence_good": "jill boycotts the bank.", "sentence_bad": "jill boycott the bank."}
+{"original": "children question some senator.", "sentence_good": "children question some senator.", "sentence_bad": "children questions some senator."}
+{"original": "pamela hasn't climbed down that ladder.", "sentence_good": "pamela hasn't climbed down the ladder.", "sentence_bad": "pamela haven't climbed down the ladder."}
+{"original": "william hasn't hidden homer.", "sentence_good": "william hasn't hidden homer.", "sentence_bad": "william haven't hidden homer."}
+{"original": "steven isn't examining the documentaries.", "sentence_good": "steven isn't examining the documentaries.", "sentence_bad": "steven weren't examining the documentaries."}
+{"original": "some pedestrians respect eric.", "sentence_good": "some pedestrians respect eric.", "sentence_bad": "some pedestrians respects eric."}
+{"original": "the girl hasn't driven to some lakes.", "sentence_good": "the girl hasn't driven at some lakes.", "sentence_bad": "the girl haven't driven at some lakes."}
+{"original": "every customer wasn't confusing regina.", "sentence_good": "the customer wasn't confusing regina.", "sentence_bad": "the customer weren't confusing regina."}
+{"original": "brian hasn't visited michelle.", "sentence_good": "brian hasn't visited michelle.", "sentence_bad": "brian haven't visited michelle."}
+{"original": "some reports annoy actors.", "sentence_good": "some reports annoy actors.", "sentence_bad": "some reports annoys actors."}
+{"original": "rachelle criticizes deanna.", "sentence_good": "rachelle criticizes deanna.", "sentence_bad": "rachelle criticize deanna."}
+{"original": "those pedestrians cure jason.", "sentence_good": "the pedestrians cure jason.", "sentence_bad": "the pedestrians cures jason."}
+{"original": "senators listen to janet.", "sentence_good": "senators listen at janet.", "sentence_bad": "senators listens at janet."}
+{"original": "some children bike to some museum.", "sentence_good": "some children bike at some museum.", "sentence_bad": "some children bikes at some museum."}
+{"original": "all ladies aren't observing cheryl.", "sentence_good": "the ladies aren't observing cheryl.", "sentence_bad": "the ladies wasn't observing cheryl."}
+{"original": "carol works with monica.", "sentence_good": "carol works at monica.", "sentence_bad": "carol work at monica."}
+{"original": "most drivers talk to kendra.", "sentence_good": "most drivers talk at kendra.", "sentence_bad": "most drivers talks at kendra."}
+{"original": "the adults astounds the impressionists.", "sentence_good": "the adults astounds the impressionists.", "sentence_bad": "the adults astound the impressionists."}
+{"original": "that art gallery distracts alicia.", "sentence_good": "the will gallery distracts alicia.", "sentence_bad": "the will gallery distract alicia."}
+{"original": "kristen runs around cafes.", "sentence_good": "kristen runs at cafes.", "sentence_bad": "kristen run at cafes."}
+{"original": "craig works with kristin.", "sentence_good": "craig works at kristin.", "sentence_bad": "craig work at kristin."}
+{"original": "some organizations shock a senator.", "sentence_good": "some organizations shock the senator.", "sentence_bad": "some organizations shocks the senator."}
+{"original": "most shirts distract claire.", "sentence_good": "most shirts distract claire.", "sentence_bad": "most shirts distracts claire."}
+{"original": "associations hire lori.", "sentence_good": "associations hire lori.", "sentence_bad": "associations hires lori."}
+{"original": "rodney wasn't alarming heather.", "sentence_good": "rodney wasn't alarming heather.", "sentence_bad": "rodney weren't alarming heather."}
+{"original": "the impressionists wear a sock.", "sentence_good": "the impressionists wear the sock.", "sentence_bad": "the impressionists wears the sock."}
+{"original": "bethany cares for alicia.", "sentence_good": "bethany cares at alicia.", "sentence_bad": "bethany care at alicia."}
+{"original": "many children break this truck.", "sentence_good": "many children break the truck.", "sentence_bad": "many children breaks the truck."}
+{"original": "some drivers tour this high school.", "sentence_good": "some drivers tour the high school.", "sentence_bad": "some drivers tours the high school."}
+{"original": "some patients discuss theresa.", "sentence_good": "some patients discuss theresa.", "sentence_bad": "some patients discusses theresa."}
+{"original": "diana admires tanya.", "sentence_good": "diana admires tanya.", "sentence_bad": "diana admire tanya."}
+{"original": "gerald disturbs roger.", "sentence_good": "gerald disturbs roger.", "sentence_bad": "gerald disturb roger."}
+{"original": "brian hasn't discussed winston churchill.", "sentence_good": "brian hasn't discussed winston churchill.", "sentence_bad": "brian haven't discussed winston churchill."}
+{"original": "sabrina discovers florence.", "sentence_good": "sabrina discovers florence.", "sentence_bad": "sabrina discover florence."}
+{"original": "some teacher wasn't dropping by the public parks.", "sentence_good": "some teacher wasn't dropping at the public parks.", "sentence_bad": "some teacher weren't dropping at the public parks."}
+{"original": "todd isn't fixing the bicycle.", "sentence_good": "todd isn't fixing the bicycle.", "sentence_bad": "todd weren't fixing the bicycle."}
+{"original": "bradley loves all documentaries.", "sentence_good": "bradley loves the documentaries.", "sentence_bad": "bradley love the documentaries."}
+{"original": "amelia isn't taking steak.", "sentence_good": "amelia isn't taking steak.", "sentence_bad": "amelia weren't taking steak."}
+{"original": "all mountains impress sonia.", "sentence_good": "the mountains impress sonia.", "sentence_bad": "the mountains impresses sonia."}
+{"original": "some waitresses reference some adult.", "sentence_good": "some waitresses reference some adult.", "sentence_bad": "some waitresses references some adult."}
+{"original": "charles dislikes the art gallery.", "sentence_good": "charles dislikes the will gallery.", "sentence_bad": "charles dislike the will gallery."}
+{"original": "diana isn't selling the hat.", "sentence_good": "diana isn't selling the hat.", "sentence_bad": "diana aren't selling the hat."}
+{"original": "some actresses complain about julia.", "sentence_good": "some actresses complain at julia.", "sentence_bad": "some actresses complains at julia."}
+{"original": "william messes up that movie theater.", "sentence_good": "william messes up the movie theater.", "sentence_bad": "william mess up the movie theater."}
+{"original": "the lutherans haven't loved janet.", "sentence_good": "the lutherans haven't loved janet.", "sentence_bad": "the lutherans hasn't loved janet."}
+{"original": "many students break every computer.", "sentence_good": "many students break the computer.", "sentence_bad": "many students breaks the computer."}
+{"original": "actresses hide the snake.", "sentence_good": "actresses hide the snake.", "sentence_bad": "actresses hides the snake."}
+{"original": "all cashiers criticize some newspaper articles.", "sentence_good": "the cashiers criticize some newspaper articles.", "sentence_bad": "the cashiers criticizes some newspaper articles."}
+{"original": "a cup scares teenagers.", "sentence_good": "the cup scares teenagers.", "sentence_bad": "the cup scare teenagers."}
+{"original": "some adults flee from jason.", "sentence_good": "some adults flee at jason.", "sentence_bad": "some adults flees at jason."}
+{"original": "caroline questions lisa.", "sentence_good": "caroline questions lisa.", "sentence_bad": "caroline question lisa."}
+{"original": "waitresses drive to a lot of movie theaters.", "sentence_good": "waitresses drive at the lot at movie theaters.", "sentence_bad": "waitresses drives at the lot at movie theaters."}
+{"original": "thomas watches travis.", "sentence_good": "thomas watches travis.", "sentence_bad": "thomas watch travis."}
+{"original": "carlos isn't attacking the guest.", "sentence_good": "carlos isn't attacking the guest.", "sentence_bad": "carlos aren't attacking the guest."}
+{"original": "tina wasn't hugging some waiter.", "sentence_good": "tina wasn't hugging some waiter.", "sentence_bad": "tina weren't hugging some waiter."}
+{"original": "that actress hasn't researched the print.", "sentence_good": "the actress hasn't researched the print.", "sentence_bad": "the actress haven't researched the print."}
+{"original": "kayla lifts those projectors.", "sentence_good": "kayla lifts the projectors.", "sentence_bad": "kayla lift the projectors."}
+{"original": "cynthia thinks about these eyes.", "sentence_good": "cynthia thinks at the eyes.", "sentence_bad": "cynthia think at the eyes."}
+{"original": "jason wasn't hiding some drawing.", "sentence_good": "jason wasn't hiding some drawing.", "sentence_bad": "jason aren't hiding some drawing."}
+{"original": "samuel hugs liam.", "sentence_good": "samuel hugs liam.", "sentence_bad": "samuel hug liam."}
+{"original": "joseph flees from carolyn.", "sentence_good": "joseph flees at carolyn.", "sentence_bad": "joseph flee at carolyn."}
+{"original": "jane questions theodore.", "sentence_good": "jane questions theodore.", "sentence_bad": "jane question theodore."}
+{"original": "this ladder annoys paula.", "sentence_good": "the ladder annoys paula.", "sentence_bad": "the ladder annoy paula."}
+{"original": "all waiters criticize all movie theaters.", "sentence_good": "the waiters criticize the movie theaters.", "sentence_bad": "the waiters criticizes the movie theaters."}
+{"original": "this cashier flees from rachel.", "sentence_good": "the cashier flees at rachel.", "sentence_bad": "the cashier flee at rachel."}
+{"original": "a lot of customers notice every waiter.", "sentence_good": "the lot at customers notice the waiter.", "sentence_bad": "the lot at customers notices the waiter."}
+{"original": "michael skates around that public park.", "sentence_good": "michael skates at the public park.", "sentence_bad": "michael skate at the public park."}
+{"original": "douglas watches some cashier.", "sentence_good": "douglas watches some cashier.", "sentence_bad": "douglas watch some cashier."}
+{"original": "those banks describe eric.", "sentence_good": "the banks describe eric.", "sentence_bad": "the banks describes eric."}
+{"original": "the customer investigates carla.", "sentence_good": "the customer investigates carla.", "sentence_bad": "the customer investigate carla."}
+{"original": "barbara hasn't lifted a hamster.", "sentence_good": "barbara hasn't lifted the hamster.", "sentence_bad": "barbara haven't lifted the hamster."}
+{"original": "every restaurant embarrasses elaine.", "sentence_good": "the restaurant embarrasses elaine.", "sentence_bad": "the restaurant embarrass elaine."}
+{"original": "margaret hasn't praised martha.", "sentence_good": "margaret hasn't praised martha.", "sentence_bad": "margaret haven't praised martha."}
+{"original": "claire wasn't revealing the car.", "sentence_good": "claire wasn't revealing the car.", "sentence_bad": "claire aren't revealing the car."}
+{"original": "the clintons disgusts brian.", "sentence_good": "the clintons disgusts brian.", "sentence_bad": "the clintons disgust brian."}
+{"original": "the borgias heal connie.", "sentence_good": "the borgias heal connie.", "sentence_bad": "the borgias heals connie."}
+{"original": "christopher runs around all art galleries.", "sentence_good": "christopher runs at the will galleries.", "sentence_bad": "christopher run at the will galleries."}
+{"original": "the pie distracts this adult.", "sentence_good": "the pie distracts the adult.", "sentence_bad": "the pie distract the adult."}
+{"original": "those waitresses annoys cynthia.", "sentence_good": "the waitresses annoys cynthia.", "sentence_bad": "the waitresses annoy cynthia."}
+{"original": "catherine boasts about brett.", "sentence_good": "catherine boasts at brett.", "sentence_bad": "catherine boast at brett."}
+{"original": "candice isn't upsetting this adult.", "sentence_good": "candice isn't upsetting the adult.", "sentence_bad": "candice aren't upsetting the adult."}
+{"original": "that public park astounds allison.", "sentence_good": "the public park astounds allison.", "sentence_bad": "the public park astound allison."}
+{"original": "laurie hasn't lifted every dog.", "sentence_good": "laurie hasn't lifted the dog.", "sentence_bad": "laurie haven't lifted the dog."}
+{"original": "heather isn't passing some lakes.", "sentence_good": "heather isn't passing some lakes.", "sentence_bad": "heather weren't passing some lakes."}
+{"original": "a lot of libraries praise sarah.", "sentence_good": "the lot at libraries praise sarah.", "sentence_bad": "the lot at libraries praises sarah."}
+{"original": "every brochure bores james.", "sentence_good": "the brochure bores james.", "sentence_bad": "the brochure bore james."}
+{"original": "walter wasn't observing donald.", "sentence_good": "walter wasn't observing donald.", "sentence_bad": "walter aren't observing donald."}
+{"original": "kenneth runs around the great lakes.", "sentence_good": "kenneth runs at the great lakes.", "sentence_bad": "kenneth run at the great lakes."}
+{"original": "museums fire elaine.", "sentence_good": "museums fire elaine.", "sentence_bad": "museums fires elaine."}
+{"original": "kenneth hasn't found ann.", "sentence_good": "kenneth hasn't found ann.", "sentence_bad": "kenneth haven't found ann."}
+{"original": "a lot of waiters remember all students.", "sentence_good": "the lot at waiters remember the students.", "sentence_bad": "the lot at waiters remembers the students."}
+{"original": "most actresses haven't exited the mountains.", "sentence_good": "most actresses haven't exited the mountains.", "sentence_bad": "most actresses hasn't exited the mountains."}
+{"original": "these guys reference clyde.", "sentence_good": "the guys reference clyde.", "sentence_bad": "the guys references clyde."}
+{"original": "chad isn't hiring most dancers.", "sentence_good": "chad isn't hiring most dancers.", "sentence_bad": "chad aren't hiring most dancers."}
+{"original": "danielle arrives at most mountains.", "sentence_good": "danielle arrives at most mountains.", "sentence_bad": "danielle arrive at most mountains."}
+{"original": "walter hasn't loved every play.", "sentence_good": "walter hasn't loved the play.", "sentence_bad": "walter haven't loved the play."}
+{"original": "adam isn't boycotting cafes.", "sentence_good": "adam isn't boycotting cafes.", "sentence_bad": "adam weren't boycotting cafes."}
+{"original": "those actors run around this library.", "sentence_good": "the actors run at the library.", "sentence_bad": "the actors runs at the library."}
+{"original": "spain alarms connie.", "sentence_good": "spain alarms connie.", "sentence_bad": "spain alarm connie."}
+{"original": "these waitresses aren't fleeing from a doctor.", "sentence_good": "the waitresses aren't fleeing at the doctor.", "sentence_bad": "the waitresses isn't fleeing at the doctor."}
+{"original": "many adults hide every window.", "sentence_good": "many adults hide the window.", "sentence_bad": "many adults hides the window."}
+{"original": "tanya scares deanna.", "sentence_good": "tanya scares deanna.", "sentence_bad": "tanya scare deanna."}
+{"original": "paul cleans those pictures.", "sentence_good": "paul cleans the pictures.", "sentence_bad": "paul clean the pictures."}
+{"original": "beth hasn't watched bethany.", "sentence_good": "beth hasn't watched bethany.", "sentence_bad": "beth haven't watched bethany."}
+{"original": "sara wasn't noticing eva.", "sentence_good": "sara wasn't noticing eva.", "sentence_bad": "sara aren't noticing eva."}
+{"original": "holly descends ladders.", "sentence_good": "holly descends ladders.", "sentence_bad": "holly descend ladders."}
+{"original": "sara drives to the mall.", "sentence_good": "sara drives at the mall.", "sentence_bad": "sara drive at the mall."}
+{"original": "the libraries know becky.", "sentence_good": "the libraries know becky.", "sentence_bad": "the libraries knows becky."}
+{"original": "the lutherans reference jason.", "sentence_good": "the lutherans reference jason.", "sentence_bad": "the lutherans references jason."}
+{"original": "steven talks to florence.", "sentence_good": "steven talks at florence.", "sentence_bad": "steven talk at florence."}
+{"original": "that movie hasn't alarmed julie.", "sentence_good": "the movie hasn't alarmed julie.", "sentence_bad": "the movie haven't alarmed julie."}
+{"original": "judy isn't boring charles.", "sentence_good": "judy isn't boring charles.", "sentence_bad": "judy weren't boring charles."}
+{"original": "jennifer sells that plate.", "sentence_good": "jennifer sells the plate.", "sentence_bad": "jennifer sell the plate."}
+{"original": "a lot of organizations praise andrew.", "sentence_good": "the lot at organizations praise andrew.", "sentence_bad": "the lot at organizations praises andrew."}
+{"original": "some boys escape from donna.", "sentence_good": "some boys escape at donna.", "sentence_bad": "some boys escapes at donna."}
+{"original": "a lot of reports astound lissa.", "sentence_good": "the lot at reports astound lissa.", "sentence_bad": "the lot at reports astounds lissa."}
+{"original": "the clintons reference these commentaries.", "sentence_good": "the clintons reference the commentaries.", "sentence_bad": "the clintons references the commentaries."}
+{"original": "becca isn't exploring that museum.", "sentence_good": "becca isn't exploring the museum.", "sentence_bad": "becca weren't exploring the museum."}
+{"original": "those legislatures fire craig.", "sentence_good": "the legislatures fire craig.", "sentence_bad": "the legislatures fires craig."}
+{"original": "nancy hasn't found danielle.", "sentence_good": "nancy hasn't found danielle.", "sentence_bad": "nancy haven't found danielle."}
+{"original": "alicia hasn't cared for gary.", "sentence_good": "alicia hasn't cared at gary.", "sentence_bad": "alicia haven't cared at gary."}
+{"original": "a pie bothers benjamin.", "sentence_good": "the pie bothers benjamin.", "sentence_bad": "the pie bother benjamin."}
+{"original": "this library hasn't stunned some hospital.", "sentence_good": "the library hasn't stunned some hospital.", "sentence_bad": "the library haven't stunned some hospital."}
+{"original": "most fish confuse donna.", "sentence_good": "most fish confuse donna.", "sentence_bad": "most fish confuses donna."}
+{"original": "stacey hasn't disliked dan.", "sentence_good": "stacey hasn't disliked dan.", "sentence_bad": "stacey haven't disliked dan."}
+{"original": "most girls go to many libraries.", "sentence_good": "most girls go at many libraries.", "sentence_bad": "most girls goes at many libraries."}
+{"original": "all waitresses bike to glaciers.", "sentence_good": "the waitresses bike at glaciers.", "sentence_bad": "the waitresses bikes at glaciers."}
+{"original": "many guests describe amanda.", "sentence_good": "many guests describe amanda.", "sentence_bad": "many guests describes amanda."}
+{"original": "rodney questions some legislature.", "sentence_good": "rodney questions some legislature.", "sentence_bad": "rodney question some legislature."}
+{"original": "marla walks through a high school.", "sentence_good": "marla walks at the high school.", "sentence_bad": "marla walk at the high school."}
+{"original": "jill boycotts a closet.", "sentence_good": "jill boycotts the closet.", "sentence_bad": "jill boycott the closet."}
+{"original": "erin hasn't worked with rose.", "sentence_good": "erin hasn't worked at rose.", "sentence_bad": "erin haven't worked at rose."}
+{"original": "tiffany hires monica.", "sentence_good": "tiffany hires monica.", "sentence_bad": "tiffany hire monica."}
+{"original": "science hasn't disturbed walter.", "sentence_good": "science hasn't disturbed walter.", "sentence_bad": "science haven't disturbed walter."}
+{"original": "some shoes embarrass some cashier.", "sentence_good": "some shoes embarrass some cashier.", "sentence_bad": "some shoes embarrasses some cashier."}
+{"original": "allison wasn't bringing trucks.", "sentence_good": "allison wasn't bringing trucks.", "sentence_bad": "allison weren't bringing trucks."}
+{"original": "a lot of screens embarrass sabrina.", "sentence_good": "the lot at screens embarrass sabrina.", "sentence_bad": "the lot at screens embarrasses sabrina."}
+{"original": "andrea tours rivers.", "sentence_good": "andrea tours rivers.", "sentence_bad": "andrea tour rivers."}
+{"original": "some glove wasn't irritating some teenager.", "sentence_good": "some glove wasn't irritating some teenager.", "sentence_bad": "some glove aren't irritating some teenager."}
+{"original": "elizabeth explores all restaurants.", "sentence_good": "elizabeth explores the restaurants.", "sentence_bad": "elizabeth explore the restaurants."}
+{"original": "raymond cleans a library.", "sentence_good": "raymond cleans the library.", "sentence_bad": "raymond clean the library."}
+{"original": "those cashiers question many waiters.", "sentence_good": "the cashiers question many waiters.", "sentence_bad": "the cashiers questions many waiters."}
+{"original": "all glasses disgust clyde.", "sentence_good": "the glasses disgust clyde.", "sentence_bad": "the glasses disgusts clyde."}
+{"original": "brad hasn't examined those essays.", "sentence_good": "brad hasn't examined the essays.", "sentence_bad": "brad haven't examined the essays."}
+{"original": "all actors haven't distracted keith.", "sentence_good": "the actors haven't distracted keith.", "sentence_bad": "the actors hasn't distracted keith."}
+{"original": "kristin leaves monica.", "sentence_good": "kristin leaves monica.", "sentence_bad": "kristin leave monica."}
+{"original": "a lot of waiters boast about wayne.", "sentence_good": "the lot at waiters boast at wayne.", "sentence_bad": "the lot at waiters boasts at wayne."}
+{"original": "stephanie knows maria.", "sentence_good": "stephanie knows maria.", "sentence_bad": "stephanie know maria."}
+{"original": "vanessa hasn't worked with james.", "sentence_good": "vanessa hasn't worked at james.", "sentence_bad": "vanessa haven't worked at james."}
+{"original": "winston churchill isn't praising marla.", "sentence_good": "winston churchill isn't praising marla.", "sentence_bad": "winston churchill aren't praising marla."}
+{"original": "wayne messes up that dish.", "sentence_good": "wayne messes up the dish.", "sentence_bad": "wayne mess up the dish."}
+{"original": "naomi hasn't dropped by a glacier.", "sentence_good": "naomi hasn't dropped at the glacier.", "sentence_bad": "naomi haven't dropped at the glacier."}
+{"original": "dan heals catherine.", "sentence_good": "dan heals catherine.", "sentence_bad": "dan heal catherine."}
+{"original": "mitchell wasn't thinking about natalie.", "sentence_good": "mitchell wasn't thinking at natalie.", "sentence_bad": "mitchell aren't thinking at natalie."}
+{"original": "kevin approaches jeffrey.", "sentence_good": "kevin approaches jeffrey.", "sentence_bad": "kevin approach jeffrey."}
+{"original": "those customers run around this museum.", "sentence_good": "the customers run at the museum.", "sentence_bad": "the customers runs at the museum."}
+{"original": "veronica sells a nose.", "sentence_good": "veronica sells the nose.", "sentence_bad": "veronica sell the nose."}
+{"original": "the borgias run around the public park.", "sentence_good": "the borgias run at the public park.", "sentence_bad": "the borgias runs at the public park."}
+{"original": "ronald kisses matt.", "sentence_good": "ronald kisses matt.", "sentence_bad": "ronald kiss matt."}
+{"original": "amanda walks through some mountains.", "sentence_good": "amanda walks at some mountains.", "sentence_bad": "amanda walk at some mountains."}
+{"original": "a lot of public parks worry jennifer.", "sentence_good": "the lot at public parks worry jennifer.", "sentence_bad": "the lot at public parks worries jennifer."}
+{"original": "these children care for alice.", "sentence_good": "the children care at alice.", "sentence_bad": "the children cares at alice."}
+{"original": "those students remember carolyn.", "sentence_good": "the students remember carolyn.", "sentence_bad": "the students remembers carolyn."}
+{"original": "that wheelbarrow isn't looking like most pictures.", "sentence_good": "the wheelbarrow isn't looking at most pictures.", "sentence_bad": "the wheelbarrow weren't looking at most pictures."}
+{"original": "a lot of guys help anne.", "sentence_good": "the lot at guys help anne.", "sentence_bad": "the lot at guys helps anne."}
+{"original": "current events aggravate many universities.", "sentence_good": "current events aggravate many universities.", "sentence_bad": "current events aggravates many universities."}
+{"original": "kathleen talks about the stories.", "sentence_good": "kathleen talks at the stories.", "sentence_bad": "kathleen talk at the stories."}
+{"original": "those guys aren't bothering amelia.", "sentence_good": "the guys aren't bothering amelia.", "sentence_bad": "the guys isn't bothering amelia."}
+{"original": "beth scares kendra.", "sentence_good": "beth scares kendra.", "sentence_bad": "beth scare kendra."}
+{"original": "the hospital hasn't discussed an actor.", "sentence_good": "the hospital hasn't discussed the actor.", "sentence_bad": "the hospital haven't discussed the actor."}
+{"original": "some candle irritates marla.", "sentence_good": "some candle irritates marla.", "sentence_bad": "some candle irritate marla."}
+{"original": "cashiers approach travis.", "sentence_good": "cashiers approach travis.", "sentence_bad": "cashiers approaches travis."}
+{"original": "many skateboards resemble the painting.", "sentence_good": "many skateboards resemble the painting.", "sentence_bad": "many skateboards resembles the painting."}
+{"original": "charles hasn't fled from matt.", "sentence_good": "charles hasn't fled at matt.", "sentence_bad": "charles haven't fled at matt."}
+{"original": "girls break those trucks.", "sentence_good": "girls break the trucks.", "sentence_bad": "girls breaks the trucks."}
+{"original": "all patients question ronald.", "sentence_good": "the patients question ronald.", "sentence_bad": "the patients questions ronald."}
+{"original": "sally boasts about all pedestrians.", "sentence_good": "sally boasts at the pedestrians.", "sentence_bad": "sally boast at the pedestrians."}
+{"original": "matt flees from donna.", "sentence_good": "matt flees at donna.", "sentence_bad": "matt flee at donna."}
+{"original": "sheila wasn't watching kathleen.", "sentence_good": "sheila wasn't watching kathleen.", "sentence_bad": "sheila weren't watching kathleen."}
+{"original": "this association impresses janet.", "sentence_good": "the association impresses janet.", "sentence_bad": "the association impress janet."}
+{"original": "erin hasn't aggravated jason.", "sentence_good": "erin hasn't aggravated jason.", "sentence_bad": "erin haven't aggravated jason."}
+{"original": "carmen hasn't seen some senators.", "sentence_good": "carmen hasn't seen some senators.", "sentence_bad": "carmen haven't seen some senators."}
+{"original": "the cars embarrass every pedestrian.", "sentence_good": "the cars embarrass the pedestrian.", "sentence_bad": "the cars embarrasses the pedestrian."}
+{"original": "rose remembers karla.", "sentence_good": "rose remembers karla.", "sentence_bad": "rose remember karla."}
+{"original": "regina hasn't worn a shoe.", "sentence_good": "regina hasn't worn the shoe.", "sentence_bad": "regina haven't worn the shoe."}
+{"original": "sabrina wasn't firing curtis.", "sentence_good": "sabrina wasn't firing curtis.", "sentence_bad": "sabrina weren't firing curtis."}
+{"original": "a lot of peppers aggravate mark.", "sentence_good": "the lot at peppers aggravate mark.", "sentence_bad": "the lot at peppers aggravates mark."}
+{"original": "these sketches confuse lissa.", "sentence_good": "the sketches confuse lissa.", "sentence_bad": "the sketches confuses lissa."}
+{"original": "actors examine the plays.", "sentence_good": "actors examine the plays.", "sentence_bad": "actors examines the plays."}
+{"original": "these drivers sound like lisa.", "sentence_good": "the drivers sound at lisa.", "sentence_bad": "the drivers sounds at lisa."}
+{"original": "claire exits the public parks.", "sentence_good": "claire exits the public parks.", "sentence_bad": "claire exit the public parks."}
+{"original": "steve visits carmen.", "sentence_good": "steve visits carmen.", "sentence_bad": "steve visit carmen."}
+{"original": "an actress hasn't climbed down many mountains.", "sentence_good": "the actress hasn't climbed down many mountains.", "sentence_bad": "the actress haven't climbed down many mountains."}
+{"original": "those ladies heal gina.", "sentence_good": "the ladies heal gina.", "sentence_bad": "the ladies heals gina."}
+{"original": "connie conceals some mirror.", "sentence_good": "connie conceals some mirror.", "sentence_bad": "connie conceal some mirror."}
+{"original": "those teachers hide jerry.", "sentence_good": "the teachers hide jerry.", "sentence_bad": "the teachers hides jerry."}
+{"original": "renee hasn't cured jacqueline.", "sentence_good": "renee hasn't cured jacqueline.", "sentence_bad": "renee haven't cured jacqueline."}
+{"original": "russell isn't insulting stories.", "sentence_good": "russell isn't insulting stories.", "sentence_bad": "russell aren't insulting stories."}
+{"original": "elaine hasn't lifted some cafes.", "sentence_good": "elaine hasn't lifted some cafes.", "sentence_bad": "elaine haven't lifted some cafes."}
+{"original": "those guys return to lori.", "sentence_good": "the guys return at lori.", "sentence_bad": "the guys returns at lori."}
+{"original": "christopher reveals maria.", "sentence_good": "christopher reveals maria.", "sentence_bad": "christopher reveal maria."}
+{"original": "chad wasn't admiring dawn.", "sentence_good": "chad wasn't admiring dawn.", "sentence_bad": "chad weren't admiring dawn."}
+{"original": "girls examine most newspaper articles.", "sentence_good": "girls examine most newspaper articles.", "sentence_bad": "girls examines most newspaper articles."}
+{"original": "harvard university hasn't listened to jesus.", "sentence_good": "harvard university hasn't listened at jesus.", "sentence_bad": "harvard university haven't listened at jesus."}
+{"original": "theresa explores that library.", "sentence_good": "theresa explores the library.", "sentence_bad": "theresa explore the library."}
+{"original": "janet discovers lissa.", "sentence_good": "janet discovers lissa.", "sentence_bad": "janet discover lissa."}
+{"original": "gary knows every adult.", "sentence_good": "gary knows the adult.", "sentence_bad": "gary know the adult."}
+{"original": "a horse shocks timothy.", "sentence_good": "the horse shocks timothy.", "sentence_bad": "the horse shock timothy."}
+{"original": "rebecca wasn't touring that lake.", "sentence_good": "rebecca wasn't touring the lake.", "sentence_bad": "rebecca weren't touring the lake."}
+{"original": "a lot of children approach these women.", "sentence_good": "the lot at children approach the women.", "sentence_bad": "the lot at children approaches the women."}
+{"original": "caroline hasn't run around many college campuses.", "sentence_good": "caroline hasn't run at many college campuses.", "sentence_bad": "caroline haven't run at many college campuses."}
+{"original": "bradley watches vincent.", "sentence_good": "bradley watches vincent.", "sentence_bad": "bradley watch vincent."}
+{"original": "a lot of doctors arrive at that college campus.", "sentence_good": "the lot at doctors arrive at the college campus.", "sentence_bad": "the lot at doctors arrives at the college campus."}
+{"original": "marcus hasn't broken all plates.", "sentence_good": "marcus hasn't broken the plates.", "sentence_bad": "marcus haven't broken the plates."}
+{"original": "that snake wasn't hurting beverly.", "sentence_good": "the snake wasn't hurting beverly.", "sentence_bad": "the snake aren't hurting beverly."}
+{"original": "candice returns to eva.", "sentence_good": "candice returns at eva.", "sentence_bad": "candice return at eva."}
+{"original": "the paintings look like many socks.", "sentence_good": "the paintings look at many socks.", "sentence_bad": "the paintings looks at many socks."}
+{"original": "some cashier returns to some dancer.", "sentence_good": "some cashier returns at some dancer.", "sentence_bad": "some cashier return at some dancer."}
+{"original": "derek hasn't cured james.", "sentence_good": "derek hasn't cured james.", "sentence_bad": "derek haven't cured james."}
+{"original": "sherry hasn't disliked caroline.", "sentence_good": "sherry hasn't disliked caroline.", "sentence_bad": "sherry haven't disliked caroline."}
+{"original": "every organization wasn't praising this person.", "sentence_good": "the organization wasn't praising the person.", "sentence_bad": "the organization aren't praising the person."}
+{"original": "marcus hasn't scanned this newspaper article.", "sentence_good": "marcus hasn't scanned the newspaper article.", "sentence_bad": "marcus haven't scanned the newspaper article."}
+{"original": "these children drop by a lot of banks.", "sentence_good": "the children drop at the lot at banks.", "sentence_bad": "the children drops at the lot at banks."}
+{"original": "all doctors discover a lot of commentaries.", "sentence_good": "the doctors discover the lot at commentaries.", "sentence_bad": "the doctors discovers the lot at commentaries."}
+{"original": "a pedestrian hasn't investigated meredith.", "sentence_good": "the pedestrian hasn't investigated meredith.", "sentence_bad": "the pedestrian haven't investigated meredith."}
+{"original": "eric isn't stunning monet.", "sentence_good": "eric isn't stunning monet.", "sentence_bad": "eric aren't stunning monet."}
+{"original": "margaret hasn't noticed a print.", "sentence_good": "margaret hasn't noticed the print.", "sentence_bad": "margaret haven't noticed the print."}
+{"original": "barbara wasn't running around the college campus.", "sentence_good": "barbara wasn't running at the college campus.", "sentence_bad": "barbara aren't running at the college campus."}
+{"original": "john descends most stairs.", "sentence_good": "john descends most stairs.", "sentence_bad": "john descend most stairs."}
+{"original": "christine praises every movie.", "sentence_good": "christine praises the movie.", "sentence_bad": "christine praise the movie."}
+{"original": "boys criticize sheila.", "sentence_good": "boys criticize sheila.", "sentence_bad": "boys criticizes sheila."}
+{"original": "sabrina hasn't cleaned every slope.", "sentence_good": "sabrina hasn't cleaned the slope.", "sentence_bad": "sabrina haven't cleaned the slope."}
+{"original": "carlos helps the adult.", "sentence_good": "carlos helps the adult.", "sentence_bad": "carlos help the adult."}
+{"original": "the teachers complain about a commentary.", "sentence_good": "the teachers complain at the commentary.", "sentence_bad": "the teachers complains at the commentary."}
+{"original": "connie remembers deanna.", "sentence_good": "connie remembers deanna.", "sentence_bad": "connie remember deanna."}
+{"original": "vanessa hasn't remembered all cafes.", "sentence_good": "vanessa hasn't remembered the cafes.", "sentence_bad": "vanessa haven't remembered the cafes."}
+{"original": "karla hasn't irritated every organization.", "sentence_good": "karla hasn't irritated the organization.", "sentence_bad": "karla haven't irritated the organization."}
+{"original": "martin hasn't questioned mitchell.", "sentence_good": "martin hasn't questioned mitchell.", "sentence_bad": "martin haven't questioned mitchell."}
+{"original": "dennis breaks these planes.", "sentence_good": "dennis breaks the planes.", "sentence_bad": "dennis break the planes."}
+{"original": "kenneth goes to every college campus.", "sentence_good": "kenneth goes at the college campus.", "sentence_bad": "kenneth go at the college campus."}
+{"original": "many waitresses reference some actors.", "sentence_good": "many waitresses reference some actors.", "sentence_bad": "many waitresses references some actors."}
+{"original": "a lot of waitresses scare edward.", "sentence_good": "the lot at waitresses scare edward.", "sentence_bad": "the lot at waitresses scares edward."}
+{"original": "this icicle distracts anna.", "sentence_good": "the icicle distracts anna.", "sentence_bad": "the icicle distract anna."}
+{"original": "most newspaper articles scare a lot of universities.", "sentence_good": "most newspaper articles scare the lot at universities.", "sentence_bad": "most newspaper articles scares the lot at universities."}
+{"original": "helen scans some report.", "sentence_good": "helen scans some report.", "sentence_bad": "helen scan some report."}
+{"original": "most students know sabrina.", "sentence_good": "most students know sabrina.", "sentence_bad": "most students knows sabrina."}
+{"original": "carol hasn't discussed linda.", "sentence_good": "carol hasn't discussed linda.", "sentence_bad": "carol haven't discussed linda."}
+{"original": "these teachers break those bicycles.", "sentence_good": "the teachers break the bicycles.", "sentence_bad": "the teachers breaks the bicycles."}
+{"original": "the bird impresses scott.", "sentence_good": "the bird impresses scott.", "sentence_bad": "the bird impress scott."}
+{"original": "stacy explores the art gallery.", "sentence_good": "stacy explores the will gallery.", "sentence_bad": "stacy explore the will gallery."}
+{"original": "debra isn't touring that mall.", "sentence_good": "debra isn't touring the mall.", "sentence_bad": "debra weren't touring the mall."}
+{"original": "those drawings aren't embarrassing ella.", "sentence_good": "the drawings aren't embarrassing ella.", "sentence_bad": "the drawings wasn't embarrassing ella."}
+{"original": "lissa sells that banana.", "sentence_good": "lissa sells the banana.", "sentence_bad": "lissa sell the banana."}
+{"original": "theresa tours the restaurant.", "sentence_good": "theresa tours the restaurant.", "sentence_bad": "theresa tour the restaurant."}
+{"original": "peter wasn't bringing these computers.", "sentence_good": "peter wasn't bringing the computers.", "sentence_bad": "peter aren't bringing the computers."}
+{"original": "diane cares for christina.", "sentence_good": "diane cares at christina.", "sentence_bad": "diane care at christina."}
+{"original": "craig hasn't escaped from every mountain.", "sentence_good": "craig hasn't escaped at the mountain.", "sentence_bad": "craig haven't escaped at the mountain."}
+{"original": "monica isn't stunning bill.", "sentence_good": "monica isn't stunning bill.", "sentence_bad": "monica aren't stunning bill."}
+{"original": "heidi cares for rose.", "sentence_good": "heidi cares at rose.", "sentence_bad": "heidi care at rose."}
+{"original": "brad hasn't dropped by every museum.", "sentence_good": "brad hasn't dropped at the museum.", "sentence_bad": "brad haven't dropped at the museum."}
+{"original": "some essay hasn't astounded raymond.", "sentence_good": "some essay hasn't astounded raymond.", "sentence_bad": "some essay haven't astounded raymond."}
+{"original": "organizations work with tammy.", "sentence_good": "organizations work at tammy.", "sentence_bad": "organizations works at tammy."}
+{"original": "that skirt looks like a drawing.", "sentence_good": "the skirt looks at the drawing.", "sentence_bad": "the skirt look at the drawing."}
+{"original": "many committees respect eva.", "sentence_good": "many committees respect eva.", "sentence_bad": "many committees respects eva."}
+{"original": "todd cleans many forks.", "sentence_good": "todd cleans many forks.", "sentence_bad": "todd clean many forks."}
+{"original": "all dancers tour many hospitals.", "sentence_good": "the dancers tour many hospitals.", "sentence_bad": "the dancers tours many hospitals."}
+{"original": "donald isn't revealing that steak.", "sentence_good": "donald isn't revealing the steak.", "sentence_bad": "donald aren't revealing the steak."}
+{"original": "scott isn't buying some pie.", "sentence_good": "scott isn't buying some pie.", "sentence_bad": "scott weren't buying some pie."}
+{"original": "this waiter looks like that sketch.", "sentence_good": "the waiter looks at the sketch.", "sentence_bad": "the waiter look at the sketch."}
+{"original": "all customers conceal most students.", "sentence_good": "the customers conceal most students.", "sentence_bad": "the customers conceals most students."}
+{"original": "marcus wasn't attacking bruce.", "sentence_good": "marcus wasn't attacking bruce.", "sentence_bad": "marcus aren't attacking bruce."}
+{"original": "actors go to most grocery stores.", "sentence_good": "actors go at most grocery stores.", "sentence_bad": "actors goes at most grocery stores."}
+{"original": "peter talks to jill.", "sentence_good": "peter talks at jill.", "sentence_bad": "peter talk at jill."}
+{"original": "lawrence heals karen.", "sentence_good": "lawrence heals karen.", "sentence_bad": "lawrence heal karen."}
+{"original": "wayne hasn't worn a dress.", "sentence_good": "wayne hasn't worn the dress.", "sentence_bad": "wayne haven't worn the dress."}
+{"original": "samuel hasn't cared for monet.", "sentence_good": "samuel hasn't cared at monet.", "sentence_bad": "samuel haven't cared at monet."}
+{"original": "florence hasn't hurt carlos.", "sentence_good": "florence hasn't hurt carlos.", "sentence_bad": "florence haven't hurt carlos."}
+{"original": "some organizations forget daniel.", "sentence_good": "some organizations forget daniel.", "sentence_bad": "some organizations forgets daniel."}
+{"original": "a cup disgusts lisa.", "sentence_good": "the cup disgusts lisa.", "sentence_bad": "the cup disgust lisa."}
+{"original": "most children listen to regina.", "sentence_good": "most children listen at regina.", "sentence_bad": "most children listens at regina."}
+{"original": "jessica isn't breaking trucks.", "sentence_good": "jessica isn't breaking trucks.", "sentence_bad": "jessica weren't breaking trucks."}
+{"original": "rachelle listens to teresa.", "sentence_good": "rachelle listens at teresa.", "sentence_bad": "rachelle listen at teresa."}
+{"original": "all teachers care for teresa.", "sentence_good": "the teachers care at teresa.", "sentence_bad": "the teachers cares at teresa."}
+{"original": "donald heals heather.", "sentence_good": "donald heals heather.", "sentence_bad": "donald heal heather."}
+{"original": "some river resembles all prints.", "sentence_good": "some river resembles the prints.", "sentence_bad": "some river resemble the prints."}
+{"original": "some cashiers admire michael.", "sentence_good": "some cashiers admire michael.", "sentence_bad": "some cashiers admires michael."}
+{"original": "jill hasn't ascended many steps.", "sentence_good": "jill hasn't ascended many steps.", "sentence_bad": "jill haven't ascended many steps."}
+{"original": "brenda hasn't referenced walter.", "sentence_good": "brenda hasn't referenced walter.", "sentence_bad": "brenda haven't referenced walter."}
+{"original": "gina wasn't thinking about a glass.", "sentence_good": "gina wasn't thinking at the glass.", "sentence_bad": "gina weren't thinking at the glass."}
+{"original": "liam isn't escaping from a dancer.", "sentence_good": "liam isn't escaping at the dancer.", "sentence_bad": "liam weren't escaping at the dancer."}
+{"original": "frank hasn't revealed a convertible.", "sentence_good": "frank hasn't revealed the convertible.", "sentence_bad": "frank haven't revealed the convertible."}
+{"original": "sally appreciates steve.", "sentence_good": "sally appreciates steve.", "sentence_bad": "sally appreciate steve."}
+{"original": "every shirt astounds omar.", "sentence_good": "the shirt astounds omar.", "sentence_bad": "the shirt astound omar."}
+{"original": "the bank hates donald.", "sentence_good": "the bank hates donald.", "sentence_bad": "the bank hate donald."}
+{"original": "suzanne scares ruth.", "sentence_good": "suzanne scares ruth.", "sentence_bad": "suzanne scare ruth."}
+{"original": "those children respect most waiters.", "sentence_good": "the children respect most waiters.", "sentence_bad": "the children respects most waiters."}
+{"original": "victoria disturbs the universities.", "sentence_good": "victoria disturbs the universities.", "sentence_bad": "victoria disturb the universities."}
+{"original": "carol hasn't hired liam.", "sentence_good": "carol hasn't hired liam.", "sentence_bad": "carol haven't hired liam."}
+{"original": "william climbs down the stairs.", "sentence_good": "william climbs down the stairs.", "sentence_bad": "william climb down the stairs."}
+{"original": "those actresses examine those essays.", "sentence_good": "the actresses examine the essays.", "sentence_bad": "the actresses examines the essays."}
+{"original": "becca isn't skated around all libraries.", "sentence_good": "becca isn't skated at the libraries.", "sentence_bad": "becca aren't skated at the libraries."}
+{"original": "sheila reveals carrie.", "sentence_good": "sheila reveals carrie.", "sentence_bad": "sheila reveal carrie."}
+{"original": "most senators bother ruth.", "sentence_good": "most senators bother ruth.", "sentence_bad": "most senators bothers ruth."}
+{"original": "all actresses wear many socks.", "sentence_good": "the actresses wear many socks.", "sentence_bad": "the actresses wears many socks."}
+{"original": "all documentaries embarrass todd.", "sentence_good": "the documentaries embarrass todd.", "sentence_bad": "the documentaries embarrasses todd."}
+{"original": "all waiters weren't arguing about dana.", "sentence_good": "the waiters weren't arguing at dana.", "sentence_bad": "the waiters wasn't arguing at dana."}
+{"original": "grace skates around those libraries.", "sentence_good": "grace skates at the libraries.", "sentence_bad": "grace skate at the libraries."}
+{"original": "travis explores a closet.", "sentence_good": "travis explores the closet.", "sentence_bad": "travis explore the closet."}
+{"original": "that guy wasn't noticing samuel.", "sentence_good": "the guy wasn't noticing samuel.", "sentence_bad": "the guy aren't noticing samuel."}
+{"original": "suzanne hasn't hugged christopher.", "sentence_good": "suzanne hasn't hugged christopher.", "sentence_bad": "suzanne haven't hugged christopher."}
+{"original": "keith hugs these senators.", "sentence_good": "keith hugs the senators.", "sentence_bad": "keith hug the senators."}
+{"original": "pedestrians heal robert.", "sentence_good": "pedestrians heal robert.", "sentence_bad": "pedestrians heals robert."}
+{"original": "heidi hasn't bought that mouth.", "sentence_good": "heidi hasn't bought the mouth.", "sentence_bad": "heidi haven't bought the mouth."}
+{"original": "these hospitals insult noah.", "sentence_good": "the hospitals insult noah.", "sentence_bad": "the hospitals insults noah."}
+{"original": "every slope upsets wendy.", "sentence_good": "the slope upsets wendy.", "sentence_bad": "the slope upset wendy."}
+{"original": "jerry isn't going to that glacier.", "sentence_good": "jerry isn't going at the glacier.", "sentence_bad": "jerry weren't going at the glacier."}
+{"original": "susan breaks most convertibles.", "sentence_good": "susan breaks most convertibles.", "sentence_bad": "susan break most convertibles."}
+{"original": "vincent wasn't disturbing these dancers.", "sentence_good": "vincent wasn't disturbing the dancers.", "sentence_bad": "vincent aren't disturbing the dancers."}
+{"original": "a committee isn't working with john.", "sentence_good": "the committee isn't working at john.", "sentence_bad": "the committee aren't working at john."}
+{"original": "vincent cleans some college campus.", "sentence_good": "vincent cleans some college campus.", "sentence_bad": "vincent clean some college campus."}
+{"original": "alan criticizes rhonda.", "sentence_good": "alan criticizes rhonda.", "sentence_bad": "alan criticize rhonda."}
+{"original": "some drivers annoys derek.", "sentence_good": "some drivers annoys derek.", "sentence_bad": "some drivers annoy derek."}
+{"original": "the adults confuse marla.", "sentence_good": "the adults confuse marla.", "sentence_bad": "the adults confuses marla."}
+{"original": "all ladies discover some unicycle.", "sentence_good": "the ladies discover some unicycle.", "sentence_bad": "the ladies discovers some unicycle."}
+{"original": "melanie admires the books.", "sentence_good": "melanie admires the books.", "sentence_bad": "melanie admire the books."}
+{"original": "david hasn't attacked alicia.", "sentence_good": "david hasn't attacked alicia.", "sentence_bad": "david haven't attacked alicia."}
+{"original": "carla hasn't found these boys.", "sentence_good": "carla hasn't found the boys.", "sentence_bad": "carla haven't found the boys."}
+{"original": "most children break that cart.", "sentence_good": "most children break the cart.", "sentence_bad": "most children breaks the cart."}
+{"original": "curtis talks to the senators.", "sentence_good": "curtis talks at the senators.", "sentence_bad": "curtis talk at the senators."}
+{"original": "these boys bike to the great lakes.", "sentence_good": "the boys bike at the great lakes.", "sentence_bad": "the boys bikes at the great lakes."}
+{"original": "suzanne hasn't hated helen.", "sentence_good": "suzanne hasn't hated helen.", "sentence_bad": "suzanne haven't hated helen."}
+{"original": "frank drops by all hills.", "sentence_good": "frank drops at the hills.", "sentence_bad": "frank drop at the hills."}
+{"original": "tanya isn't bringing malls.", "sentence_good": "tanya isn't bringing malls.", "sentence_bad": "tanya aren't bringing malls."}
+{"original": "guests dislike all waitresses.", "sentence_good": "guests dislike the waitresses.", "sentence_bad": "guests dislikes the waitresses."}
+{"original": "kathleen disturbs roger.", "sentence_good": "kathleen disturbs roger.", "sentence_bad": "kathleen disturb roger."}
+{"original": "raymond tours closets.", "sentence_good": "raymond tours closets.", "sentence_bad": "raymond tour closets."}
+{"original": "candice climbs down some steps.", "sentence_good": "candice climbs down some steps.", "sentence_bad": "candice climb down some steps."}
+{"original": "a lot of patients pass every mountain.", "sentence_good": "the lot at patients pass the mountain.", "sentence_bad": "the lot at patients passes the mountain."}
+{"original": "david hasn't cured daniel.", "sentence_good": "david hasn't cured daniel.", "sentence_bad": "david haven't cured daniel."}
+{"original": "benjamin references donald.", "sentence_good": "benjamin references donald.", "sentence_bad": "benjamin reference donald."}
+{"original": "becky sells the book.", "sentence_good": "becky sells the book.", "sentence_bad": "becky sell the book."}
+{"original": "brian hasn't sounded like a senator.", "sentence_good": "brian hasn't sounded at the senator.", "sentence_bad": "brian haven't sounded at the senator."}
+{"original": "the teachers skate around a mountain.", "sentence_good": "the teachers skate at the mountain.", "sentence_bad": "the teachers skates at the mountain."}
+{"original": "sarah sells this muffin.", "sentence_good": "sarah sells the muffin.", "sentence_bad": "sarah sell the muffin."}
+{"original": "these ladies fix the plate.", "sentence_good": "the ladies fix the plate.", "sentence_bad": "the ladies fixes the plate."}
+{"original": "sheila hasn't dropped by every art gallery.", "sentence_good": "sheila hasn't dropped at the will gallery.", "sentence_bad": "sheila haven't dropped at the will gallery."}
+{"original": "actors tour all grocery stores.", "sentence_good": "actors tour the grocery stores.", "sentence_bad": "actors tours the grocery stores."}
+{"original": "a lot of pedestrians stuns diane.", "sentence_good": "the lot at pedestrians stuns diane.", "sentence_bad": "the lot at pedestrians stun diane."}
+{"original": "roger climbs up many ladders.", "sentence_good": "roger climbs up many ladders.", "sentence_bad": "roger climb up many ladders."}
+{"original": "homer wasn't arguing about kirsten.", "sentence_good": "homer wasn't arguing at kirsten.", "sentence_bad": "homer weren't arguing at kirsten."}
+{"original": "these reports astound these waitresses.", "sentence_good": "the reports astound the waitresses.", "sentence_bad": "the reports astounds the waitresses."}
+{"original": "the dancer lifts many grocery stores.", "sentence_good": "the dancer lifts many grocery stores.", "sentence_bad": "the dancer lift many grocery stores."}
+{"original": "the lady investigates benjamin.", "sentence_good": "the lady investigates benjamin.", "sentence_bad": "the lady investigate benjamin."}
+{"original": "carla discovers benjamin.", "sentence_good": "carla discovers benjamin.", "sentence_bad": "carla discover benjamin."}
+{"original": "all patients ascend these hills.", "sentence_good": "the patients ascend the hills.", "sentence_bad": "the patients ascends the hills."}
+{"original": "tanya wasn't bringing this mirror.", "sentence_good": "tanya wasn't bringing the mirror.", "sentence_bad": "tanya weren't bringing the mirror."}
+{"original": "amy drops by a lot of rivers.", "sentence_good": "amy drops at the lot at rivers.", "sentence_bad": "amy drop at the lot at rivers."}
+{"original": "stacey listens to mark.", "sentence_good": "stacey listens at mark.", "sentence_bad": "stacey listen at mark."}
+{"original": "that library impresses rachel.", "sentence_good": "the library impresses rachel.", "sentence_bad": "the library impress rachel."}
+{"original": "all cashiers go to that movie theater.", "sentence_good": "the cashiers go at the movie theater.", "sentence_bad": "the cashiers goes at the movie theater."}
+{"original": "beth hasn't boycotted some association.", "sentence_good": "beth hasn't boycotted some association.", "sentence_bad": "beth haven't boycotted some association."}
+{"original": "a lot of cashiers impress lawrence.", "sentence_good": "the lot at cashiers impress lawrence.", "sentence_bad": "the lot at cashiers impresses lawrence."}
+{"original": "the steak distracts a school.", "sentence_good": "the steak distracts the school.", "sentence_bad": "the steak distract the school."}
+{"original": "the dancers skate around all libraries.", "sentence_good": "the dancers skate at the libraries.", "sentence_bad": "the dancers skates at the libraries."}
+{"original": "leslie conceals most restaurants.", "sentence_good": "leslie conceals most restaurants.", "sentence_bad": "leslie conceal most restaurants."}
+{"original": "every spotlight embarrasses lissa.", "sentence_good": "the spotlight embarrasses lissa.", "sentence_bad": "the spotlight embarrass lissa."}
+{"original": "edward descends all hills.", "sentence_good": "edward descends the hills.", "sentence_bad": "edward descend the hills."}
+{"original": "this wheelbarrow bothers every legislature.", "sentence_good": "the wheelbarrow bothers the legislature.", "sentence_bad": "the wheelbarrow bother the legislature."}
+{"original": "douglas tours a lake.", "sentence_good": "douglas tours the lake.", "sentence_bad": "douglas tour the lake."}
+{"original": "derek wasn't confusing julie.", "sentence_good": "derek wasn't confusing julie.", "sentence_bad": "derek weren't confusing julie."}
+{"original": "the patients remember a mall.", "sentence_good": "the patients remember the mall.", "sentence_bad": "the patients remembers the mall."}
+{"original": "the clintons heal a boy.", "sentence_good": "the clintons heal the boy.", "sentence_bad": "the clintons heals the boy."}
+{"original": "eric hasn't visited many actresses.", "sentence_good": "eric hasn't visited many actresses.", "sentence_bad": "eric haven't visited many actresses."}
+{"original": "kristen wasn't working with every teacher.", "sentence_good": "kristen wasn't working at the teacher.", "sentence_bad": "kristen weren't working at the teacher."}
+{"original": "gerald insults a lot of plays.", "sentence_good": "gerald insults the lot at plays.", "sentence_bad": "gerald insult the lot at plays."}
+{"original": "many teachers climb up a lot of slopes.", "sentence_good": "many teachers climb up the lot at slopes.", "sentence_bad": "many teachers climbs up the lot at slopes."}
+{"original": "those customers examine those commentaries.", "sentence_good": "the customers examine the commentaries.", "sentence_bad": "the customers examines the commentaries."}
+{"original": "guy finds thomas.", "sentence_good": "guy finds thomas.", "sentence_bad": "guy find thomas."}
+{"original": "rhonda wasn't dropping by a cafe.", "sentence_good": "rhonda wasn't dropping at the cafe.", "sentence_bad": "rhonda aren't dropping at the cafe."}
+{"original": "cynthia knows some boy.", "sentence_good": "cynthia knows some boy.", "sentence_bad": "cynthia know some boy."}
+{"original": "those legislatures forget leslie.", "sentence_good": "the legislatures forget leslie.", "sentence_bad": "the legislatures forgets leslie."}
+{"original": "guys haven't returned to sarah.", "sentence_good": "guys haven't returned at sarah.", "sentence_bad": "guys hasn't returned at sarah."}
+{"original": "some teacher hugs bradley.", "sentence_good": "some teacher hugs bradley.", "sentence_bad": "some teacher hug bradley."}
+{"original": "every hospital hasn't distracted brad.", "sentence_good": "the hospital hasn't distracted brad.", "sentence_bad": "the hospital haven't distracted brad."}
+{"original": "natalie hates dawn.", "sentence_good": "natalie hates dawn.", "sentence_bad": "natalie hate dawn."}
+{"original": "jill hasn't discovered randolf.", "sentence_good": "jill hasn't discovered randolf.", "sentence_bad": "jill haven't discovered randolf."}
+{"original": "colleen discovers gerald.", "sentence_good": "colleen discovers gerald.", "sentence_bad": "colleen discover gerald."}
+{"original": "gloves haven't disturbed anna.", "sentence_good": "gloves haven't disturbed anna.", "sentence_bad": "gloves hasn't disturbed anna."}
+{"original": "many customers fix the skateboard.", "sentence_good": "many customers fix the skateboard.", "sentence_bad": "many customers fixes the skateboard."}
+{"original": "keith lifts planes.", "sentence_good": "keith lifts planes.", "sentence_bad": "keith lift planes."}
+{"original": "stacy isn't boasting about russell.", "sentence_good": "stacy isn't boasting at russell.", "sentence_bad": "stacy aren't boasting at russell."}
+{"original": "these libraries talk to steven.", "sentence_good": "the libraries talk at steven.", "sentence_bad": "the libraries talks at steven."}
+{"original": "alexander wasn't finding the child.", "sentence_good": "alexander wasn't finding the child.", "sentence_bad": "alexander aren't finding the child."}
+{"original": "that student hasn't climbed up many mountains.", "sentence_good": "the student hasn't climbed up many mountains.", "sentence_bad": "the student haven't climbed up many mountains."}
+{"original": "the lutherans talk to tina.", "sentence_good": "the lutherans talk at tina.", "sentence_bad": "the lutherans talks at tina."}
+{"original": "many rabbits shock tina.", "sentence_good": "many rabbits shock tina.", "sentence_bad": "many rabbits shocks tina."}
+{"original": "julia hasn't healed this guy.", "sentence_good": "julia hasn't healed the guy.", "sentence_bad": "julia haven't healed the guy."}
+{"original": "all customers sell those dishes.", "sentence_good": "the customers sell the dishes.", "sentence_bad": "the customers sells the dishes."}
+{"original": "some pedestrians reveal every tomato.", "sentence_good": "some pedestrians reveal the tomato.", "sentence_bad": "some pedestrians reveals the tomato."}
+{"original": "amelia wears every glove.", "sentence_good": "amelia wears the glove.", "sentence_bad": "amelia wear the glove."}
+{"original": "the borgias clean the shawl.", "sentence_good": "the borgias clean the shawl.", "sentence_bad": "the borgias cleans the shawl."}
+{"original": "the rugs resemble those drawings.", "sentence_good": "the rugs resemble the drawings.", "sentence_bad": "the rugs resembles the drawings."}
+{"original": "julia wasn't appreciating jodi.", "sentence_good": "julia wasn't appreciating jodi.", "sentence_bad": "julia weren't appreciating jodi."}
+{"original": "some senators fix every glass.", "sentence_good": "some senators fix the glass.", "sentence_bad": "some senators fixes the glass."}
+{"original": "carlos kisses most children.", "sentence_good": "carlos kisses most children.", "sentence_bad": "carlos kiss most children."}
+{"original": "those children discover a cafe.", "sentence_good": "the children discover the cafe.", "sentence_bad": "the children discovers the cafe."}
+{"original": "jennifer drops by the great lakes.", "sentence_good": "jennifer drops at the great lakes.", "sentence_bad": "jennifer drop at the great lakes."}
+{"original": "the clintons fires gregory.", "sentence_good": "the clintons fires gregory.", "sentence_bad": "the clintons fire gregory."}
+{"original": "a lot of guests dislike heather.", "sentence_good": "the lot at guests dislike heather.", "sentence_bad": "the lot at guests dislikes heather."}
+{"original": "those students arrive at those malls.", "sentence_good": "the students arrive at the malls.", "sentence_bad": "the students arrives at the malls."}
+{"original": "senators bothers daniel.", "sentence_good": "senators bothers daniel.", "sentence_bad": "senators bother daniel."}
+{"original": "these boys aren't lifting those projectors.", "sentence_good": "the boys aren't lifting the projectors.", "sentence_bad": "the boys wasn't lifting the projectors."}
+{"original": "those cashiers reveal paul.", "sentence_good": "the cashiers reveal paul.", "sentence_bad": "the cashiers reveals paul."}
+{"original": "the borgias shocks elaine.", "sentence_good": "the borgias shocks elaine.", "sentence_bad": "the borgias shock elaine."}
+{"original": "the carts haven't annoyed holly.", "sentence_good": "the carts haven't annoyed holly.", "sentence_bad": "the carts hasn't annoyed holly."}
+{"original": "the lutherans investigate ellen.", "sentence_good": "the lutherans investigate ellen.", "sentence_bad": "the lutherans investigates ellen."}
+{"original": "caroline hasn't hidden carolyn.", "sentence_good": "caroline hasn't hidden carolyn.", "sentence_bad": "caroline haven't hidden carolyn."}
+{"original": "pork annoys jane.", "sentence_good": "pork annoys jane.", "sentence_bad": "pork annoy jane."}
+{"original": "this picture looks like that slope.", "sentence_good": "the picture looks at the slope.", "sentence_bad": "the picture look at the slope."}
+{"original": "these bicycles annoy thomas.", "sentence_good": "the bicycles annoy thomas.", "sentence_bad": "the bicycles annoys thomas."}
+{"original": "most drivers conceal joel.", "sentence_good": "most drivers conceal joel.", "sentence_bad": "most drivers conceals joel."}
+{"original": "gina boycotts every closet.", "sentence_good": "gina boycotts the closet.", "sentence_bad": "gina boycott the closet."}
+{"original": "candice wears a skirt.", "sentence_good": "candice wears the skirt.", "sentence_bad": "candice wear the skirt."}
+{"original": "galileo isn't observing many waitresses.", "sentence_good": "galileo isn't observing many waitresses.", "sentence_bad": "galileo weren't observing many waitresses."}
+{"original": "jacqueline isn't boring victoria.", "sentence_good": "jacqueline isn't boring victoria.", "sentence_bad": "jacqueline aren't boring victoria."}
+{"original": "carmen isn't boycotting the libraries.", "sentence_good": "carmen isn't boycotting the libraries.", "sentence_bad": "carmen weren't boycotting the libraries."}
+{"original": "michelle lifts the doors.", "sentence_good": "michelle lifts the doors.", "sentence_bad": "michelle lift the doors."}
+{"original": "patricia lifts every banana.", "sentence_good": "patricia lifts the banana.", "sentence_bad": "patricia lift the banana."}
+{"original": "richard isn't cleaning a lot of cars.", "sentence_good": "richard isn't cleaning the lot at cars.", "sentence_bad": "richard aren't cleaning the lot at cars."}
+{"original": "the borgias wear the coat.", "sentence_good": "the borgias wear the coat.", "sentence_bad": "the borgias wears the coat."}
+{"original": "kristen goes to the lake.", "sentence_good": "kristen goes at the lake.", "sentence_bad": "kristen go at the lake."}
+{"original": "the tomato resembles a lot of prints.", "sentence_good": "the tomato resembles the lot at prints.", "sentence_bad": "the tomato resemble the lot at prints."}
+{"original": "the girls ascend those ladders.", "sentence_good": "the girls ascend the ladders.", "sentence_bad": "the girls ascends the ladders."}
+{"original": "every cat hasn't disgusted all people.", "sentence_good": "the cat hasn't disgusted the people.", "sentence_bad": "the cat haven't disgusted the people."}
+{"original": "ann sees tanya.", "sentence_good": "ann sees tanya.", "sentence_bad": "ann see tanya."}
+{"original": "richard wasn't walking through this glacier.", "sentence_good": "richard wasn't walking at the glacier.", "sentence_bad": "richard aren't walking at the glacier."}
+{"original": "these hamsters ascend that ladder.", "sentence_good": "the hamsters ascend the ladder.", "sentence_bad": "the hamsters ascends the ladder."}
+{"original": "curtis hasn't escaped from sandra.", "sentence_good": "curtis hasn't escaped at sandra.", "sentence_bad": "curtis haven't escaped at sandra."}
+{"original": "a senator isn't taking most pants.", "sentence_good": "the senator isn't taking most pants.", "sentence_bad": "the senator aren't taking most pants."}
+{"original": "elaine leaves timothy.", "sentence_good": "elaine leaves timothy.", "sentence_bad": "elaine leave timothy."}
+{"original": "most pedestrians work with william.", "sentence_good": "most pedestrians work at william.", "sentence_bad": "most pedestrians works at william."}
+{"original": "irene hasn't ascended a lot of hills.", "sentence_good": "irene hasn't ascended the lot at hills.", "sentence_bad": "irene haven't ascended the lot at hills."}
+{"original": "those senators exit college campuses.", "sentence_good": "the senators exit college campuses.", "sentence_bad": "the senators exits college campuses."}
+{"original": "heidi isn't exploring harvard university.", "sentence_good": "heidi isn't exploring harvard university.", "sentence_bad": "heidi weren't exploring harvard university."}
+{"original": "cindy isn't noticing some teachers.", "sentence_good": "cindy isn't noticing some teachers.", "sentence_bad": "cindy aren't noticing some teachers."}
+{"original": "wendy wasn't selling most hills.", "sentence_good": "wendy wasn't selling most hills.", "sentence_bad": "wendy weren't selling most hills."}
+{"original": "julia hasn't hidden most art galleries.", "sentence_good": "julia hasn't hidden most will galleries.", "sentence_bad": "julia haven't hidden most will galleries."}
+{"original": "bradley hasn't scanned that play.", "sentence_good": "bradley hasn't scanned the play.", "sentence_bad": "bradley haven't scanned the play."}
+{"original": "the carts resemble these paintings.", "sentence_good": "the carts resemble the paintings.", "sentence_bad": "the carts resembles the paintings."}
+{"original": "denise sounds like randolf.", "sentence_good": "denise sounds at randolf.", "sentence_bad": "denise sound at randolf."}
+{"original": "teresa buys that window.", "sentence_good": "teresa buys the window.", "sentence_bad": "teresa buy the window."}
+{"original": "the waitresses think about all newspaper articles.", "sentence_good": "the waitresses think at the newspaper articles.", "sentence_bad": "the waitresses thinks at the newspaper articles."}
+{"original": "todd exits the great lakes.", "sentence_good": "todd exits the great lakes.", "sentence_bad": "todd exit the great lakes."}
+{"original": "paul heals that man.", "sentence_good": "paul heals the man.", "sentence_bad": "paul heal the man."}
+{"original": "christopher hasn't aggravated stephen.", "sentence_good": "christopher hasn't aggravated stephen.", "sentence_bad": "christopher haven't aggravated stephen."}
+{"original": "judy tours those restaurants.", "sentence_good": "judy tours the restaurants.", "sentence_bad": "judy tour the restaurants."}
+{"original": "stephen hasn't lifted photographs.", "sentence_good": "stephen hasn't lifted photographs.", "sentence_bad": "stephen haven't lifted photographs."}
+{"original": "some windows disturb beth.", "sentence_good": "some windows disturb beth.", "sentence_bad": "some windows disturbs beth."}
+{"original": "omar investigates the hospitals.", "sentence_good": "omar investigates the hospitals.", "sentence_bad": "omar investigate the hospitals."}
+{"original": "some actresses distracts michael.", "sentence_good": "some actresses distracts michael.", "sentence_bad": "some actresses distract michael."}
+{"original": "eva boasts about theodore.", "sentence_good": "eva boasts at theodore.", "sentence_bad": "eva boast at theodore."}
+{"original": "all teenagers run around the school.", "sentence_good": "the teenagers run at the school.", "sentence_bad": "the teenagers runs at the school."}
+{"original": "the impressionists talk to cynthia.", "sentence_good": "the impressionists talk at cynthia.", "sentence_bad": "the impressionists talks at cynthia."}
+{"original": "alan hasn't explored a lot of museums.", "sentence_good": "alan hasn't explored the lot at museums.", "sentence_bad": "alan haven't explored the lot at museums."}
+{"original": "noah descends every hill.", "sentence_good": "noah descends the hill.", "sentence_bad": "noah descend the hill."}
+{"original": "amanda isn't observing angela.", "sentence_good": "amanda isn't observing angela.", "sentence_bad": "amanda aren't observing angela."}
+{"original": "sabrina isn't boycotting the lake.", "sentence_good": "sabrina isn't boycotting the lake.", "sentence_bad": "sabrina aren't boycotting the lake."}
+{"original": "rachelle hasn't stunned angela.", "sentence_good": "rachelle hasn't stunned angela.", "sentence_bad": "rachelle haven't stunned angela."}
+{"original": "the borgias observe stephanie.", "sentence_good": "the borgias observe stephanie.", "sentence_bad": "the borgias observes stephanie."}
+{"original": "all girls sell all horses.", "sentence_good": "the girls sell the horses.", "sentence_bad": "the girls sells the horses."}
+{"original": "many pedestrians return to those waiters.", "sentence_good": "many pedestrians return at the waiters.", "sentence_bad": "many pedestrians returns at the waiters."}
+{"original": "most teachers drop by some mountains.", "sentence_good": "most teachers drop at some mountains.", "sentence_bad": "most teachers drops at some mountains."}
+{"original": "guests reference karla.", "sentence_good": "guests reference karla.", "sentence_bad": "guests references karla."}
+{"original": "stacey hasn't embarrassed the government.", "sentence_good": "stacey hasn't embarrassed the government.", "sentence_bad": "stacey haven't embarrassed the government."}
+{"original": "alan hasn't referenced natalie.", "sentence_good": "alan hasn't referenced natalie.", "sentence_bad": "alan haven't referenced natalie."}
+{"original": "the girls conceal the mouth.", "sentence_good": "the girls conceal the mouth.", "sentence_bad": "the girls conceals the mouth."}
+{"original": "the clintons weren't criticizing john.", "sentence_good": "the clintons weren't criticizing john.", "sentence_bad": "the clintons isn't criticizing john."}
+{"original": "theodore sounds like rachelle.", "sentence_good": "theodore sounds at rachelle.", "sentence_bad": "theodore sound at rachelle."}
+{"original": "the clintons drive to a hospital.", "sentence_good": "the clintons drive at the hospital.", "sentence_bad": "the clintons drives at the hospital."}
+{"original": "an association stuns clyde.", "sentence_good": "the association stuns clyde.", "sentence_bad": "the association stun clyde."}
+{"original": "paul examines some books.", "sentence_good": "paul examines some books.", "sentence_bad": "paul examine some books."}
+{"original": "kristin wasn't disturbing kathleen.", "sentence_good": "kristin wasn't disturbing kathleen.", "sentence_bad": "kristin aren't disturbing kathleen."}
+{"original": "that patient praises tonya.", "sentence_good": "the patient praises tonya.", "sentence_bad": "the patient praise tonya."}
+{"original": "hills alarm craig.", "sentence_good": "hills alarm craig.", "sentence_bad": "hills alarms craig."}
+{"original": "dan hasn't aggravated janet.", "sentence_good": "dan hasn't aggravated janet.", "sentence_bad": "dan haven't aggravated janet."}
+{"original": "current events scare harvard university.", "sentence_good": "current events scare harvard university.", "sentence_bad": "current events scares harvard university."}
+{"original": "jill hasn't hated christopher.", "sentence_good": "jill hasn't hated christopher.", "sentence_bad": "jill haven't hated christopher."}
+{"original": "beverly notices a lot of banks.", "sentence_good": "beverly notices the lot at banks.", "sentence_bad": "beverly notice the lot at banks."}
+{"original": "donna kisses these doctors.", "sentence_good": "donna kisses the doctors.", "sentence_bad": "donna kiss the doctors."}
+{"original": "most dancers escape from stacy.", "sentence_good": "most dancers escape at stacy.", "sentence_bad": "most dancers escapes at stacy."}
+{"original": "paintings haven't looked like water.", "sentence_good": "paintings haven't looked at water.", "sentence_bad": "paintings hasn't looked at water."}
+{"original": "this movie bores susan.", "sentence_good": "the movie bores susan.", "sentence_bad": "the movie bore susan."}
+{"original": "these actors boycott a lot of public parks.", "sentence_good": "the actors boycott the lot at public parks.", "sentence_bad": "the actors boycotts the lot at public parks."}
+{"original": "teresa researches most college campuses.", "sentence_good": "teresa researches most college campuses.", "sentence_bad": "teresa research most college campuses."}
+{"original": "lucille questions candice.", "sentence_good": "lucille questions candice.", "sentence_bad": "lucille question candice."}
+{"original": "nina hasn't cleaned the skirt.", "sentence_good": "nina hasn't cleaned the skirt.", "sentence_bad": "nina haven't cleaned the skirt."}
+{"original": "harvard university hasn't criticized that college campus.", "sentence_good": "harvard university hasn't criticized the college campus.", "sentence_bad": "harvard university haven't criticized the college campus."}
+{"original": "the teachers bore gregory.", "sentence_good": "the teachers bore gregory.", "sentence_bad": "the teachers bores gregory."}

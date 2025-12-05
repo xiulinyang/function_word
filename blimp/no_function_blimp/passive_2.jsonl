@@ -1,0 +1,904 @@
+{"original": "a lot of nieces of some actor aren't scared.", "sentence_good": "lot nieces some actor aren't scared.", "sentence_bad": "lot nieces some actor aren't wept."}
+{"original": "mitchell's grandfathers are forgotten.", "sentence_good": "mitchell's grandfathers forgotten.", "sentence_bad": "mitchell's grandfathers concurred."}
+{"original": "the clintons were attacked.", "sentence_good": "clintons attacked.", "sentence_bad": "clintons replied."}
+{"original": "most cashiers are disliked.", "sentence_good": "most cashiers disliked.", "sentence_bad": "most cashiers flirted."}
+{"original": "a lot of libraries were distracted.", "sentence_good": "lot libraries distracted.", "sentence_bad": "lot libraries communicated."}
+{"original": "kristen wasn't visited.", "sentence_good": "kristen wasn't visited.", "sentence_bad": "kristen wasn't muttered."}
+{"original": "stephen was disliked.", "sentence_good": "stephen disliked.", "sentence_bad": "stephen laughed."}
+{"original": "steve isn't disliked.", "sentence_good": "steve isn't disliked.", "sentence_bad": "steve isn't lied."}
+{"original": "the actresses weren't bored.", "sentence_good": "actresses weren't bored.", "sentence_bad": "actresses weren't retaliated."}
+{"original": "mary wasn't known.", "sentence_good": "mary wasn't known.", "sentence_bad": "mary wasn't cried."}
+{"original": "many teachers aren't visited.", "sentence_good": "many teachers aren't visited.", "sentence_bad": "many teachers aren't conspired."}
+{"original": "leslie's piano teachers were hired.", "sentence_good": "leslie's piano teachers hired.", "sentence_bad": "leslie's piano teachers flirted."}
+{"original": "most actors are described.", "sentence_good": "most actors described.", "sentence_bad": "most actors corresponded."}
+{"original": "some guy's granddaughter was investigated.", "sentence_good": "some guy's granddaughter investigated.", "sentence_bad": "some guy's granddaughter screamed."}
+{"original": "edward was hurt.", "sentence_good": "edward hurt.", "sentence_bad": "edward spoken up."}
+{"original": "all companies are bothered.", "sentence_good": "companies bothered.", "sentence_bad": "companies argued."}
+{"original": "winston churchill's french teachers aren't loved.", "sentence_good": "winston churchill's french teachers aren't loved.", "sentence_bad": "winston churchill's french teachers aren't clashed."}
+{"original": "vincent's partners aren't astounded.", "sentence_good": "vincent's partners aren't astounded.", "sentence_bad": "vincent's partners aren't waved."}
+{"original": "bill was disturbed.", "sentence_good": "bill disturbed.", "sentence_bad": "bill left."}
+{"original": "cindy was insulted.", "sentence_good": "cindy insulted.", "sentence_bad": "cindy lied."}
+{"original": "jodi's lawyers were praised.", "sentence_good": "jodi's lawyers praised.", "sentence_bad": "jodi's lawyers struggled."}
+{"original": "most adults' mentees aren't admired.", "sentence_good": "most adults' mentees aren't admired.", "sentence_bad": "most adults' mentees aren't gone fishing."}
+{"original": "paul was kissed.", "sentence_good": "paul kissed.", "sentence_bad": "paul screamed."}
+{"original": "many patients were impressed.", "sentence_good": "many patients impressed.", "sentence_bad": "many patients chatted."}
+{"original": "carl's daughter is fired.", "sentence_good": "carl's daughter fired.", "sentence_bad": "carl's daughter shouted."}
+{"original": "the mother of steve is annoyed.", "sentence_good": "mother steve annoyed.", "sentence_bad": "mother steve sighed."}
+{"original": "kristin's brothers are astounded.", "sentence_good": "kristin's brothers astounded.", "sentence_bad": "kristin's brothers corresponded."}
+{"original": "eric isn't described.", "sentence_good": "eric isn't described.", "sentence_bad": "eric isn't concurred."}
+{"original": "homer's teachers weren't scanned.", "sentence_good": "homer's teachers weren't scanned.", "sentence_bad": "homer's teachers weren't clashed."}
+{"original": "carlos wasn't scared.", "sentence_good": "carlos wasn't scared.", "sentence_bad": "carlos wasn't trained."}
+{"original": "those guests weren't discussed.", "sentence_good": "guests weren't discussed.", "sentence_bad": "guests weren't flirted."}
+{"original": "these people aren't admired.", "sentence_good": "people aren't admired.", "sentence_bad": "people aren't corresponded."}
+{"original": "carla isn't hugged.", "sentence_good": "carla isn't hugged.", "sentence_bad": "carla isn't wept."}
+{"original": "some government isn't bothered.", "sentence_good": "some government isn't bothered.", "sentence_bad": "some government isn't communicated."}
+{"original": "craig wasn't bothered.", "sentence_good": "craig wasn't bothered.", "sentence_bad": "craig wasn't grinned."}
+{"original": "guy's nieces aren't distracted.", "sentence_good": "guy's nieces aren't distracted.", "sentence_bad": "guy's nieces aren't nodded."}
+{"original": "those guys were visited.", "sentence_good": "guys visited.", "sentence_bad": "guys waved."}
+{"original": "derek is hated.", "sentence_good": "derek hated.", "sentence_bad": "derek shrugged."}
+{"original": "frank was hired.", "sentence_good": "frank hired.", "sentence_bad": "frank screamed."}
+{"original": "this student wasn't helped.", "sentence_good": "student wasn't helped.", "sentence_bad": "student wasn't littered."}
+{"original": "a lot of guys are loved.", "sentence_good": "lot guys loved.", "sentence_bad": "lot guys responded."}
+{"original": "the cucumber is admired.", "sentence_good": "cucumber admired.", "sentence_bad": "cucumber rotted."}
+{"original": "lisa isn't disgusted.", "sentence_good": "lisa isn't disgusted.", "sentence_bad": "lisa isn't murmured."}
+{"original": "a girl's ex-wife is hurt.", "sentence_good": "girl's ex-wife hurt.", "sentence_bad": "girl's ex-wife disagreed."}
+{"original": "vanessa is upset.", "sentence_good": "vanessa upset.", "sentence_bad": "vanessa cried."}
+{"original": "ellen's mentors aren't upset.", "sentence_good": "ellen's mentors aren't upset.", "sentence_bad": "ellen's mentors aren't retaliated."}
+{"original": "kimberley's nieces weren't helped.", "sentence_good": "kimberley's nieces weren't helped.", "sentence_bad": "kimberley's nieces weren't disagreed."}
+{"original": "that mushroom is cleaned.", "sentence_good": "mushroom cleaned.", "sentence_bad": "mushroom rotted."}
+{"original": "this mother of stephanie isn't aggravated.", "sentence_good": "mother stephanie isn't aggravated.", "sentence_bad": "mother stephanie isn't fallen asleep."}
+{"original": "every cashier is alarmed.", "sentence_good": "cashier alarmed.", "sentence_bad": "cashier fallen asleep."}
+{"original": "kevin was irritated.", "sentence_good": "kevin irritated.", "sentence_bad": "kevin waved."}
+{"original": "jodi's piano teachers are discussed.", "sentence_good": "jodi's piano teachers discussed.", "sentence_bad": "jodi's piano teachers answered."}
+{"original": "brothers of sally are left.", "sentence_good": "brothers sally left.", "sentence_bad": "brothers sally negotiated."}
+{"original": "most boys are appreciated.", "sentence_good": "most boys appreciated.", "sentence_bad": "most boys fallen asleep."}
+{"original": "elaine is embarrassed.", "sentence_good": "elaine embarrassed.", "sentence_bad": "elaine complained."}
+{"original": "danielle's classmates aren't discussed.", "sentence_good": "danielle's classmates aren't discussed.", "sentence_bad": "danielle's classmates aren't collaborated."}
+{"original": "renee wasn't seen.", "sentence_good": "renee wasn't seen.", "sentence_bad": "renee wasn't fallen asleep."}
+{"original": "the actress was forgotten.", "sentence_good": "actress forgotten.", "sentence_bad": "actress left."}
+{"original": "dennis's electrician isn't kissed.", "sentence_good": "dennis's electrician isn't kissed.", "sentence_bad": "dennis's electrician isn't murmured."}
+{"original": "rachel's colleague isn't admired.", "sentence_good": "rachel's colleague isn't admired.", "sentence_bad": "rachel's colleague isn't come here."}
+{"original": "most guys are described.", "sentence_good": "most guys described.", "sentence_bad": "most guys coped."}
+{"original": "a lot of legislatures are shocked.", "sentence_good": "lot legislatures shocked.", "sentence_bad": "lot legislatures retaliated."}
+{"original": "most teenagers are hurt.", "sentence_good": "most teenagers hurt.", "sentence_bad": "most teenagers negotiated."}
+{"original": "gina isn't criticized.", "sentence_good": "gina isn't criticized.", "sentence_bad": "gina isn't muttered."}
+{"original": "cindy's spouse isn't hated.", "sentence_good": "cindy's spouse isn't hated.", "sentence_bad": "cindy's spouse isn't disagreed."}
+{"original": "these friends of carol weren't bored.", "sentence_good": "friends carol weren't bored.", "sentence_bad": "friends carol weren't profited."}
+{"original": "all customers are embarrassed.", "sentence_good": "customers embarrassed.", "sentence_bad": "customers chatted."}
+{"original": "jerry isn't shocked.", "sentence_good": "jerry isn't shocked.", "sentence_bad": "jerry isn't boasted."}
+{"original": "that actor's associates are worried.", "sentence_good": "actor's associates worried.", "sentence_bad": "actor's associates cooperated."}
+{"original": "sara wasn't scared.", "sentence_good": "sara wasn't scared.", "sentence_bad": "sara wasn't come here."}
+{"original": "natalie's niece isn't forgotten.", "sentence_good": "natalie's niece isn't forgotten.", "sentence_bad": "natalie's niece isn't muttered."}
+{"original": "raymond's best friends weren't disturbed.", "sentence_good": "raymond's best friends weren't disturbed.", "sentence_bad": "raymond's best friends weren't worked hard."}
+{"original": "tonya's french teachers aren't disliked.", "sentence_good": "tonya's french teachers aren't disliked.", "sentence_bad": "tonya's french teachers aren't clashed."}
+{"original": "all actors were observed.", "sentence_good": "actors observed.", "sentence_bad": "actors collaborated."}
+{"original": "those actresses weren't insulted.", "sentence_good": "actresses weren't insulted.", "sentence_bad": "actresses weren't flirted."}
+{"original": "rachelle's associates are disliked.", "sentence_good": "rachelle's associates disliked.", "sentence_bad": "rachelle's associates chuckled."}
+{"original": "teachers' plumbers were respected.", "sentence_good": "teachers' plumbers respected.", "sentence_bad": "teachers' plumbers concurred."}
+{"original": "harvard university was scared.", "sentence_good": "harvard university scared.", "sentence_bad": "harvard university clashed."}
+{"original": "connie is hugged.", "sentence_good": "connie hugged.", "sentence_bad": "connie died."}
+{"original": "these children were stunned.", "sentence_good": "children stunned.", "sentence_bad": "children come here."}
+{"original": "douglas's friends weren't hugged.", "sentence_good": "douglas's friends weren't hugged.", "sentence_bad": "douglas's friends weren't grinned."}
+{"original": "mark was bothered.", "sentence_good": "mark bothered.", "sentence_bad": "mark nodded."}
+{"original": "william's mentors aren't criticized.", "sentence_good": "william's mentors aren't criticized.", "sentence_bad": "william's mentors aren't left."}
+{"original": "brian is scared.", "sentence_good": "brian scared.", "sentence_bad": "brian gone fishing."}
+{"original": "those pedestrians aren't referenced.", "sentence_good": "pedestrians aren't referenced.", "sentence_bad": "pedestrians aren't retaliated."}
+{"original": "regina wasn't bothered.", "sentence_good": "regina wasn't bothered.", "sentence_bad": "regina wasn't fallen asleep."}
+{"original": "those teenagers aren't insulted.", "sentence_good": "teenagers aren't insulted.", "sentence_bad": "teenagers aren't chatted."}
+{"original": "the banana was cleaned.", "sentence_good": "banana cleaned.", "sentence_bad": "banana rotted."}
+{"original": "most fathers of amelia weren't criticized.", "sentence_good": "most fathers amelia weren't criticized.", "sentence_bad": "most fathers amelia weren't cooperated."}
+{"original": "a lot of children aren't annoyed.", "sentence_good": "lot children aren't annoyed.", "sentence_bad": "lot children aren't wept."}
+{"original": "homer was watched.", "sentence_good": "homer watched.", "sentence_bad": "homer come here."}
+{"original": "some senators were confused.", "sentence_good": "some senators confused.", "sentence_bad": "some senators profited."}
+{"original": "stephen's son isn't disturbed.", "sentence_good": "stephen's son isn't disturbed.", "sentence_bad": "stephen's son isn't disagreed."}
+{"original": "that teenager was described.", "sentence_good": "teenager described.", "sentence_bad": "teenager blinked."}
+{"original": "danielle's classmate is investigated.", "sentence_good": "danielle's classmate investigated.", "sentence_bad": "danielle's classmate smiled."}
+{"original": "michelle was seen.", "sentence_good": "michelle seen.", "sentence_bad": "michelle murmured."}
+{"original": "tracy's ex-husbands are annoyed.", "sentence_good": "tracy's ex-husbands annoyed.", "sentence_bad": "tracy's ex-husbands muttered."}
+{"original": "todd is remembered.", "sentence_good": "todd remembered.", "sentence_bad": "todd lied."}
+{"original": "grace isn't known.", "sentence_good": "grace isn't known.", "sentence_bad": "grace isn't trained."}
+{"original": "heather was scared.", "sentence_good": "heather scared.", "sentence_bad": "heather grinned."}
+{"original": "ann isn't praised.", "sentence_good": "ann isn't praised.", "sentence_bad": "ann isn't trained."}
+{"original": "guy was hated.", "sentence_good": "guy hated.", "sentence_bad": "guy muttered."}
+{"original": "organizations aren't scared.", "sentence_good": "organizations aren't scared.", "sentence_bad": "organizations aren't answered."}
+{"original": "melinda's ex-wife isn't distracted.", "sentence_good": "melinda's ex-wife isn't distracted.", "sentence_bad": "melinda's ex-wife isn't laughed."}
+{"original": "tamara's colleagues aren't shocked.", "sentence_good": "tamara's colleagues aren't shocked.", "sentence_bad": "tamara's colleagues aren't communicated."}
+{"original": "banks are appreciated.", "sentence_good": "banks appreciated.", "sentence_bad": "banks conferred."}
+{"original": "craig is stunned.", "sentence_good": "craig stunned.", "sentence_bad": "craig laughed."}
+{"original": "grandmothers of guy aren't distracted.", "sentence_good": "grandmothers guy aren't distracted.", "sentence_bad": "grandmothers guy aren't testified."}
+{"original": "the grandfathers of jerry aren't distracted.", "sentence_good": "grandfathers jerry aren't distracted.", "sentence_bad": "grandfathers jerry aren't cooperated."}
+{"original": "these eggplants were seen.", "sentence_good": "eggplants seen.", "sentence_bad": "eggplants rotted."}
+{"original": "anna's sons were described.", "sentence_good": "anna's sons described.", "sentence_bad": "anna's sons conspired."}
+{"original": "the girls are loved.", "sentence_good": "girls loved.", "sentence_bad": "girls laughed."}
+{"original": "that organization isn't scared.", "sentence_good": "organization isn't scared.", "sentence_bad": "organization isn't collaborated."}
+{"original": "chad's nephews weren't hated.", "sentence_good": "chad's nephews weren't hated.", "sentence_bad": "chad's nephews weren't muttered."}
+{"original": "most actresses aren't observed.", "sentence_good": "most actresses aren't observed.", "sentence_bad": "most actresses aren't retaliated."}
+{"original": "some students are scared.", "sentence_good": "some students scared.", "sentence_bad": "some students coped."}
+{"original": "sheila was visited.", "sentence_good": "sheila visited.", "sentence_bad": "sheila waved."}
+{"original": "the teenagers weren't bored.", "sentence_good": "teenagers weren't bored.", "sentence_bad": "teenagers weren't argued."}
+{"original": "nina's daughter was confused.", "sentence_good": "nina's daughter confused.", "sentence_bad": "nina's daughter shrugged."}
+{"original": "all nephews of the girls aren't forgotten.", "sentence_good": "nephews girls aren't forgotten.", "sentence_bad": "nephews girls aren't negotiated."}
+{"original": "those nieces of laurie are bothered.", "sentence_good": "nieces laurie bothered.", "sentence_bad": "nieces laurie nodded."}
+{"original": "associations are stunned.", "sentence_good": "associations stunned.", "sentence_bad": "associations corresponded."}
+{"original": "most students are kissed.", "sentence_good": "most students kissed.", "sentence_bad": "most students spoken up."}
+{"original": "that organization wasn't disgusted.", "sentence_good": "organization wasn't disgusted.", "sentence_bad": "organization wasn't communicated."}
+{"original": "kayla isn't remembered.", "sentence_good": "kayla isn't remembered.", "sentence_bad": "kayla isn't concurred."}
+{"original": "grace's brothers weren't investigated.", "sentence_good": "grace's brothers weren't investigated.", "sentence_bad": "grace's brothers weren't talked."}
+{"original": "carlos was disgusted.", "sentence_good": "carlos disgusted.", "sentence_bad": "carlos spoken up."}
+{"original": "those waitresses weren't alarmed.", "sentence_good": "waitresses weren't alarmed.", "sentence_bad": "waitresses weren't smiled."}
+{"original": "roger's niece wasn't respected.", "sentence_good": "roger's niece wasn't respected.", "sentence_bad": "roger's niece wasn't concurred."}
+{"original": "jodi's tutors were examined.", "sentence_good": "jodi's tutors examined.", "sentence_bad": "jodi's tutors gone fishing."}
+{"original": "alice wasn't investigated.", "sentence_good": "alice wasn't investigated.", "sentence_bad": "alice wasn't complained."}
+{"original": "rose's best friends are upset.", "sentence_good": "rose's best friends upset.", "sentence_bad": "rose's best friends left."}
+{"original": "theresa's ex-wives aren't worried.", "sentence_good": "theresa's ex-wives aren't worried.", "sentence_bad": "theresa's ex-wives aren't competed."}
+{"original": "these patients aren't disgusted.", "sentence_good": "patients aren't disgusted.", "sentence_bad": "patients aren't testified."}
+{"original": "janice's plumbers aren't aggravated.", "sentence_good": "janice's plumbers aren't aggravated.", "sentence_bad": "janice's plumbers aren't clashed."}
+{"original": "patricia is attacked.", "sentence_good": "patricia attacked.", "sentence_bad": "patricia screamed."}
+{"original": "some cat isn't bought.", "sentence_good": "some cat isn't bought.", "sentence_bad": "some cat isn't come here."}
+{"original": "holly is observed.", "sentence_good": "holly observed.", "sentence_bad": "holly blinked."}
+{"original": "that school was explored.", "sentence_good": "school explored.", "sentence_bad": "school worked hard."}
+{"original": "victoria is hugged.", "sentence_good": "victoria hugged.", "sentence_bad": "victoria shrugged."}
+{"original": "kirsten was confused.", "sentence_good": "kirsten confused.", "sentence_bad": "kirsten lied."}
+{"original": "sonia isn't concealed.", "sentence_good": "sonia isn't concealed.", "sentence_bad": "sonia isn't cried."}
+{"original": "grace's best friends are seen.", "sentence_good": "grace's best friends seen.", "sentence_bad": "grace's best friends interacted."}
+{"original": "every waitress isn't remembered.", "sentence_good": "waitress isn't remembered.", "sentence_bad": "waitress isn't nodded."}
+{"original": "judy's piano teachers are shocked.", "sentence_good": "judy's piano teachers shocked.", "sentence_bad": "judy's piano teachers trained."}
+{"original": "the clintons were aggravated.", "sentence_good": "clintons aggravated.", "sentence_bad": "clintons testified."}
+{"original": "some senators were stunned.", "sentence_good": "some senators stunned.", "sentence_bad": "some senators cooperated."}
+{"original": "brian's grandmothers weren't helped.", "sentence_good": "brian's grandmothers weren't helped.", "sentence_bad": "brian's grandmothers weren't replied."}
+{"original": "kathleen's employee isn't observed.", "sentence_good": "kathleen's employee isn't observed.", "sentence_bad": "kathleen's employee isn't complained."}
+{"original": "some sisters of diane were examined.", "sentence_good": "some sisters diane examined.", "sentence_bad": "some sisters diane left."}
+{"original": "patrick's ex-girlfriends weren't shocked.", "sentence_good": "patrick's ex-girlfriends weren't shocked.", "sentence_bad": "patrick's ex-girlfriends weren't cooperated."}
+{"original": "that dog was bought.", "sentence_good": "dog bought.", "sentence_bad": "dog come here."}
+{"original": "clyde's girlfriend isn't observed.", "sentence_good": "clyde's girlfriend isn't observed.", "sentence_bad": "clyde's girlfriend isn't murmured."}
+{"original": "waiters' grandmothers aren't forgotten.", "sentence_good": "waiters' grandmothers aren't forgotten.", "sentence_bad": "waiters' grandmothers aren't fallen asleep."}
+{"original": "lawrence is shocked.", "sentence_good": "lawrence shocked.", "sentence_bad": "lawrence argued."}
+{"original": "every boy's grandfathers are irritated.", "sentence_good": "boy's grandfathers irritated.", "sentence_bad": "boy's grandfathers flirted."}
+{"original": "homer was annoyed.", "sentence_good": "homer annoyed.", "sentence_bad": "homer chuckled."}
+{"original": "marie's lawyers aren't watched.", "sentence_good": "marie's lawyers aren't watched.", "sentence_bad": "marie's lawyers aren't shrugged."}
+{"original": "steven's plumbers weren't observed.", "sentence_good": "steven's plumbers weren't observed.", "sentence_bad": "steven's plumbers weren't wept."}
+{"original": "ella's mothers are disgusted.", "sentence_good": "ella's mothers disgusted.", "sentence_bad": "ella's mothers retaliated."}
+{"original": "russell's friends aren't hugged.", "sentence_good": "russell's friends aren't hugged.", "sentence_bad": "russell's friends aren't worked hard."}
+{"original": "veronica's student is impressed.", "sentence_good": "veronica's student impressed.", "sentence_bad": "veronica's student nodded."}
+{"original": "carol wasn't forgotten.", "sentence_good": "carol wasn't forgotten.", "sentence_bad": "carol wasn't sighed."}
+{"original": "elizabeth's boyfriend wasn't disgusted.", "sentence_good": "elizabeth's boyfriend wasn't disgusted.", "sentence_bad": "elizabeth's boyfriend wasn't disagreed."}
+{"original": "this mother of tammy was upset.", "sentence_good": "mother tammy upset.", "sentence_bad": "mother tammy gotten fired."}
+{"original": "raymond's supervisors aren't distracted.", "sentence_good": "raymond's supervisors aren't distracted.", "sentence_bad": "raymond's supervisors aren't worked hard."}
+{"original": "laurie wasn't concealed.", "sentence_good": "laurie wasn't concealed.", "sentence_bad": "laurie wasn't shrugged."}
+{"original": "jane isn't shocked.", "sentence_good": "jane isn't shocked.", "sentence_bad": "jane isn't argued."}
+{"original": "steven isn't loved.", "sentence_good": "steven isn't loved.", "sentence_bad": "steven isn't smiled."}
+{"original": "winston churchill wasn't investigated.", "sentence_good": "winston churchill wasn't investigated.", "sentence_bad": "winston churchill wasn't trained."}
+{"original": "most committees were stunned.", "sentence_good": "most committees stunned.", "sentence_bad": "most committees communicated."}
+{"original": "omar wasn't scared.", "sentence_good": "omar wasn't scared.", "sentence_bad": "omar wasn't suffered."}
+{"original": "doctors' ex-girlfriends weren't praised.", "sentence_good": "doctors' ex-girlfriends weren't praised.", "sentence_bad": "doctors' ex-girlfriends weren't flirted."}
+{"original": "barbara isn't observed.", "sentence_good": "barbara isn't observed.", "sentence_bad": "barbara isn't grinned."}
+{"original": "every customer was loved.", "sentence_good": "customer loved.", "sentence_bad": "customer screamed."}
+{"original": "rachelle's mentors were praised.", "sentence_good": "rachelle's mentors praised.", "sentence_bad": "rachelle's mentors competed."}
+{"original": "victoria is remembered.", "sentence_good": "victoria remembered.", "sentence_bad": "victoria lied."}
+{"original": "irene is stunned.", "sentence_good": "irene stunned.", "sentence_bad": "irene shouted."}
+{"original": "sally was forgotten.", "sentence_good": "sally forgotten.", "sentence_bad": "sally compromised."}
+{"original": "robert wasn't embarrassed.", "sentence_good": "robert wasn't embarrassed.", "sentence_bad": "robert wasn't shouted."}
+{"original": "this person's mothers are concealed.", "sentence_good": "person's mothers concealed.", "sentence_bad": "person's mothers fallen asleep."}
+{"original": "amy is upset.", "sentence_good": "amy upset.", "sentence_bad": "amy complained."}
+{"original": "all associations are distracted.", "sentence_good": "associations distracted.", "sentence_bad": "associations coped."}
+{"original": "some museum isn't insulted.", "sentence_good": "some museum isn't insulted.", "sentence_bad": "some museum isn't corresponded."}
+{"original": "diane wasn't embarrassed.", "sentence_good": "diane wasn't embarrassed.", "sentence_bad": "diane wasn't trained."}
+{"original": "connie wasn't impressed.", "sentence_good": "connie wasn't impressed.", "sentence_bad": "connie wasn't answered."}
+{"original": "most children's mentors aren't praised.", "sentence_good": "most children's mentors aren't praised.", "sentence_bad": "most children's mentors aren't profited."}
+{"original": "connie's bosses were admired.", "sentence_good": "connie's bosses admired.", "sentence_bad": "connie's bosses retaliated."}
+{"original": "andrea's ex-husbands aren't shocked.", "sentence_good": "andrea's ex-husbands aren't shocked.", "sentence_bad": "andrea's ex-husbands aren't chuckled."}
+{"original": "margaret's grandmothers aren't hurt.", "sentence_good": "margaret's grandmothers aren't hurt.", "sentence_bad": "margaret's grandmothers aren't competed."}
+{"original": "every doctor was kissed.", "sentence_good": "doctor kissed.", "sentence_bad": "doctor gone fishing."}
+{"original": "spain is remembered.", "sentence_good": "spain remembered.", "sentence_bad": "spain cooperated."}
+{"original": "the ladies aren't visited.", "sentence_good": "ladies aren't visited.", "sentence_bad": "ladies aren't corresponded."}
+{"original": "the grandmothers of george weren't bothered.", "sentence_good": "grandmothers george weren't bothered.", "sentence_bad": "grandmothers george weren't nodded."}
+{"original": "sally wasn't observed.", "sentence_good": "sally wasn't observed.", "sentence_bad": "sally wasn't boasted."}
+{"original": "curtis's granddaughters aren't visited.", "sentence_good": "curtis's granddaughters aren't visited.", "sentence_bad": "curtis's granddaughters aren't communicated."}
+{"original": "timothy's piano teachers weren't insulted.", "sentence_good": "timothy's piano teachers weren't insulted.", "sentence_bad": "timothy's piano teachers weren't flirted."}
+{"original": "some mothers of the waiter weren't attacked.", "sentence_good": "some mothers waiter weren't attacked.", "sentence_bad": "some mothers waiter weren't reacted."}
+{"original": "caroline was visited.", "sentence_good": "caroline visited.", "sentence_bad": "caroline gotten fired."}
+{"original": "most fathers of melissa are alarmed.", "sentence_good": "most fathers melissa alarmed.", "sentence_bad": "most fathers melissa clashed."}
+{"original": "a lot of guys were visited.", "sentence_good": "lot guys visited.", "sentence_bad": "lot guys conspired."}
+{"original": "jesus isn't hated.", "sentence_good": "jesus isn't hated.", "sentence_bad": "jesus isn't compromised."}
+{"original": "some stories were referenced.", "sentence_good": "some stories referenced.", "sentence_bad": "some stories disagreed."}
+{"original": "that legislature isn't disturbed.", "sentence_good": "legislature isn't disturbed.", "sentence_bad": "legislature isn't testified."}
+{"original": "peter isn't hated.", "sentence_good": "peter isn't hated.", "sentence_bad": "peter isn't nodded."}
+{"original": "martha's contractors are seen.", "sentence_good": "martha's contractors seen.", "sentence_bad": "martha's contractors negotiated."}
+{"original": "galileo is appreciated.", "sentence_good": "galileo appreciated.", "sentence_bad": "galileo wept."}
+{"original": "joel isn't disturbed.", "sentence_good": "joel isn't disturbed.", "sentence_bad": "joel isn't waved."}
+{"original": "all bananas are bought.", "sentence_good": "bananas bought.", "sentence_bad": "bananas rotted."}
+{"original": "beth's french teachers weren't distracted.", "sentence_good": "beth's french teachers weren't distracted.", "sentence_bad": "beth's french teachers weren't worked hard."}
+{"original": "many organizations aren't disturbed.", "sentence_good": "many organizations aren't disturbed.", "sentence_bad": "many organizations aren't coped."}
+{"original": "bill was criticized.", "sentence_good": "bill criticized.", "sentence_bad": "bill murmured."}
+{"original": "that waitress is confused.", "sentence_good": "waitress confused.", "sentence_bad": "waitress shouted."}
+{"original": "those men's senators weren't scanned.", "sentence_good": "men's senators weren't scanned.", "sentence_bad": "men's senators weren't communicated."}
+{"original": "theodore's piano teachers weren't scanned.", "sentence_good": "theodore's piano teachers weren't scanned.", "sentence_bad": "theodore's piano teachers weren't struggled."}
+{"original": "ann's husband wasn't bothered.", "sentence_good": "ann's husband wasn't bothered.", "sentence_bad": "ann's husband wasn't lied."}
+{"original": "the clintons were seen.", "sentence_good": "clintons seen.", "sentence_bad": "clintons chatted."}
+{"original": "that dog wasn't seen.", "sentence_good": "dog wasn't seen.", "sentence_bad": "dog wasn't fallen asleep."}
+{"original": "jill isn't stunned.", "sentence_good": "jill isn't stunned.", "sentence_bad": "jill isn't murmured."}
+{"original": "kirsten's guests are forgotten.", "sentence_good": "kirsten's guests forgotten.", "sentence_bad": "kirsten's guests corresponded."}
+{"original": "douglas wasn't embarrassed.", "sentence_good": "douglas wasn't embarrassed.", "sentence_bad": "douglas wasn't gotten fired."}
+{"original": "sarah's podiatrists weren't left.", "sentence_good": "sarah's podiatrists weren't left.", "sentence_bad": "sarah's podiatrists weren't struggled."}
+{"original": "christopher's employees aren't forgotten.", "sentence_good": "christopher's employees aren't forgotten.", "sentence_bad": "christopher's employees aren't replied."}
+{"original": "all grandsons of erin were worried.", "sentence_good": "grandsons erin worried.", "sentence_bad": "grandsons erin replied."}
+{"original": "samuel's best friends were criticized.", "sentence_good": "samuel's best friends criticized.", "sentence_bad": "samuel's best friends disagreed."}
+{"original": "george's partners are visited.", "sentence_good": "george's partners visited.", "sentence_bad": "george's partners argued."}
+{"original": "edward isn't respected.", "sentence_good": "edward isn't respected.", "sentence_bad": "edward isn't argued."}
+{"original": "tara's nephew isn't kissed.", "sentence_good": "tara's nephew isn't kissed.", "sentence_bad": "tara's nephew isn't gone fishing."}
+{"original": "nancy isn't hated.", "sentence_good": "nancy isn't hated.", "sentence_bad": "nancy isn't left."}
+{"original": "stacey wasn't described.", "sentence_good": "stacey wasn't described.", "sentence_bad": "stacey wasn't gotten fired."}
+{"original": "brad isn't criticized.", "sentence_good": "brad isn't criticized.", "sentence_bad": "brad isn't argued."}
+{"original": "sonia's ex-girlfriends were remembered.", "sentence_good": "sonia's ex-girlfriends remembered.", "sentence_bad": "sonia's ex-girlfriends talked."}
+{"original": "these grandsons of these waitresses weren't referenced.", "sentence_good": "grandsons waitresses weren't referenced.", "sentence_bad": "grandsons waitresses weren't murmured."}
+{"original": "sharon was upset.", "sentence_good": "sharon upset.", "sentence_bad": "sharon complained."}
+{"original": "connie isn't forgotten.", "sentence_good": "connie isn't forgotten.", "sentence_bad": "connie isn't concurred."}
+{"original": "monet's mentee isn't shocked.", "sentence_good": "monet's mentee isn't shocked.", "sentence_bad": "monet's mentee isn't disagreed."}
+{"original": "matt's partners are discussed.", "sentence_good": "matt's partners discussed.", "sentence_bad": "matt's partners come here."}
+{"original": "samantha is bothered.", "sentence_good": "samantha bothered.", "sentence_bad": "samantha chuckled."}
+{"original": "the waitresses were disgusted.", "sentence_good": "waitresses disgusted.", "sentence_bad": "waitresses negotiated."}
+{"original": "the book about spain was bought.", "sentence_good": "book spain bought.", "sentence_bad": "book spain disagreed."}
+{"original": "dawn is praised.", "sentence_good": "dawn praised.", "sentence_bad": "dawn sighed."}
+{"original": "peter was alarmed.", "sentence_good": "peter alarmed.", "sentence_bad": "peter argued."}
+{"original": "some bank wasn't lifted.", "sentence_good": "some bank wasn't lifted.", "sentence_bad": "some bank wasn't coped."}
+{"original": "these teachers are investigated.", "sentence_good": "teachers investigated.", "sentence_bad": "teachers flirted."}
+{"original": "sheila's plumbers aren't known.", "sentence_good": "sheila's plumbers aren't known.", "sentence_bad": "sheila's plumbers aren't replied."}
+{"original": "scott is respected.", "sentence_good": "scott respected.", "sentence_bad": "scott blinked."}
+{"original": "every sister of patrick was alarmed.", "sentence_good": "sister patrick alarmed.", "sentence_bad": "sister patrick wept."}
+{"original": "spain is visited.", "sentence_good": "spain visited.", "sentence_bad": "spain profited."}
+{"original": "dennis's dentists aren't disliked.", "sentence_good": "dennis's dentists aren't disliked.", "sentence_bad": "dennis's dentists aren't competed."}
+{"original": "debra was confused.", "sentence_good": "debra confused.", "sentence_bad": "debra concurred."}
+{"original": "these sisters of jacqueline aren't worried.", "sentence_good": "sisters jacqueline aren't worried.", "sentence_bad": "sisters jacqueline aren't interacted."}
+{"original": "steven isn't irritated.", "sentence_good": "steven isn't irritated.", "sentence_bad": "steven isn't waved."}
+{"original": "claire wasn't astounded.", "sentence_good": "claire wasn't astounded.", "sentence_bad": "claire wasn't spoken up."}
+{"original": "jessica was remembered.", "sentence_good": "jessica remembered.", "sentence_bad": "jessica died."}
+{"original": "tomatoes were brought.", "sentence_good": "tomatoes brought.", "sentence_bad": "tomatoes rotted."}
+{"original": "martha's handyman wasn't irritated.", "sentence_good": "martha's handyman wasn't irritated.", "sentence_bad": "martha's handyman wasn't come here."}
+{"original": "joseph was helped.", "sentence_good": "joseph helped.", "sentence_bad": "joseph screamed."}
+{"original": "this government isn't stunned.", "sentence_good": "government isn't stunned.", "sentence_bad": "government isn't communicated."}
+{"original": "brad's employees were confused.", "sentence_good": "brad's employees confused.", "sentence_bad": "brad's employees corresponded."}
+{"original": "all sons of claire weren't stunned.", "sentence_good": "sons claire weren't stunned.", "sentence_bad": "sons claire weren't struggled."}
+{"original": "all museums were distracted.", "sentence_good": "museums distracted.", "sentence_bad": "museums retaliated."}
+{"original": "kristin is appreciated.", "sentence_good": "kristin appreciated.", "sentence_bad": "kristin suffered."}
+{"original": "marla's french teachers aren't bored.", "sentence_good": "marla's french teachers aren't bored.", "sentence_bad": "marla's french teachers aren't competed."}
+{"original": "the grandfathers of some person are observed.", "sentence_good": "grandfathers some person observed.", "sentence_bad": "grandfathers some person testified."}
+{"original": "karen was aggravated.", "sentence_good": "karen aggravated.", "sentence_bad": "karen screamed."}
+{"original": "amy isn't disliked.", "sentence_good": "amy isn't disliked.", "sentence_bad": "amy isn't lied."}
+{"original": "patricia wasn't disliked.", "sentence_good": "patricia wasn't disliked.", "sentence_bad": "patricia wasn't smiled."}
+{"original": "phillip's plumber was fired.", "sentence_good": "phillip's plumber fired.", "sentence_bad": "phillip's plumber lied."}
+{"original": "brett isn't attacked.", "sentence_good": "brett isn't attacked.", "sentence_bad": "brett isn't answered."}
+{"original": "tamara's cousins were loved.", "sentence_good": "tamara's cousins loved.", "sentence_bad": "tamara's cousins profited."}
+{"original": "most patients are investigated.", "sentence_good": "most patients investigated.", "sentence_bad": "most patients come here."}
+{"original": "scott wasn't left.", "sentence_good": "scott wasn't left.", "sentence_bad": "scott wasn't talked."}
+{"original": "kristen's friends aren't watched.", "sentence_good": "kristen's friends aren't watched.", "sentence_bad": "kristen's friends aren't gotten fired."}
+{"original": "michael's lawyers aren't insulted.", "sentence_good": "michael's lawyers aren't insulted.", "sentence_bad": "michael's lawyers aren't answered."}
+{"original": "kevin was described.", "sentence_good": "kevin described.", "sentence_bad": "kevin laughed."}
+{"original": "dawn isn't referenced.", "sentence_good": "dawn isn't referenced.", "sentence_bad": "dawn isn't argued."}
+{"original": "wayne isn't alarmed.", "sentence_good": "wayne isn't alarmed.", "sentence_bad": "wayne isn't suffered."}
+{"original": "carol is hugged.", "sentence_good": "carol hugged.", "sentence_bad": "carol died."}
+{"original": "some company wasn't bothered.", "sentence_good": "some company wasn't bothered.", "sentence_bad": "some company wasn't boasted."}
+{"original": "marla isn't scared.", "sentence_good": "marla isn't scared.", "sentence_bad": "marla isn't left."}
+{"original": "many customers aren't helped.", "sentence_good": "many customers aren't helped.", "sentence_bad": "many customers aren't disagreed."}
+{"original": "some company isn't investigated.", "sentence_good": "some company isn't investigated.", "sentence_bad": "some company isn't negotiated."}
+{"original": "ella's granddaughters are admired.", "sentence_good": "ella's granddaughters admired.", "sentence_bad": "ella's granddaughters cooperated."}
+{"original": "all adults were astounded.", "sentence_good": "adults astounded.", "sentence_bad": "adults communicated."}
+{"original": "timothy's student is attacked.", "sentence_good": "timothy's student attacked.", "sentence_bad": "timothy's student littered."}
+{"original": "a lot of ladies were known.", "sentence_good": "lot ladies known.", "sentence_bad": "lot ladies gone fishing."}
+{"original": "many dancers' classmates aren't disliked.", "sentence_good": "many dancers' classmates aren't disliked.", "sentence_bad": "many dancers' classmates aren't spoken up."}
+{"original": "most children were visited.", "sentence_good": "most children visited.", "sentence_bad": "most children communicated."}
+{"original": "marla isn't watched.", "sentence_good": "marla isn't watched.", "sentence_bad": "marla isn't suffered."}
+{"original": "every man's fathers aren't appreciated.", "sentence_good": "man's fathers aren't appreciated.", "sentence_bad": "man's fathers aren't chatted."}
+{"original": "katherine wasn't fired.", "sentence_good": "katherine wasn't fired.", "sentence_bad": "katherine wasn't screamed."}
+{"original": "grace isn't discussed.", "sentence_good": "grace isn't discussed.", "sentence_bad": "grace isn't boasted."}
+{"original": "the men weren't hugged.", "sentence_good": "men weren't hugged.", "sentence_bad": "men weren't responded."}
+{"original": "patrick was scared.", "sentence_good": "patrick scared.", "sentence_bad": "patrick grinned."}
+{"original": "this bank wasn't remembered.", "sentence_good": "bank wasn't remembered.", "sentence_bad": "bank wasn't clashed."}
+{"original": "katherine's daughters weren't aggravated.", "sentence_good": "katherine's daughters weren't aggravated.", "sentence_bad": "katherine's daughters weren't testified."}
+{"original": "the grandmothers of becky were bored.", "sentence_good": "grandmothers becky bored.", "sentence_bad": "grandmothers becky profited."}
+{"original": "stephanie was hugged.", "sentence_good": "stephanie hugged.", "sentence_bad": "stephanie littered."}
+{"original": "candice is shocked.", "sentence_good": "candice shocked.", "sentence_bad": "candice grinned."}
+{"original": "some tomato wasn't admired.", "sentence_good": "some tomato wasn't admired.", "sentence_bad": "some tomato wasn't rotted."}
+{"original": "most grandsons of dennis weren't described.", "sentence_good": "most grandsons dennis weren't described.", "sentence_bad": "most grandsons dennis weren't profited."}
+{"original": "randolf's colleague is investigated.", "sentence_good": "randolf's colleague investigated.", "sentence_bad": "randolf's colleague died."}
+{"original": "a lot of ladies aren't confused.", "sentence_good": "lot ladies aren't confused.", "sentence_bad": "lot ladies aren't suffered."}
+{"original": "the daughter of phillip was known.", "sentence_good": "daughter phillip known.", "sentence_bad": "daughter phillip lied."}
+{"original": "some companies were investigated.", "sentence_good": "some companies investigated.", "sentence_bad": "some companies negotiated."}
+{"original": "carl isn't loved.", "sentence_good": "carl isn't loved.", "sentence_bad": "carl isn't sighed."}
+{"original": "amanda wasn't insulted.", "sentence_good": "amanda wasn't insulted.", "sentence_bad": "amanda wasn't muttered."}
+{"original": "walter is admired.", "sentence_good": "walter admired.", "sentence_bad": "walter blinked."}
+{"original": "that guy was disliked.", "sentence_good": "guy disliked.", "sentence_bad": "guy complained."}
+{"original": "sharon wasn't hurt.", "sentence_good": "sharon wasn't hurt.", "sentence_bad": "sharon wasn't argued."}
+{"original": "many adults aren't disgusted.", "sentence_good": "many adults aren't disgusted.", "sentence_bad": "many adults aren't profited."}
+{"original": "dana's nephews weren't approached.", "sentence_good": "dana's nephews weren't approached.", "sentence_bad": "dana's nephews weren't struggled."}
+{"original": "the friend of karen was bothered.", "sentence_good": "friend karen bothered.", "sentence_bad": "friend karen waved."}
+{"original": "all teenagers were watched.", "sentence_good": "teenagers watched.", "sentence_bad": "teenagers cooperated."}
+{"original": "donna wasn't worried.", "sentence_good": "donna wasn't worried.", "sentence_bad": "donna wasn't chuckled."}
+{"original": "emily is investigated.", "sentence_good": "emily investigated.", "sentence_bad": "emily suffered."}
+{"original": "these students are astounded.", "sentence_good": "students astounded.", "sentence_bad": "students worked hard."}
+{"original": "some grandsons of theodore aren't referenced.", "sentence_good": "some grandsons theodore aren't referenced.", "sentence_bad": "some grandsons theodore aren't reacted."}
+{"original": "noah was appreciated.", "sentence_good": "noah appreciated.", "sentence_bad": "noah lied."}
+{"original": "some library is shocked.", "sentence_good": "some library shocked.", "sentence_bad": "some library struggled."}
+{"original": "all daughters of brian were helped.", "sentence_good": "daughters brian helped.", "sentence_bad": "daughters brian chatted."}
+{"original": "jane isn't embarrassed.", "sentence_good": "jane isn't embarrassed.", "sentence_bad": "jane isn't answered."}
+{"original": "nephews of danielle weren't observed.", "sentence_good": "nephews danielle weren't observed.", "sentence_bad": "nephews danielle weren't disagreed."}
+{"original": "theresa is confused.", "sentence_good": "theresa confused.", "sentence_bad": "theresa shouted."}
+{"original": "every daughter of meredith wasn't embarrassed.", "sentence_good": "daughter meredith wasn't embarrassed.", "sentence_bad": "daughter meredith wasn't talked."}
+{"original": "donald is insulted.", "sentence_good": "donald insulted.", "sentence_bad": "donald gotten fired."}
+{"original": "naomi isn't described.", "sentence_good": "naomi isn't described.", "sentence_bad": "naomi isn't compromised."}
+{"original": "derek wasn't worried.", "sentence_good": "derek wasn't worried.", "sentence_bad": "derek wasn't shouted."}
+{"original": "eva is attacked.", "sentence_good": "eva attacked.", "sentence_bad": "eva concurred."}
+{"original": "margaret isn't insulted.", "sentence_good": "margaret isn't insulted.", "sentence_bad": "margaret isn't fallen asleep."}
+{"original": "brett isn't praised.", "sentence_good": "brett isn't praised.", "sentence_bad": "brett isn't screamed."}
+{"original": "those guys' classmates were appreciated.", "sentence_good": "guys' classmates appreciated.", "sentence_bad": "guys' classmates coped."}
+{"original": "christopher was disgusted.", "sentence_good": "christopher disgusted.", "sentence_bad": "christopher talked."}
+{"original": "the lutherans' daughters weren't irritated.", "sentence_good": "lutherans' daughters weren't irritated.", "sentence_bad": "lutherans' daughters weren't chatted."}
+{"original": "a lot of people were fired.", "sentence_good": "lot people fired.", "sentence_bad": "lot people chatted."}
+{"original": "the impressionists weren't embarrassed.", "sentence_good": "impressionists weren't embarrassed.", "sentence_bad": "impressionists weren't laughed."}
+{"original": "melinda's guests aren't upset.", "sentence_good": "melinda's guests aren't upset.", "sentence_bad": "melinda's guests aren't worked hard."}
+{"original": "roger isn't appreciated.", "sentence_good": "roger isn't appreciated.", "sentence_bad": "roger isn't spoken up."}
+{"original": "grandsons of jason were distracted.", "sentence_good": "grandsons jason distracted.", "sentence_bad": "grandsons jason profited."}
+{"original": "kayla's brothers weren't examined.", "sentence_good": "kayla's brothers weren't examined.", "sentence_bad": "kayla's brothers weren't retaliated."}
+{"original": "those men weren't forgotten.", "sentence_good": "men weren't forgotten.", "sentence_bad": "men weren't disagreed."}
+{"original": "some hospital wasn't irritated.", "sentence_good": "some hospital wasn't irritated.", "sentence_bad": "some hospital wasn't retaliated."}
+{"original": "many cashiers were aggravated.", "sentence_good": "many cashiers aggravated.", "sentence_bad": "many cashiers lied."}
+{"original": "omar is worried.", "sentence_good": "omar worried.", "sentence_bad": "omar come here."}
+{"original": "these mothers of many pedestrians were disturbed.", "sentence_good": "mothers many pedestrians disturbed.", "sentence_bad": "mothers many pedestrians reacted."}
+{"original": "dennis isn't attacked.", "sentence_good": "dennis isn't attacked.", "sentence_bad": "dennis isn't complained."}
+{"original": "some legislature was confused.", "sentence_good": "some legislature confused.", "sentence_bad": "some legislature reacted."}
+{"original": "kristin was approached.", "sentence_good": "kristin approached.", "sentence_bad": "kristin blinked."}
+{"original": "meredith was described.", "sentence_good": "meredith described.", "sentence_bad": "meredith fallen asleep."}
+{"original": "men weren't irritated.", "sentence_good": "men weren't irritated.", "sentence_bad": "men weren't clashed."}
+{"original": "phillip wasn't kissed.", "sentence_good": "phillip wasn't kissed.", "sentence_bad": "phillip wasn't gotten fired."}
+{"original": "that bank isn't stunned.", "sentence_good": "bank isn't stunned.", "sentence_bad": "bank isn't competed."}
+{"original": "kathleen was investigated.", "sentence_good": "kathleen investigated.", "sentence_bad": "kathleen wept."}
+{"original": "gerald's classmate was criticized.", "sentence_good": "gerald's classmate criticized.", "sentence_bad": "gerald's classmate chuckled."}
+{"original": "those teachers weren't impressed.", "sentence_good": "teachers weren't impressed.", "sentence_bad": "teachers weren't interacted."}
+{"original": "the movie about music is examined.", "sentence_good": "movie music examined.", "sentence_bad": "movie music disagreed."}
+{"original": "the museum wasn't upset.", "sentence_good": "museum wasn't upset.", "sentence_bad": "museum wasn't cooperated."}
+{"original": "nancy's father wasn't left.", "sentence_good": "nancy's father wasn't left.", "sentence_bad": "nancy's father wasn't come here."}
+{"original": "tonya is aggravated.", "sentence_good": "tonya aggravated.", "sentence_bad": "tonya come here."}
+{"original": "kristen is seen.", "sentence_good": "kristen seen.", "sentence_bad": "kristen muttered."}
+{"original": "barbara's grandfathers aren't appreciated.", "sentence_good": "barbara's grandfathers aren't appreciated.", "sentence_bad": "barbara's grandfathers aren't profited."}
+{"original": "those teenagers are forgotten.", "sentence_good": "teenagers forgotten.", "sentence_bad": "teenagers disagreed."}
+{"original": "all waitresses aren't referenced.", "sentence_good": "waitresses aren't referenced.", "sentence_bad": "waitresses aren't struggled."}
+{"original": "marla's ex-husband is bothered.", "sentence_good": "marla's ex-husband bothered.", "sentence_bad": "marla's ex-husband compromised."}
+{"original": "all boys were astounded.", "sentence_good": "boys astounded.", "sentence_bad": "boys responded."}
+{"original": "that patient is hired.", "sentence_good": "patient hired.", "sentence_bad": "patient come here."}
+{"original": "the clintons weren't hated.", "sentence_good": "clintons weren't hated.", "sentence_bad": "clintons weren't gone fishing."}
+{"original": "bruce's ex-girlfriend isn't forgotten.", "sentence_good": "bruce's ex-girlfriend isn't forgotten.", "sentence_bad": "bruce's ex-girlfriend isn't concurred."}
+{"original": "many girls were alarmed.", "sentence_good": "many girls alarmed.", "sentence_bad": "many girls competed."}
+{"original": "a lot of mothers of some dancers are astounded.", "sentence_good": "lot mothers some dancers astounded.", "sentence_bad": "lot mothers some dancers nodded."}
+{"original": "amelia's french teachers aren't referenced.", "sentence_good": "amelia's french teachers aren't referenced.", "sentence_bad": "amelia's french teachers aren't responded."}
+{"original": "all daughters of becca aren't approached.", "sentence_good": "daughters becca aren't approached.", "sentence_bad": "daughters becca aren't complained."}
+{"original": "ronald wasn't distracted.", "sentence_good": "ronald wasn't distracted.", "sentence_bad": "ronald wasn't suffered."}
+{"original": "most actresses' french teachers are embarrassed.", "sentence_good": "most actresses' french teachers embarrassed.", "sentence_bad": "most actresses' french teachers lied."}
+{"original": "women's employee was scared.", "sentence_good": "women's employee scared.", "sentence_bad": "women's employee grinned."}
+{"original": "steven's sons aren't worried.", "sentence_good": "steven's sons aren't worried.", "sentence_bad": "steven's sons aren't corresponded."}
+{"original": "some legislatures are boycotted.", "sentence_good": "some legislatures boycotted.", "sentence_bad": "some legislatures collaborated."}
+{"original": "some men are disgusted.", "sentence_good": "some men disgusted.", "sentence_bad": "some men concurred."}
+{"original": "nicole wasn't approached.", "sentence_good": "nicole wasn't approached.", "sentence_bad": "nicole wasn't waved."}
+{"original": "tara was embarrassed.", "sentence_good": "tara embarrassed.", "sentence_bad": "tara lied."}
+{"original": "carolyn's daughters are insulted.", "sentence_good": "carolyn's daughters insulted.", "sentence_bad": "carolyn's daughters interacted."}
+{"original": "a lot of customers were bothered.", "sentence_good": "lot customers bothered.", "sentence_bad": "lot customers chatted."}
+{"original": "christine is worried.", "sentence_good": "christine worried.", "sentence_bad": "christine left."}
+{"original": "many bananas are brought.", "sentence_good": "many bananas brought.", "sentence_bad": "many bananas rotted."}
+{"original": "tanya was respected.", "sentence_good": "tanya respected.", "sentence_bad": "tanya fallen asleep."}
+{"original": "denise was hugged.", "sentence_good": "denise hugged.", "sentence_bad": "denise left."}
+{"original": "this museum is astounded.", "sentence_good": "museum astounded.", "sentence_bad": "museum coped."}
+{"original": "all girls' piano teachers aren't insulted.", "sentence_good": "girls' piano teachers aren't insulted.", "sentence_bad": "girls' piano teachers aren't interacted."}
+{"original": "guy was aggravated.", "sentence_good": "guy aggravated.", "sentence_bad": "guy muttered."}
+{"original": "that eggplant was sold.", "sentence_good": "eggplant sold.", "sentence_bad": "eggplant rotted."}
+{"original": "most banks weren't alarmed.", "sentence_good": "most banks weren't alarmed.", "sentence_bad": "most banks weren't collaborated."}
+{"original": "bethany's nephews aren't praised.", "sentence_good": "bethany's nephews aren't praised.", "sentence_bad": "bethany's nephews aren't replied."}
+{"original": "lawrence's employees aren't seen.", "sentence_good": "lawrence's employees aren't seen.", "sentence_bad": "lawrence's employees aren't cooperated."}
+{"original": "peter's tutors were astounded.", "sentence_good": "peter's tutors astounded.", "sentence_bad": "peter's tutors conspired."}
+{"original": "edward is respected.", "sentence_good": "edward respected.", "sentence_bad": "edward suffered."}
+{"original": "walter wasn't hurt.", "sentence_good": "walter wasn't hurt.", "sentence_bad": "walter wasn't concurred."}
+{"original": "valerie was forgotten.", "sentence_good": "valerie forgotten.", "sentence_bad": "valerie lied."}
+{"original": "a lot of girls weren't disgusted.", "sentence_good": "lot girls weren't disgusted.", "sentence_bad": "lot girls weren't shouted."}
+{"original": "allison is disliked.", "sentence_good": "allison disliked.", "sentence_bad": "allison chuckled."}
+{"original": "carlos was observed.", "sentence_good": "carlos observed.", "sentence_bad": "carlos gone fishing."}
+{"original": "sarah's contractors are confused.", "sentence_good": "sarah's contractors confused.", "sentence_bad": "sarah's contractors profited."}
+{"original": "adam's plumbers were worried.", "sentence_good": "adam's plumbers worried.", "sentence_bad": "adam's plumbers replied."}
+{"original": "judy was bothered.", "sentence_good": "judy bothered.", "sentence_bad": "judy lied."}
+{"original": "those fathers of steven weren't kissed.", "sentence_good": "fathers steven weren't kissed.", "sentence_bad": "fathers steven weren't cried."}
+{"original": "liam's handymen are astounded.", "sentence_good": "liam's handymen astounded.", "sentence_bad": "liam's handymen worked hard."}
+{"original": "michelle isn't forgotten.", "sentence_good": "michelle isn't forgotten.", "sentence_bad": "michelle isn't answered."}
+{"original": "martha isn't praised.", "sentence_good": "martha isn't praised.", "sentence_bad": "martha isn't blinked."}
+{"original": "some friends of dawn aren't aggravated.", "sentence_good": "some friends dawn aren't aggravated.", "sentence_bad": "some friends dawn aren't flirted."}
+{"original": "some waiter's tutors were impressed.", "sentence_good": "some waiter's tutors impressed.", "sentence_bad": "some waiter's tutors competed."}
+{"original": "helen was admired.", "sentence_good": "helen admired.", "sentence_bad": "helen concurred."}
+{"original": "raymond wasn't aggravated.", "sentence_good": "raymond wasn't aggravated.", "sentence_bad": "raymond wasn't died."}
+{"original": "the libraries aren't irritated.", "sentence_good": "libraries aren't irritated.", "sentence_bad": "libraries aren't worked hard."}
+{"original": "cindy wasn't hugged.", "sentence_good": "cindy wasn't hugged.", "sentence_bad": "cindy wasn't spoken up."}
+{"original": "most pedestrians were visited.", "sentence_good": "most pedestrians visited.", "sentence_bad": "most pedestrians collaborated."}
+{"original": "cheryl was stunned.", "sentence_good": "cheryl stunned.", "sentence_bad": "cheryl sighed."}
+{"original": "some child's associates were loved.", "sentence_good": "some child's associates loved.", "sentence_bad": "some child's associates reacted."}
+{"original": "spain was remembered.", "sentence_good": "spain remembered.", "sentence_bad": "spain boasted."}
+{"original": "theresa was observed.", "sentence_good": "theresa observed.", "sentence_bad": "theresa gotten fired."}
+{"original": "tonya was appreciated.", "sentence_good": "tonya appreciated.", "sentence_bad": "tonya left."}
+{"original": "debra isn't hugged.", "sentence_good": "debra isn't hugged.", "sentence_bad": "debra isn't talked."}
+{"original": "theodore is helped.", "sentence_good": "theodore helped.", "sentence_bad": "theodore trained."}
+{"original": "the company was aggravated.", "sentence_good": "company aggravated.", "sentence_bad": "company testified."}
+{"original": "some brother of marie is hired.", "sentence_good": "some brother marie hired.", "sentence_bad": "some brother marie trained."}
+{"original": "some cashier's associate wasn't disliked.", "sentence_good": "some cashier's associate wasn't disliked.", "sentence_bad": "some cashier's associate wasn't cried."}
+{"original": "irene is shocked.", "sentence_good": "irene shocked.", "sentence_bad": "irene argued."}
+{"original": "janet's podiatrists weren't fired.", "sentence_good": "janet's podiatrists weren't fired.", "sentence_bad": "janet's podiatrists weren't coped."}
+{"original": "tara wasn't seen.", "sentence_good": "tara wasn't seen.", "sentence_bad": "tara wasn't boasted."}
+{"original": "a museum was worried.", "sentence_good": "museum worried.", "sentence_bad": "museum worked hard."}
+{"original": "grace's piano teachers are known.", "sentence_good": "grace's piano teachers known.", "sentence_bad": "grace's piano teachers replied."}
+{"original": "a university was scared.", "sentence_good": "university scared.", "sentence_bad": "university profited."}
+{"original": "jodi's ex-boyfriends weren't attacked.", "sentence_good": "jodi's ex-boyfriends weren't attacked.", "sentence_bad": "jodi's ex-boyfriends weren't answered."}
+{"original": "martin was concealed.", "sentence_good": "martin concealed.", "sentence_bad": "martin screamed."}
+{"original": "these hospitals aren't boycotted.", "sentence_good": "hospitals aren't boycotted.", "sentence_bad": "hospitals aren't corresponded."}
+{"original": "many men are hugged.", "sentence_good": "many men hugged.", "sentence_bad": "many men profited."}
+{"original": "gina is investigated.", "sentence_good": "gina investigated.", "sentence_bad": "gina come here."}
+{"original": "florence's girlfriend wasn't upset.", "sentence_good": "florence's girlfriend wasn't upset.", "sentence_bad": "florence's girlfriend wasn't left."}
+{"original": "melissa's senator wasn't bored.", "sentence_good": "melissa's senator wasn't bored.", "sentence_bad": "melissa's senator wasn't screamed."}
+{"original": "laurie's ex-girlfriend isn't loved.", "sentence_good": "laurie's ex-girlfriend isn't loved.", "sentence_bad": "laurie's ex-girlfriend isn't murmured."}
+{"original": "mitchell wasn't referenced.", "sentence_good": "mitchell wasn't referenced.", "sentence_bad": "mitchell wasn't compromised."}
+{"original": "sheila was disturbed.", "sentence_good": "sheila disturbed.", "sentence_bad": "sheila compromised."}
+{"original": "a company is impressed.", "sentence_good": "company impressed.", "sentence_bad": "company competed."}
+{"original": "harvard university was disliked.", "sentence_good": "harvard university disliked.", "sentence_bad": "harvard university cooperated."}
+{"original": "samantha was helped.", "sentence_good": "samantha helped.", "sentence_bad": "samantha nodded."}
+{"original": "every government isn't astounded.", "sentence_good": "government isn't astounded.", "sentence_bad": "government isn't coped."}
+{"original": "some child is seen.", "sentence_good": "some child seen.", "sentence_bad": "some child smiled."}
+{"original": "those friends of gerald are alarmed.", "sentence_good": "friends gerald alarmed.", "sentence_bad": "friends gerald murmured."}
+{"original": "those fathers of paul weren't watched.", "sentence_good": "fathers paul weren't watched.", "sentence_bad": "fathers paul weren't collaborated."}
+{"original": "helen is hurt.", "sentence_good": "helen hurt.", "sentence_bad": "helen boasted."}
+{"original": "mary is seen.", "sentence_good": "mary seen.", "sentence_bad": "mary smiled."}
+{"original": "renee's employees are referenced.", "sentence_good": "renee's employees referenced.", "sentence_bad": "renee's employees profited."}
+{"original": "tanya wasn't hired.", "sentence_good": "tanya wasn't hired.", "sentence_bad": "tanya wasn't shrugged."}
+{"original": "renee isn't impressed.", "sentence_good": "renee isn't impressed.", "sentence_bad": "renee isn't compromised."}
+{"original": "a son of samuel is discussed.", "sentence_good": "son samuel discussed.", "sentence_bad": "son samuel talked."}
+{"original": "derek was discussed.", "sentence_good": "derek discussed.", "sentence_bad": "derek trained."}
+{"original": "regina's senators weren't embarrassed.", "sentence_good": "regina's senators weren't embarrassed.", "sentence_bad": "regina's senators weren't shrugged."}
+{"original": "many ladies aren't kissed.", "sentence_good": "many ladies aren't kissed.", "sentence_bad": "many ladies aren't collaborated."}
+{"original": "amelia's senator wasn't criticized.", "sentence_good": "amelia's senator wasn't criticized.", "sentence_bad": "amelia's senator wasn't compromised."}
+{"original": "some schools are disturbed.", "sentence_good": "some schools disturbed.", "sentence_bad": "some schools worked hard."}
+{"original": "a driver's fathers were shocked.", "sentence_good": "driver's fathers shocked.", "sentence_bad": "driver's fathers testified."}
+{"original": "a customer's teachers aren't forgotten.", "sentence_good": "customer's teachers aren't forgotten.", "sentence_bad": "customer's teachers aren't complained."}
+{"original": "heidi was disliked.", "sentence_good": "heidi disliked.", "sentence_bad": "heidi blinked."}
+{"original": "bradley's ex-husbands were helped.", "sentence_good": "bradley's ex-husbands helped.", "sentence_bad": "bradley's ex-husbands corresponded."}
+{"original": "most patients aren't loved.", "sentence_good": "most patients aren't loved.", "sentence_bad": "most patients aren't interacted."}
+{"original": "the clintons are scared.", "sentence_good": "clintons scared.", "sentence_bad": "clintons collaborated."}
+{"original": "theodore's senators weren't fired.", "sentence_good": "theodore's senators weren't fired.", "sentence_bad": "theodore's senators weren't conspired."}
+{"original": "carla was hurt.", "sentence_good": "carla hurt.", "sentence_bad": "carla gone fishing."}
+{"original": "all granddaughters of vanessa aren't impressed.", "sentence_good": "granddaughters vanessa aren't impressed.", "sentence_bad": "granddaughters vanessa aren't shouted."}
+{"original": "larry's ex-boyfriends weren't remembered.", "sentence_good": "larry's ex-boyfriends weren't remembered.", "sentence_bad": "larry's ex-boyfriends weren't screamed."}
+{"original": "those waiters weren't disgusted.", "sentence_good": "waiters weren't disgusted.", "sentence_bad": "waiters weren't chuckled."}
+{"original": "a lot of waitresses weren't attacked.", "sentence_good": "lot waitresses weren't attacked.", "sentence_bad": "lot waitresses weren't conspired."}
+{"original": "kenneth wasn't referenced.", "sentence_good": "kenneth wasn't referenced.", "sentence_bad": "kenneth wasn't talked."}
+{"original": "many women were hated.", "sentence_good": "many women hated.", "sentence_bad": "many women communicated."}
+{"original": "a lot of nieces of tamara weren't disgusted.", "sentence_good": "lot nieces tamara weren't disgusted.", "sentence_bad": "lot nieces tamara weren't clashed."}
+{"original": "deborah's plumbers are referenced.", "sentence_good": "deborah's plumbers referenced.", "sentence_bad": "deborah's plumbers replied."}
+{"original": "erin isn't embarrassed.", "sentence_good": "erin isn't embarrassed.", "sentence_bad": "erin isn't talked."}
+{"original": "karla wasn't scared.", "sentence_good": "karla wasn't scared.", "sentence_bad": "karla wasn't complained."}
+{"original": "jennifer's colleagues are approached.", "sentence_good": "jennifer's colleagues approached.", "sentence_bad": "jennifer's colleagues waved."}
+{"original": "spain isn't shocked.", "sentence_good": "spain isn't shocked.", "sentence_bad": "spain isn't coped."}
+{"original": "the actors' cousins are described.", "sentence_good": "actors' cousins described.", "sentence_bad": "actors' cousins replied."}
+{"original": "stacey's ex-girlfriends aren't disliked.", "sentence_good": "stacey's ex-girlfriends aren't disliked.", "sentence_bad": "stacey's ex-girlfriends aren't suffered."}
+{"original": "ruth is disliked.", "sentence_good": "ruth disliked.", "sentence_bad": "ruth suffered."}
+{"original": "rhonda isn't watched.", "sentence_good": "rhonda isn't watched.", "sentence_bad": "rhonda isn't chuckled."}
+{"original": "noah wasn't scared.", "sentence_good": "noah wasn't scared.", "sentence_bad": "noah wasn't wept."}
+{"original": "april's oncologist wasn't hugged.", "sentence_good": "april's oncologist wasn't hugged.", "sentence_bad": "april's oncologist wasn't wept."}
+{"original": "brad isn't confused.", "sentence_good": "brad isn't confused.", "sentence_bad": "brad isn't suffered."}
+{"original": "bradley is fired.", "sentence_good": "bradley fired.", "sentence_bad": "bradley fallen asleep."}
+{"original": "bradley is bored.", "sentence_good": "bradley bored.", "sentence_bad": "bradley concurred."}
+{"original": "every girl's handyman was known.", "sentence_good": "girl's handyman known.", "sentence_bad": "girl's handyman answered."}
+{"original": "joel was annoyed.", "sentence_good": "joel annoyed.", "sentence_bad": "joel murmured."}
+{"original": "gary's senators weren't approached.", "sentence_good": "gary's senators weren't approached.", "sentence_bad": "gary's senators weren't collaborated."}
+{"original": "the waitresses weren't embarrassed.", "sentence_good": "waitresses weren't embarrassed.", "sentence_bad": "waitresses weren't struggled."}
+{"original": "peter's tutors aren't disturbed.", "sentence_good": "peter's tutors aren't disturbed.", "sentence_bad": "peter's tutors aren't shouted."}
+{"original": "actors are astounded.", "sentence_good": "actors astounded.", "sentence_bad": "actors responded."}
+{"original": "katherine is helped.", "sentence_good": "katherine helped.", "sentence_bad": "katherine trained."}
+{"original": "erin's contractors weren't described.", "sentence_good": "erin's contractors weren't described.", "sentence_bad": "erin's contractors weren't coped."}
+{"original": "monica was embarrassed.", "sentence_good": "monica embarrassed.", "sentence_bad": "monica left."}
+{"original": "christopher isn't alarmed.", "sentence_good": "christopher isn't alarmed.", "sentence_bad": "christopher isn't concurred."}
+{"original": "the dogs weren't brought.", "sentence_good": "dogs weren't brought.", "sentence_bad": "dogs weren't left."}
+{"original": "most grandfathers of a boy were visited.", "sentence_good": "most grandfathers boy visited.", "sentence_bad": "most grandfathers boy come here."}
+{"original": "wayne's ex-boyfriend isn't fired.", "sentence_good": "wayne's ex-boyfriend isn't fired.", "sentence_bad": "wayne's ex-boyfriend isn't talked."}
+{"original": "sandra is alarmed.", "sentence_good": "sandra alarmed.", "sentence_bad": "sandra answered."}
+{"original": "marie was criticized.", "sentence_good": "marie criticized.", "sentence_bad": "marie left."}
+{"original": "veronica's mentee wasn't investigated.", "sentence_good": "veronica's mentee wasn't investigated.", "sentence_bad": "veronica's mentee wasn't gotten fired."}
+{"original": "homer wasn't bothered.", "sentence_good": "homer wasn't bothered.", "sentence_bad": "homer wasn't left."}
+{"original": "sandra is worried.", "sentence_good": "sandra worried.", "sentence_bad": "sandra shrugged."}
+{"original": "curtis's teachers were fired.", "sentence_good": "curtis's teachers fired.", "sentence_bad": "curtis's teachers talked."}
+{"original": "a lot of grandsons of lori aren't known.", "sentence_good": "lot grandsons lori aren't known.", "sentence_bad": "lot grandsons lori aren't flirted."}
+{"original": "the guest's grandsons were disturbed.", "sentence_good": "guest's grandsons disturbed.", "sentence_bad": "guest's grandsons cooperated."}
+{"original": "elizabeth's best friends aren't disgusted.", "sentence_good": "elizabeth's best friends aren't disgusted.", "sentence_bad": "elizabeth's best friends aren't flirted."}
+{"original": "that pepper wasn't admired.", "sentence_good": "pepper wasn't admired.", "sentence_bad": "pepper wasn't rotted."}
+{"original": "some waitress was shocked.", "sentence_good": "some waitress shocked.", "sentence_bad": "some waitress shrugged."}
+{"original": "a university was investigated.", "sentence_good": "university investigated.", "sentence_bad": "university negotiated."}
+{"original": "the brother of bradley isn't referenced.", "sentence_good": "brother bradley isn't referenced.", "sentence_bad": "brother bradley isn't grinned."}
+{"original": "the grandsons of kenneth aren't disgusted.", "sentence_good": "grandsons kenneth aren't disgusted.", "sentence_bad": "grandsons kenneth aren't gotten fired."}
+{"original": "cheryl's teacher isn't discussed.", "sentence_good": "cheryl's teacher isn't discussed.", "sentence_bad": "cheryl's teacher isn't laughed."}
+{"original": "all fathers of most patients are hated.", "sentence_good": "fathers most patients hated.", "sentence_bad": "fathers most patients shouted."}
+{"original": "some eggplant was sold.", "sentence_good": "some eggplant sold.", "sentence_bad": "some eggplant rotted."}
+{"original": "a woman wasn't confused.", "sentence_good": "woman wasn't confused.", "sentence_bad": "woman wasn't sighed."}
+{"original": "some dancers weren't insulted.", "sentence_good": "some dancers weren't insulted.", "sentence_bad": "some dancers weren't gone fishing."}
+{"original": "regina was seen.", "sentence_good": "regina seen.", "sentence_bad": "regina gone fishing."}
+{"original": "monica's associates aren't shocked.", "sentence_good": "monica's associates aren't shocked.", "sentence_bad": "monica's associates aren't clashed."}
+{"original": "the borgias are praised.", "sentence_good": "borgias praised.", "sentence_bad": "borgias argued."}
+{"original": "a teacher isn't loved.", "sentence_good": "teacher isn't loved.", "sentence_bad": "teacher isn't shouted."}
+{"original": "most actresses were hugged.", "sentence_good": "most actresses hugged.", "sentence_bad": "most actresses negotiated."}
+{"original": "every museum is respected.", "sentence_good": "museum respected.", "sentence_bad": "museum coped."}
+{"original": "those girls are described.", "sentence_good": "girls described.", "sentence_bad": "girls interacted."}
+{"original": "wayne wasn't observed.", "sentence_good": "wayne wasn't observed.", "sentence_bad": "wayne wasn't fallen asleep."}
+{"original": "some nephews of victoria are seen.", "sentence_good": "some nephews victoria seen.", "sentence_bad": "some nephews victoria collaborated."}
+{"original": "the student is shocked.", "sentence_good": "student shocked.", "sentence_bad": "student shouted."}
+{"original": "monet's ex-girlfriends aren't known.", "sentence_good": "monet's ex-girlfriends aren't known.", "sentence_bad": "monet's ex-girlfriends aren't screamed."}
+{"original": "claire's friends aren't bored.", "sentence_good": "claire's friends aren't bored.", "sentence_bad": "claire's friends aren't clashed."}
+{"original": "these waitresses weren't left.", "sentence_good": "waitresses weren't left.", "sentence_bad": "waitresses weren't chatted."}
+{"original": "pamela's sister wasn't seen.", "sentence_good": "pamela's sister wasn't seen.", "sentence_bad": "pamela's sister wasn't grinned."}
+{"original": "many guests aren't remembered.", "sentence_good": "many guests aren't remembered.", "sentence_bad": "many guests aren't competed."}
+{"original": "michael isn't hugged.", "sentence_good": "michael isn't hugged.", "sentence_bad": "michael isn't boasted."}
+{"original": "brett was fired.", "sentence_good": "brett fired.", "sentence_bad": "brett lied."}
+{"original": "a guest isn't upset.", "sentence_good": "guest isn't upset.", "sentence_bad": "guest isn't waved."}
+{"original": "raymond's podiatrist is insulted.", "sentence_good": "raymond's podiatrist insulted.", "sentence_bad": "raymond's podiatrist trained."}
+{"original": "this man wasn't respected.", "sentence_good": "man wasn't respected.", "sentence_bad": "man wasn't fallen asleep."}
+{"original": "a son of all students was referenced.", "sentence_good": "son students referenced.", "sentence_bad": "son students left."}
+{"original": "kevin's plumbers weren't annoyed.", "sentence_good": "kevin's plumbers weren't annoyed.", "sentence_bad": "kevin's plumbers weren't negotiated."}
+{"original": "julie is loved.", "sentence_good": "julie loved.", "sentence_bad": "julie left."}
+{"original": "these girls were irritated.", "sentence_good": "girls irritated.", "sentence_bad": "girls left."}
+{"original": "some men weren't astounded.", "sentence_good": "some men weren't astounded.", "sentence_bad": "some men weren't collaborated."}
+{"original": "winston churchill's dentists weren't worried.", "sentence_good": "winston churchill's dentists weren't worried.", "sentence_bad": "winston churchill's dentists weren't coped."}
+{"original": "marie is observed.", "sentence_good": "marie observed.", "sentence_bad": "marie wept."}
+{"original": "many actors' lawyer is remembered.", "sentence_good": "many actors' lawyer remembered.", "sentence_bad": "many actors' lawyer screamed."}
+{"original": "a brother of a lot of guys is respected.", "sentence_good": "brother lot guys respected.", "sentence_bad": "brother lot guys compromised."}
+{"original": "nancy's sons weren't scared.", "sentence_good": "nancy's sons weren't scared.", "sentence_bad": "nancy's sons weren't struggled."}
+{"original": "the man's dermatologist was visited.", "sentence_good": "man's dermatologist visited.", "sentence_bad": "man's dermatologist chuckled."}
+{"original": "michael's guests are admired.", "sentence_good": "michael's guests admired.", "sentence_bad": "michael's guests communicated."}
+{"original": "veronica isn't forgotten.", "sentence_good": "veronica isn't forgotten.", "sentence_bad": "veronica isn't gotten fired."}
+{"original": "the cashiers were worried.", "sentence_good": "cashiers worried.", "sentence_bad": "cashiers blinked."}
+{"original": "brenda's podiatrists weren't disturbed.", "sentence_good": "brenda's podiatrists weren't disturbed.", "sentence_bad": "brenda's podiatrists weren't retaliated."}
+{"original": "the borgias are insulted.", "sentence_good": "borgias insulted.", "sentence_bad": "borgias profited."}
+{"original": "this apple isn't bought.", "sentence_good": "apple isn't bought.", "sentence_bad": "apple isn't rotted."}
+{"original": "walter wasn't remembered.", "sentence_good": "walter wasn't remembered.", "sentence_bad": "walter wasn't concurred."}
+{"original": "all pedestrians are astounded.", "sentence_good": "pedestrians astounded.", "sentence_bad": "pedestrians reacted."}
+{"original": "that library wasn't passed.", "sentence_good": "library wasn't passed.", "sentence_bad": "library wasn't negotiated."}
+{"original": "all banks aren't distracted.", "sentence_good": "banks aren't distracted.", "sentence_bad": "banks aren't answered."}
+{"original": "christine wasn't fired.", "sentence_good": "christine wasn't fired.", "sentence_bad": "christine wasn't gone fishing."}
+{"original": "rachel was criticized.", "sentence_good": "rachel criticized.", "sentence_bad": "rachel suffered."}
+{"original": "those teachers are criticized.", "sentence_good": "teachers criticized.", "sentence_bad": "teachers boasted."}
+{"original": "julia's guests weren't disliked.", "sentence_good": "julia's guests weren't disliked.", "sentence_bad": "julia's guests weren't coped."}
+{"original": "jodi was appreciated.", "sentence_good": "jodi appreciated.", "sentence_bad": "jodi compromised."}
+{"original": "valerie is astounded.", "sentence_good": "valerie astounded.", "sentence_bad": "valerie spoken up."}
+{"original": "russell's senators weren't worried.", "sentence_good": "russell's senators weren't worried.", "sentence_bad": "russell's senators weren't struggled."}
+{"original": "andrew's piano teachers were impressed.", "sentence_good": "andrew's piano teachers impressed.", "sentence_bad": "andrew's piano teachers clashed."}
+{"original": "theodore's podiatrists are loved.", "sentence_good": "theodore's podiatrists loved.", "sentence_bad": "theodore's podiatrists flirted."}
+{"original": "those committees are astounded.", "sentence_good": "committees astounded.", "sentence_bad": "committees clashed."}
+{"original": "most ladies aren't helped.", "sentence_good": "most ladies aren't helped.", "sentence_bad": "most ladies aren't responded."}
+{"original": "vanessa's plumber was annoyed.", "sentence_good": "vanessa's plumber annoyed.", "sentence_bad": "vanessa's plumber waved."}
+{"original": "chad's grandmothers weren't remembered.", "sentence_good": "chad's grandmothers weren't remembered.", "sentence_bad": "chad's grandmothers weren't clashed."}
+{"original": "the bird was seen.", "sentence_good": "bird seen.", "sentence_bad": "bird come here."}
+{"original": "rebecca isn't referenced.", "sentence_good": "rebecca isn't referenced.", "sentence_bad": "rebecca isn't murmured."}
+{"original": "sara was observed.", "sentence_good": "sara observed.", "sentence_bad": "sara sighed."}
+{"original": "patients weren't left.", "sentence_good": "patients weren't left.", "sentence_bad": "patients weren't conspired."}
+{"original": "jason's french teacher was disgusted.", "sentence_good": "jason's french teacher disgusted.", "sentence_bad": "jason's french teacher trained."}
+{"original": "a guest is admired.", "sentence_good": "guest admired.", "sentence_bad": "guest argued."}
+{"original": "danielle was worried.", "sentence_good": "danielle worried.", "sentence_bad": "danielle spoken up."}
+{"original": "these students were approached.", "sentence_good": "students approached.", "sentence_bad": "students profited."}
+{"original": "tomatoes weren't admired.", "sentence_good": "tomatoes weren't admired.", "sentence_bad": "tomatoes weren't rotted."}
+{"original": "christina's best friends aren't impressed.", "sentence_good": "christina's best friends aren't impressed.", "sentence_bad": "christina's best friends aren't concurred."}
+{"original": "sharon's ex-husbands weren't scanned.", "sentence_good": "sharon's ex-husbands weren't scanned.", "sentence_bad": "sharon's ex-husbands weren't flirted."}
+{"original": "candice isn't shocked.", "sentence_good": "candice isn't shocked.", "sentence_bad": "candice isn't cried."}
+{"original": "a lot of ladies were bored.", "sentence_good": "lot ladies bored.", "sentence_bad": "lot ladies competed."}
+{"original": "scott isn't left.", "sentence_good": "scott isn't left.", "sentence_bad": "scott isn't spoken up."}
+{"original": "a lot of pedestrians are helped.", "sentence_good": "lot pedestrians helped.", "sentence_bad": "lot pedestrians struggled."}
+{"original": "brian's granddaughters are bored.", "sentence_good": "brian's granddaughters bored.", "sentence_bad": "brian's granddaughters testified."}
+{"original": "sabrina is confused.", "sentence_good": "sabrina confused.", "sentence_bad": "sabrina fallen asleep."}
+{"original": "roger is upset.", "sentence_good": "roger upset.", "sentence_bad": "roger suffered."}
+{"original": "every committee isn't irritated.", "sentence_good": "committee isn't irritated.", "sentence_bad": "committee isn't competed."}
+{"original": "the women aren't disturbed.", "sentence_good": "women aren't disturbed.", "sentence_bad": "women aren't clashed."}
+{"original": "peppers were seen.", "sentence_good": "peppers seen.", "sentence_bad": "peppers rotted."}
+{"original": "a lot of waitresses aren't referenced.", "sentence_good": "lot waitresses aren't referenced.", "sentence_bad": "lot waitresses aren't interacted."}
+{"original": "tammy was embarrassed.", "sentence_good": "tammy embarrassed.", "sentence_bad": "tammy complained."}
+{"original": "that son of liam isn't alarmed.", "sentence_good": "son liam isn't alarmed.", "sentence_bad": "son liam isn't gotten fired."}
+{"original": "raymond is scared.", "sentence_good": "raymond scared.", "sentence_bad": "raymond lied."}
+{"original": "bruce isn't insulted.", "sentence_good": "bruce isn't insulted.", "sentence_bad": "bruce isn't wept."}
+{"original": "dawn is remembered.", "sentence_good": "dawn remembered.", "sentence_bad": "dawn laughed."}
+{"original": "those birds weren't seen.", "sentence_good": "birds weren't seen.", "sentence_bad": "birds weren't come here."}
+{"original": "every legislature is worried.", "sentence_good": "legislature worried.", "sentence_bad": "legislature chatted."}
+{"original": "the actors were confused.", "sentence_good": "actors confused.", "sentence_bad": "actors testified."}
+{"original": "mark is shocked.", "sentence_good": "mark shocked.", "sentence_bad": "mark nodded."}
+{"original": "jacqueline's best friends are insulted.", "sentence_good": "jacqueline's best friends insulted.", "sentence_bad": "jacqueline's best friends screamed."}
+{"original": "the child's father isn't observed.", "sentence_good": "child's father isn't observed.", "sentence_bad": "child's father isn't complained."}
+{"original": "that university isn't confused.", "sentence_good": "university isn't confused.", "sentence_bad": "university isn't chatted."}
+{"original": "a museum wasn't explored.", "sentence_good": "museum wasn't explored.", "sentence_bad": "museum wasn't conspired."}
+{"original": "a lot of daughters of holly are alarmed.", "sentence_good": "lot daughters holly alarmed.", "sentence_bad": "lot daughters holly replied."}
+{"original": "ellen isn't worried.", "sentence_good": "ellen isn't worried.", "sentence_bad": "ellen isn't died."}
+{"original": "angela isn't impressed.", "sentence_good": "angela isn't impressed.", "sentence_bad": "angela isn't gotten fired."}
+{"original": "nina is kissed.", "sentence_good": "nina kissed.", "sentence_bad": "nina chuckled."}
+{"original": "rhonda isn't approached.", "sentence_good": "rhonda isn't approached.", "sentence_bad": "rhonda isn't boasted."}
+{"original": "timothy's ex-boyfriends weren't distracted.", "sentence_good": "timothy's ex-boyfriends weren't distracted.", "sentence_bad": "timothy's ex-boyfriends weren't suffered."}
+{"original": "carrie's electricians aren't approached.", "sentence_good": "carrie's electricians aren't approached.", "sentence_bad": "carrie's electricians aren't retaliated."}
+{"original": "patrick's guest was scanned.", "sentence_good": "patrick's guest scanned.", "sentence_bad": "patrick's guest answered."}
+{"original": "a lot of pedestrians aren't alarmed.", "sentence_good": "lot pedestrians aren't alarmed.", "sentence_bad": "lot pedestrians aren't worked hard."}
+{"original": "joseph's mentors are seen.", "sentence_good": "joseph's mentors seen.", "sentence_bad": "joseph's mentors worked hard."}
+{"original": "alice's daughters aren't astounded.", "sentence_good": "alice's daughters aren't astounded.", "sentence_bad": "alice's daughters aren't grinned."}
+{"original": "marla isn't forgotten.", "sentence_good": "marla isn't forgotten.", "sentence_bad": "marla isn't nodded."}
+{"original": "tina's fathers were bothered.", "sentence_good": "tina's fathers bothered.", "sentence_bad": "tina's fathers competed."}
+{"original": "sandra isn't investigated.", "sentence_good": "sandra isn't investigated.", "sentence_bad": "sandra isn't smiled."}
+{"original": "a lot of libraries aren't admired.", "sentence_good": "lot libraries aren't admired.", "sentence_bad": "lot libraries aren't conferred."}
+{"original": "theresa isn't hurt.", "sentence_good": "theresa isn't hurt.", "sentence_bad": "theresa isn't shouted."}
+{"original": "larry is fired.", "sentence_good": "larry fired.", "sentence_bad": "larry muttered."}
+{"original": "noah's partners weren't hurt.", "sentence_good": "noah's partners weren't hurt.", "sentence_bad": "noah's partners weren't competed."}
+{"original": "the borgias aren't kissed.", "sentence_good": "borgias aren't kissed.", "sentence_bad": "borgias aren't reacted."}
+{"original": "ruth wasn't worried.", "sentence_good": "ruth wasn't worried.", "sentence_bad": "ruth wasn't muttered."}
+{"original": "chad was stunned.", "sentence_good": "chad stunned.", "sentence_bad": "chad gotten fired."}
+{"original": "the girls weren't bored.", "sentence_good": "girls weren't bored.", "sentence_bad": "girls weren't conferred."}
+{"original": "cheryl's contractor isn't hired.", "sentence_good": "cheryl's contractor isn't hired.", "sentence_bad": "cheryl's contractor isn't shrugged."}
+{"original": "some person's wife was forgotten.", "sentence_good": "some person's wife forgotten.", "sentence_bad": "some person's wife trained."}
+{"original": "the actors weren't kissed.", "sentence_good": "actors weren't kissed.", "sentence_bad": "actors weren't laughed."}
+{"original": "these daughters of cheryl are worried.", "sentence_good": "daughters cheryl worried.", "sentence_bad": "daughters cheryl responded."}
+{"original": "the clintons were astounded.", "sentence_good": "clintons astounded.", "sentence_bad": "clintons struggled."}
+{"original": "valerie is investigated.", "sentence_good": "valerie investigated.", "sentence_bad": "valerie gotten fired."}
+{"original": "the schools are bought.", "sentence_good": "schools bought.", "sentence_bad": "schools struggled."}
+{"original": "mary isn't scared.", "sentence_good": "mary isn't scared.", "sentence_bad": "mary isn't gone fishing."}
+{"original": "gina was upset.", "sentence_good": "gina upset.", "sentence_bad": "gina died."}
+{"original": "judy's handyman isn't referenced.", "sentence_good": "judy's handyman isn't referenced.", "sentence_bad": "judy's handyman isn't nodded."}
+{"original": "a lot of nieces of tracy aren't visited.", "sentence_good": "lot nieces tracy aren't visited.", "sentence_bad": "lot nieces tracy aren't chatted."}
+{"original": "brian's mother is appreciated.", "sentence_good": "brian's mother appreciated.", "sentence_bad": "brian's mother argued."}
+{"original": "these guys are attacked.", "sentence_good": "guys attacked.", "sentence_bad": "guys boasted."}
+{"original": "those people aren't astounded.", "sentence_good": "people aren't astounded.", "sentence_bad": "people aren't argued."}
+{"original": "a lot of nephews of rhonda were forgotten.", "sentence_good": "lot nephews rhonda forgotten.", "sentence_bad": "lot nephews rhonda communicated."}
+{"original": "carrie was discussed.", "sentence_good": "carrie discussed.", "sentence_bad": "carrie talked."}
+{"original": "a child's dentists aren't impressed.", "sentence_good": "child's dentists aren't impressed.", "sentence_bad": "child's dentists aren't cooperated."}
+{"original": "brian is hurt.", "sentence_good": "brian hurt.", "sentence_bad": "brian suffered."}
+{"original": "all waiters are astounded.", "sentence_good": "waiters astounded.", "sentence_bad": "waiters collaborated."}
+{"original": "that guest is disturbed.", "sentence_good": "guest disturbed.", "sentence_bad": "guest answered."}
+{"original": "theodore was helped.", "sentence_good": "theodore helped.", "sentence_bad": "theodore talked."}
+{"original": "maria's daughters weren't shocked.", "sentence_good": "maria's daughters weren't shocked.", "sentence_bad": "maria's daughters weren't shrugged."}
+{"original": "tanya is embarrassed.", "sentence_good": "tanya embarrassed.", "sentence_bad": "tanya wept."}
+{"original": "this spinach is seen.", "sentence_good": "spinach seen.", "sentence_bad": "spinach rotted."}
+{"original": "chad isn't astounded.", "sentence_good": "chad isn't astounded.", "sentence_bad": "chad isn't smiled."}
+{"original": "all teenagers were bothered.", "sentence_good": "teenagers bothered.", "sentence_bad": "teenagers struggled."}
+{"original": "teresa's dermatologists weren't impressed.", "sentence_good": "teresa's dermatologists weren't impressed.", "sentence_bad": "teresa's dermatologists weren't interacted."}
+{"original": "brenda's employee was respected.", "sentence_good": "brenda's employee respected.", "sentence_bad": "brenda's employee concurred."}
+{"original": "walter's dermatologists are fired.", "sentence_good": "walter's dermatologists fired.", "sentence_bad": "walter's dermatologists retaliated."}
+{"original": "laura was upset.", "sentence_good": "laura upset.", "sentence_bad": "laura cried."}
+{"original": "paul was admired.", "sentence_good": "paul admired.", "sentence_bad": "paul come here."}
+{"original": "this actress isn't concealed.", "sentence_good": "actress isn't concealed.", "sentence_bad": "actress isn't concurred."}
+{"original": "lucille's mentors are appreciated.", "sentence_good": "lucille's mentors appreciated.", "sentence_bad": "lucille's mentors blinked."}
+{"original": "kimberley isn't left.", "sentence_good": "kimberley isn't left.", "sentence_bad": "kimberley isn't smiled."}
+{"original": "marla's daughters are stunned.", "sentence_good": "marla's daughters stunned.", "sentence_bad": "marla's daughters died."}
+{"original": "frank was disliked.", "sentence_good": "frank disliked.", "sentence_bad": "frank shouted."}
+{"original": "jodi was forgotten.", "sentence_good": "jodi forgotten.", "sentence_bad": "jodi suffered."}
+{"original": "samantha's grandfather isn't scanned.", "sentence_good": "samantha's grandfather isn't scanned.", "sentence_bad": "samantha's grandfather isn't left."}
+{"original": "nancy wasn't confused.", "sentence_good": "nancy wasn't confused.", "sentence_bad": "nancy wasn't died."}
+{"original": "the lutherans were impressed.", "sentence_good": "lutherans impressed.", "sentence_bad": "lutherans interacted."}
+{"original": "the girl wasn't annoyed.", "sentence_good": "girl wasn't annoyed.", "sentence_bad": "girl wasn't suffered."}
+{"original": "the boy isn't disturbed.", "sentence_good": "boy isn't disturbed.", "sentence_bad": "boy isn't grinned."}
+{"original": "kathleen isn't concealed.", "sentence_good": "kathleen isn't concealed.", "sentence_bad": "kathleen isn't screamed."}
+{"original": "most waiters weren't disliked.", "sentence_good": "most waiters weren't disliked.", "sentence_bad": "most waiters weren't reacted."}
+{"original": "many hospitals aren't disliked.", "sentence_good": "many hospitals aren't disliked.", "sentence_bad": "many hospitals aren't coped."}
+{"original": "patricia isn't referenced.", "sentence_good": "patricia isn't referenced.", "sentence_bad": "patricia isn't gotten fired."}
+{"original": "all patients' contractors are forgotten.", "sentence_good": "patients' contractors forgotten.", "sentence_bad": "patients' contractors cried."}
+{"original": "this association was annoyed.", "sentence_good": "association annoyed.", "sentence_bad": "association chatted."}
+{"original": "sherry's ex-husbands aren't stunned.", "sentence_good": "sherry's ex-husbands aren't stunned.", "sentence_bad": "sherry's ex-husbands aren't retaliated."}
+{"original": "alan's nephews were insulted.", "sentence_good": "alan's nephews insulted.", "sentence_bad": "alan's nephews replied."}
+{"original": "lawrence's students weren't watched.", "sentence_good": "lawrence's students weren't watched.", "sentence_bad": "lawrence's students weren't trained."}
+{"original": "the actor isn't admired.", "sentence_good": "actor isn't admired.", "sentence_bad": "actor isn't muttered."}
+{"original": "a lot of teenagers were stunned.", "sentence_good": "lot teenagers stunned.", "sentence_bad": "lot teenagers negotiated."}
+{"original": "omar's ex-girlfriend isn't hired.", "sentence_good": "omar's ex-girlfriend isn't hired.", "sentence_bad": "omar's ex-girlfriend isn't littered."}
+{"original": "many grandfathers of winston churchill were distracted.", "sentence_good": "many grandfathers winston churchill distracted.", "sentence_bad": "many grandfathers winston churchill profited."}
+{"original": "cindy wasn't annoyed.", "sentence_good": "cindy wasn't annoyed.", "sentence_bad": "cindy wasn't gone fishing."}
+{"original": "jennifer's ex-husband was investigated.", "sentence_good": "jennifer's ex-husband investigated.", "sentence_bad": "jennifer's ex-husband waved."}
+{"original": "girls aren't stunned.", "sentence_good": "girls aren't stunned.", "sentence_bad": "girls aren't cooperated."}
+{"original": "adam is approached.", "sentence_good": "adam approached.", "sentence_bad": "adam shouted."}
+{"original": "kristen's ex-husband was remembered.", "sentence_good": "kristen's ex-husband remembered.", "sentence_bad": "kristen's ex-husband complained."}
+{"original": "randolf was astounded.", "sentence_good": "randolf astounded.", "sentence_bad": "randolf muttered."}
+{"original": "rodney is remembered.", "sentence_good": "rodney remembered.", "sentence_bad": "rodney compromised."}
+{"original": "the borgias were kissed.", "sentence_good": "borgias kissed.", "sentence_bad": "borgias chuckled."}
+{"original": "these drivers' sons weren't loved.", "sentence_good": "drivers' sons weren't loved.", "sentence_bad": "drivers' sons weren't gone fishing."}
+{"original": "the library is admired.", "sentence_good": "library admired.", "sentence_bad": "library conferred."}
+{"original": "a lot of teenagers weren't aggravated.", "sentence_good": "lot teenagers weren't aggravated.", "sentence_bad": "lot teenagers weren't conspired."}
+{"original": "some waitresses were forgotten.", "sentence_good": "some waitresses forgotten.", "sentence_bad": "some waitresses clashed."}
+{"original": "every organization was upset.", "sentence_good": "organization upset.", "sentence_bad": "organization corresponded."}
+{"original": "some grandmothers of andrea weren't aggravated.", "sentence_good": "some grandmothers andrea weren't aggravated.", "sentence_bad": "some grandmothers andrea weren't interacted."}
+{"original": "sabrina is forgotten.", "sentence_good": "sabrina forgotten.", "sentence_bad": "sabrina screamed."}
+{"original": "rebecca's brothers aren't scared.", "sentence_good": "rebecca's brothers aren't scared.", "sentence_bad": "rebecca's brothers aren't cooperated."}
+{"original": "richard wasn't investigated.", "sentence_good": "richard wasn't investigated.", "sentence_bad": "richard wasn't laughed."}
+{"original": "a lot of actors weren't remembered.", "sentence_good": "lot actors weren't remembered.", "sentence_bad": "lot actors weren't competed."}
+{"original": "some mushrooms were seen.", "sentence_good": "some mushrooms seen.", "sentence_bad": "some mushrooms rotted."}
+{"original": "pamela's dentist was confused.", "sentence_good": "pamela's dentist confused.", "sentence_bad": "pamela's dentist spoken up."}
+{"original": "the granddaughters of tonya aren't helped.", "sentence_good": "granddaughters tonya aren't helped.", "sentence_bad": "granddaughters tonya aren't spoken up."}
+{"original": "jessica's sister was respected.", "sentence_good": "jessica's sister respected.", "sentence_bad": "jessica's sister argued."}
+{"original": "many students are praised.", "sentence_good": "many students praised.", "sentence_bad": "many students screamed."}
+{"original": "regina isn't respected.", "sentence_good": "regina isn't respected.", "sentence_bad": "regina isn't left."}
+{"original": "the borgias are hated.", "sentence_good": "borgias hated.", "sentence_bad": "borgias reacted."}
+{"original": "andrea's ex-husbands were alarmed.", "sentence_good": "andrea's ex-husbands alarmed.", "sentence_bad": "andrea's ex-husbands concurred."}
+{"original": "this actor was visited.", "sentence_good": "actor visited.", "sentence_bad": "actor talked."}
+{"original": "every apple was lifted.", "sentence_good": "apple lifted.", "sentence_bad": "apple rotted."}
+{"original": "ann's daughters weren't concealed.", "sentence_good": "ann's daughters weren't concealed.", "sentence_bad": "ann's daughters weren't negotiated."}
+{"original": "some hospital isn't respected.", "sentence_good": "some hospital isn't respected.", "sentence_bad": "some hospital isn't struggled."}
+{"original": "these boys' friend wasn't visited.", "sentence_good": "boys' friend wasn't visited.", "sentence_bad": "boys' friend wasn't argued."}
+{"original": "teresa isn't kissed.", "sentence_good": "teresa isn't kissed.", "sentence_bad": "teresa isn't lied."}
+{"original": "most eggplants were admired.", "sentence_good": "most eggplants admired.", "sentence_bad": "most eggplants rotted."}
+{"original": "caroline's students aren't admired.", "sentence_good": "caroline's students aren't admired.", "sentence_bad": "caroline's students aren't interacted."}
+{"original": "sonia is left.", "sentence_good": "sonia left.", "sentence_bad": "sonia grinned."}
+{"original": "angela's teachers were hated.", "sentence_good": "angela's teachers hated.", "sentence_bad": "angela's teachers muttered."}
+{"original": "nephews of amelia weren't hurt.", "sentence_good": "nephews amelia weren't hurt.", "sentence_bad": "nephews amelia weren't communicated."}
+{"original": "some guests were disliked.", "sentence_good": "some guests disliked.", "sentence_bad": "some guests retaliated."}
+{"original": "these teachers are discussed.", "sentence_good": "teachers discussed.", "sentence_bad": "teachers grinned."}
+{"original": "a pedestrian wasn't distracted.", "sentence_good": "pedestrian wasn't distracted.", "sentence_bad": "pedestrian wasn't gone fishing."}
+{"original": "holly's sons are bothered.", "sentence_good": "holly's sons bothered.", "sentence_bad": "holly's sons chatted."}
+{"original": "the clintons were observed.", "sentence_good": "clintons observed.", "sentence_bad": "clintons reacted."}
+{"original": "charles isn't left.", "sentence_good": "charles isn't left.", "sentence_bad": "charles isn't answered."}
+{"original": "that guest's daughters were embarrassed.", "sentence_good": "guest's daughters embarrassed.", "sentence_bad": "guest's daughters argued."}
+{"original": "wayne's daughter is referenced.", "sentence_good": "wayne's daughter referenced.", "sentence_bad": "wayne's daughter talked."}
+{"original": "the clintons weren't astounded.", "sentence_good": "clintons weren't astounded.", "sentence_bad": "clintons weren't interacted."}
+{"original": "heidi was praised.", "sentence_good": "heidi praised.", "sentence_bad": "heidi argued."}
+{"original": "every cucumber was admired.", "sentence_good": "cucumber admired.", "sentence_bad": "cucumber rotted."}
+{"original": "some patients were approached.", "sentence_good": "some patients approached.", "sentence_bad": "some patients conferred."}
+{"original": "alexander wasn't respected.", "sentence_good": "alexander wasn't respected.", "sentence_bad": "alexander wasn't wept."}
+{"original": "all committees are confused.", "sentence_good": "committees confused.", "sentence_bad": "committees collaborated."}
+{"original": "george is alarmed.", "sentence_good": "george alarmed.", "sentence_bad": "george grinned."}
+{"original": "marcus's hairdressers were praised.", "sentence_good": "marcus's hairdressers praised.", "sentence_bad": "marcus's hairdressers shrugged."}
+{"original": "gregory was observed.", "sentence_good": "gregory observed.", "sentence_bad": "gregory spoken up."}
+{"original": "a lot of boys aren't observed.", "sentence_good": "lot boys aren't observed.", "sentence_bad": "lot boys aren't sighed."}
+{"original": "holly's daughter was astounded.", "sentence_good": "holly's daughter astounded.", "sentence_bad": "holly's daughter grinned."}
+{"original": "florence was impressed.", "sentence_good": "florence impressed.", "sentence_bad": "florence gone fishing."}
+{"original": "melissa's grandfathers are hired.", "sentence_good": "melissa's grandfathers hired.", "sentence_bad": "melissa's grandfathers suffered."}
+{"original": "that government was impressed.", "sentence_good": "government impressed.", "sentence_bad": "government cooperated."}
+{"original": "all eggplants were bought.", "sentence_good": "eggplants bought.", "sentence_bad": "eggplants rotted."}
+{"original": "these legislatures aren't worried.", "sentence_good": "legislatures aren't worried.", "sentence_bad": "legislatures aren't answered."}
+{"original": "this dancer wasn't disliked.", "sentence_good": "dancer wasn't disliked.", "sentence_bad": "dancer wasn't littered."}
+{"original": "the legislatures aren't scared.", "sentence_good": "legislatures aren't scared.", "sentence_bad": "legislatures aren't retaliated."}
+{"original": "most people were left.", "sentence_good": "most people left.", "sentence_bad": "most people replied."}
+{"original": "spain wasn't exited.", "sentence_good": "spain wasn't exited.", "sentence_bad": "spain wasn't retaliated."}
+{"original": "the nephew of some woman isn't helped.", "sentence_good": "nephew some woman isn't helped.", "sentence_bad": "nephew some woman isn't cried."}
+{"original": "most brothers of jennifer weren't discussed.", "sentence_good": "most brothers jennifer weren't discussed.", "sentence_bad": "most brothers jennifer weren't disagreed."}
+{"original": "alice isn't referenced.", "sentence_good": "alice isn't referenced.", "sentence_bad": "alice isn't gone fishing."}
+{"original": "emily's dermatologists were disturbed.", "sentence_good": "emily's dermatologists disturbed.", "sentence_bad": "emily's dermatologists struggled."}
+{"original": "caroline's best friend was scanned.", "sentence_good": "caroline's best friend scanned.", "sentence_bad": "caroline's best friend muttered."}
+{"original": "the waitresses are observed.", "sentence_good": "waitresses observed.", "sentence_bad": "waitresses cried."}
+{"original": "jacqueline's associates were approached.", "sentence_good": "jacqueline's associates approached.", "sentence_bad": "jacqueline's associates corresponded."}
+{"original": "these grandmothers of the borgias weren't hired.", "sentence_good": "grandmothers borgias weren't hired.", "sentence_bad": "grandmothers borgias weren't struggled."}
+{"original": "janice isn't helped.", "sentence_good": "janice isn't helped.", "sentence_bad": "janice isn't smiled."}
+{"original": "sabrina isn't worried.", "sentence_good": "sabrina isn't worried.", "sentence_bad": "sabrina isn't shrugged."}
+{"original": "natalie's contractors are seen.", "sentence_good": "natalie's contractors seen.", "sentence_bad": "natalie's contractors chatted."}
+{"original": "some lady is seen.", "sentence_good": "some lady seen.", "sentence_bad": "some lady shouted."}
+{"original": "teresa was alarmed.", "sentence_good": "teresa alarmed.", "sentence_bad": "teresa died."}
+{"original": "bill's supervisors are kissed.", "sentence_good": "bill's supervisors kissed.", "sentence_bad": "bill's supervisors reacted."}
+{"original": "aaron isn't upset.", "sentence_good": "aaron isn't upset.", "sentence_bad": "aaron isn't muttered."}
+{"original": "some niece of heather was appreciated.", "sentence_good": "some niece heather appreciated.", "sentence_bad": "some niece heather complained."}
+{"original": "jill was kissed.", "sentence_good": "jill kissed.", "sentence_bad": "jill gone fishing."}
+{"original": "tonya is embarrassed.", "sentence_good": "tonya embarrassed.", "sentence_bad": "tonya argued."}
+{"original": "some hospital isn't stunned.", "sentence_good": "some hospital isn't stunned.", "sentence_bad": "some hospital isn't reacted."}
+{"original": "a lot of customers weren't aggravated.", "sentence_good": "lot customers weren't aggravated.", "sentence_bad": "lot customers weren't retaliated."}
+{"original": "a museum is upset.", "sentence_good": "museum upset.", "sentence_bad": "museum interacted."}
+{"original": "most associations weren't irritated.", "sentence_good": "most associations weren't irritated.", "sentence_bad": "most associations weren't replied."}
+{"original": "that hospital isn't left.", "sentence_good": "hospital isn't left.", "sentence_bad": "hospital isn't conferred."}
+{"original": "nina wasn't stunned.", "sentence_good": "nina wasn't stunned.", "sentence_bad": "nina wasn't boasted."}
+{"original": "a lot of children aren't embarrassed.", "sentence_good": "lot children aren't embarrassed.", "sentence_bad": "lot children aren't cooperated."}
+{"original": "peter's dermatologists were stunned.", "sentence_good": "peter's dermatologists stunned.", "sentence_bad": "peter's dermatologists muttered."}
+{"original": "bruce was shocked.", "sentence_good": "bruce shocked.", "sentence_bad": "bruce smiled."}
+{"original": "many brothers of denise weren't aggravated.", "sentence_good": "many brothers denise weren't aggravated.", "sentence_bad": "many brothers denise weren't retaliated."}
+{"original": "connie wasn't insulted.", "sentence_good": "connie wasn't insulted.", "sentence_bad": "connie wasn't murmured."}
+{"original": "mark's husband was embarrassed.", "sentence_good": "mark's husband embarrassed.", "sentence_bad": "mark's husband smiled."}
+{"original": "amy wasn't impressed.", "sentence_good": "amy wasn't impressed.", "sentence_bad": "amy wasn't trained."}
+{"original": "carla was disliked.", "sentence_good": "carla disliked.", "sentence_bad": "carla trained."}
+{"original": "benjamin's best friends were impressed.", "sentence_good": "benjamin's best friends impressed.", "sentence_bad": "benjamin's best friends replied."}
+{"original": "phillip wasn't remembered.", "sentence_good": "phillip wasn't remembered.", "sentence_bad": "phillip wasn't shrugged."}
+{"original": "nancy wasn't fired.", "sentence_good": "nancy wasn't fired.", "sentence_bad": "nancy wasn't gotten fired."}
+{"original": "rachelle isn't respected.", "sentence_good": "rachelle isn't respected.", "sentence_bad": "rachelle isn't lied."}
+{"original": "kristen is insulted.", "sentence_good": "kristen insulted.", "sentence_bad": "kristen left."}
+{"original": "nina's ex-husbands aren't disliked.", "sentence_good": "nina's ex-husbands aren't disliked.", "sentence_bad": "nina's ex-husbands aren't disagreed."}
+{"original": "this banana isn't brought.", "sentence_good": "banana isn't brought.", "sentence_bad": "banana isn't rotted."}
+{"original": "steven isn't described.", "sentence_good": "steven isn't described.", "sentence_bad": "steven isn't cried."}
+{"original": "the sons of joel weren't astounded.", "sentence_good": "sons joel weren't astounded.", "sentence_bad": "sons joel weren't complained."}
+{"original": "many doctors were watched.", "sentence_good": "many doctors watched.", "sentence_bad": "many doctors communicated."}
+{"original": "carl wasn't respected.", "sentence_good": "carl wasn't respected.", "sentence_bad": "carl wasn't spoken up."}
+{"original": "jacqueline's cousins are seen.", "sentence_good": "jacqueline's cousins seen.", "sentence_bad": "jacqueline's cousins reacted."}
+{"original": "those actresses weren't kissed.", "sentence_good": "actresses weren't kissed.", "sentence_bad": "actresses weren't left."}
+{"original": "adam was remembered.", "sentence_good": "adam remembered.", "sentence_bad": "adam wept."}
+{"original": "robert's senators were criticized.", "sentence_good": "robert's senators criticized.", "sentence_bad": "robert's senators clashed."}
+{"original": "kendra was kissed.", "sentence_good": "kendra kissed.", "sentence_bad": "kendra died."}
+{"original": "sally wasn't insulted.", "sentence_good": "sally wasn't insulted.", "sentence_bad": "sally wasn't smiled."}
+{"original": "those teenagers were criticized.", "sentence_good": "teenagers criticized.", "sentence_bad": "teenagers lied."}
+{"original": "anna's grandmothers aren't known.", "sentence_good": "anna's grandmothers aren't known.", "sentence_bad": "anna's grandmothers aren't conferred."}
+{"original": "andrea isn't aggravated.", "sentence_good": "andrea isn't aggravated.", "sentence_bad": "andrea isn't answered."}
+{"original": "rhonda was scared.", "sentence_good": "rhonda scared.", "sentence_bad": "rhonda grinned."}
+{"original": "anne was investigated.", "sentence_good": "anne investigated.", "sentence_bad": "anne blinked."}
+{"original": "dawn is bored.", "sentence_good": "dawn bored.", "sentence_bad": "dawn sighed."}
+{"original": "cynthia's mothers were left.", "sentence_good": "cynthia's mothers left.", "sentence_bad": "cynthia's mothers cooperated."}
+{"original": "this woman wasn't known.", "sentence_good": "woman wasn't known.", "sentence_bad": "woman wasn't shouted."}
+{"original": "every friend of alicia isn't helped.", "sentence_good": "friend alicia isn't helped.", "sentence_bad": "friend alicia isn't compromised."}
+{"original": "these nieces of tina aren't kissed.", "sentence_good": "nieces tina aren't kissed.", "sentence_bad": "nieces tina aren't communicated."}
+{"original": "every girl's dermatologists are annoyed.", "sentence_good": "girl's dermatologists annoyed.", "sentence_bad": "girl's dermatologists interacted."}
+{"original": "an actress's guests weren't fired.", "sentence_good": "actress's guests weren't fired.", "sentence_bad": "actress's guests weren't chatted."}
+{"original": "this actor's oncologists were described.", "sentence_good": "actor's oncologists described.", "sentence_bad": "actor's oncologists testified."}
+{"original": "diane was bothered.", "sentence_good": "diane bothered.", "sentence_bad": "diane murmured."}
+{"original": "those cashiers are concealed.", "sentence_good": "cashiers concealed.", "sentence_bad": "cashiers nodded."}
+{"original": "melinda wasn't confused.", "sentence_good": "melinda wasn't confused.", "sentence_bad": "melinda wasn't murmured."}
+{"original": "wendy's supervisors are remembered.", "sentence_good": "wendy's supervisors remembered.", "sentence_bad": "wendy's supervisors screamed."}
+{"original": "elizabeth was aggravated.", "sentence_good": "elizabeth aggravated.", "sentence_bad": "elizabeth gotten fired."}
+{"original": "timothy wasn't worried.", "sentence_good": "timothy wasn't worried.", "sentence_bad": "timothy wasn't died."}
+{"original": "these waiters' plumbers were referenced.", "sentence_good": "waiters' plumbers referenced.", "sentence_bad": "waiters' plumbers left."}
+{"original": "christopher isn't admired.", "sentence_good": "christopher isn't admired.", "sentence_bad": "christopher isn't waved."}
+{"original": "elizabeth was annoyed.", "sentence_good": "elizabeth annoyed.", "sentence_bad": "elizabeth complained."}
+{"original": "melinda wasn't appreciated.", "sentence_good": "melinda wasn't appreciated.", "sentence_bad": "melinda wasn't fallen asleep."}
+{"original": "donna's mentors weren't bored.", "sentence_good": "donna's mentors weren't bored.", "sentence_bad": "donna's mentors weren't cooperated."}
+{"original": "brad is loved.", "sentence_good": "brad loved.", "sentence_bad": "brad chuckled."}
+{"original": "raymond's dentists aren't astounded.", "sentence_good": "raymond's dentists aren't astounded.", "sentence_bad": "raymond's dentists aren't boasted."}
+{"original": "many customers are described.", "sentence_good": "many customers described.", "sentence_bad": "many customers argued."}
+{"original": "sherry wasn't distracted.", "sentence_good": "sherry wasn't distracted.", "sentence_bad": "sherry wasn't nodded."}
+{"original": "angela's dentists were upset.", "sentence_good": "angela's dentists upset.", "sentence_bad": "angela's dentists blinked."}
+{"original": "grandmothers of lawrence weren't criticized.", "sentence_good": "grandmothers lawrence weren't criticized.", "sentence_bad": "grandmothers lawrence weren't trained."}
+{"original": "lucille is impressed.", "sentence_good": "lucille impressed.", "sentence_bad": "lucille grinned."}
+{"original": "spain was explored.", "sentence_good": "spain explored.", "sentence_bad": "spain struggled."}
+{"original": "most students aren't referenced.", "sentence_good": "most students aren't referenced.", "sentence_bad": "most students aren't negotiated."}
+{"original": "some children weren't disliked.", "sentence_good": "some children weren't disliked.", "sentence_bad": "some children weren't shouted."}
+{"original": "nicole's tutor isn't aggravated.", "sentence_good": "nicole's tutor isn't aggravated.", "sentence_bad": "nicole's tutor isn't sighed."}
+{"original": "the lutherans were forgotten.", "sentence_good": "lutherans forgotten.", "sentence_bad": "lutherans worked hard."}
+{"original": "connie isn't left.", "sentence_good": "connie isn't left.", "sentence_bad": "connie isn't spoken up."}
+{"original": "many patients are annoyed.", "sentence_good": "many patients annoyed.", "sentence_bad": "many patients complained."}
+{"original": "dana's grandfathers aren't worried.", "sentence_good": "dana's grandfathers aren't worried.", "sentence_bad": "dana's grandfathers aren't cried."}
+{"original": "those actresses were approached.", "sentence_good": "actresses approached.", "sentence_bad": "actresses clashed."}
+{"original": "a woman is loved.", "sentence_good": "woman loved.", "sentence_bad": "woman compromised."}
+{"original": "melinda isn't irritated.", "sentence_good": "melinda isn't irritated.", "sentence_bad": "melinda isn't talked."}
+{"original": "the sisters of this waitress weren't appreciated.", "sentence_good": "sisters waitress weren't appreciated.", "sentence_bad": "sisters waitress weren't compromised."}
+{"original": "stephen isn't irritated.", "sentence_good": "stephen isn't irritated.", "sentence_bad": "stephen isn't concurred."}
+{"original": "dawn was loved.", "sentence_good": "dawn loved.", "sentence_bad": "dawn littered."}
+{"original": "laurie's granddaughters were attacked.", "sentence_good": "laurie's granddaughters attacked.", "sentence_bad": "laurie's granddaughters testified."}
+{"original": "rhonda was helped.", "sentence_good": "rhonda helped.", "sentence_bad": "rhonda waved."}
+{"original": "matt wasn't forgotten.", "sentence_good": "matt wasn't forgotten.", "sentence_bad": "matt wasn't sighed."}
+{"original": "marie was referenced.", "sentence_good": "marie referenced.", "sentence_bad": "marie spoken up."}
+{"original": "spain isn't disgusted.", "sentence_good": "spain isn't disgusted.", "sentence_bad": "spain isn't replied."}
+{"original": "many ladies' plumbers are helped.", "sentence_good": "many ladies' plumbers helped.", "sentence_bad": "many ladies' plumbers blinked."}
+{"original": "grace is remembered.", "sentence_good": "grace remembered.", "sentence_bad": "grace screamed."}
+{"original": "julia's podiatrists weren't left.", "sentence_good": "julia's podiatrists weren't left.", "sentence_bad": "julia's podiatrists weren't replied."}
+{"original": "many fathers of every teacher aren't described.", "sentence_good": "many fathers teacher aren't described.", "sentence_bad": "many fathers teacher aren't corresponded."}
+{"original": "lisa's mentors were discussed.", "sentence_good": "lisa's mentors discussed.", "sentence_bad": "lisa's mentors retaliated."}
+{"original": "carlos's tutors weren't aggravated.", "sentence_good": "carlos's tutors weren't aggravated.", "sentence_bad": "carlos's tutors weren't profited."}
+{"original": "all companies were irritated.", "sentence_good": "companies irritated.", "sentence_bad": "companies chatted."}
+{"original": "irene was loved.", "sentence_good": "irene loved.", "sentence_bad": "irene suffered."}
+{"original": "the clintons aren't upset.", "sentence_good": "clintons aren't upset.", "sentence_bad": "clintons aren't struggled."}
+{"original": "andrew is known.", "sentence_good": "andrew known.", "sentence_bad": "andrew shouted."}
+{"original": "the government isn't investigated.", "sentence_good": "government isn't investigated.", "sentence_bad": "government isn't conferred."}
+{"original": "dennis isn't concealed.", "sentence_good": "dennis isn't concealed.", "sentence_bad": "dennis isn't chuckled."}
+{"original": "homer is hated.", "sentence_good": "homer hated.", "sentence_bad": "homer argued."}
+{"original": "cheryl's tutors were scared.", "sentence_good": "cheryl's tutors scared.", "sentence_bad": "cheryl's tutors nodded."}
+{"original": "natalie wasn't appreciated.", "sentence_good": "natalie wasn't appreciated.", "sentence_bad": "natalie wasn't complained."}
+{"original": "connie's senators weren't helped.", "sentence_good": "connie's senators weren't helped.", "sentence_bad": "connie's senators weren't replied."}
+{"original": "jesus isn't forgotten.", "sentence_good": "jesus isn't forgotten.", "sentence_bad": "jesus isn't talked."}
+{"original": "the cousins of laura were criticized.", "sentence_good": "cousins laura criticized.", "sentence_bad": "cousins laura suffered."}
+{"original": "many friends of martin aren't seen.", "sentence_good": "many friends martin aren't seen.", "sentence_bad": "many friends martin aren't suffered."}
+{"original": "all customers' grandmothers were attacked.", "sentence_good": "customers' grandmothers attacked.", "sentence_bad": "customers' grandmothers shrugged."}
+{"original": "alexander is criticized.", "sentence_good": "alexander criticized.", "sentence_bad": "alexander laughed."}
+{"original": "randolf was annoyed.", "sentence_good": "randolf annoyed.", "sentence_bad": "randolf trained."}
+{"original": "gina wasn't confused.", "sentence_good": "gina wasn't confused.", "sentence_bad": "gina wasn't shouted."}
+{"original": "emily wasn't admired.", "sentence_good": "emily wasn't admired.", "sentence_bad": "emily wasn't gone fishing."}
+{"original": "russell was astounded.", "sentence_good": "russell astounded.", "sentence_bad": "russell suffered."}
+{"original": "alicia was referenced.", "sentence_good": "alicia referenced.", "sentence_bad": "alicia shrugged."}
+{"original": "ella wasn't discussed.", "sentence_good": "ella wasn't discussed.", "sentence_bad": "ella wasn't come here."}
+{"original": "sarah's cousins are praised.", "sentence_good": "sarah's cousins praised.", "sentence_bad": "sarah's cousins coped."}
+{"original": "gerald's mentors aren't forgotten.", "sentence_good": "gerald's mentors aren't forgotten.", "sentence_bad": "gerald's mentors aren't reacted."}
+{"original": "grandmothers of guy aren't helped.", "sentence_good": "grandmothers guy aren't helped.", "sentence_bad": "grandmothers guy aren't clashed."}
+{"original": "ella's employees were worried.", "sentence_good": "ella's employees worried.", "sentence_bad": "ella's employees coped."}
+{"original": "these museums aren't stunned.", "sentence_good": "museums aren't stunned.", "sentence_bad": "museums aren't worked hard."}
+{"original": "allison was helped.", "sentence_good": "allison helped.", "sentence_bad": "allison answered."}
+{"original": "randolf's doctors were criticized.", "sentence_good": "randolf's doctors criticized.", "sentence_bad": "randolf's doctors left."}
+{"original": "phillip is respected.", "sentence_good": "phillip respected.", "sentence_bad": "phillip littered."}
+{"original": "tracy is annoyed.", "sentence_good": "tracy annoyed.", "sentence_bad": "tracy boasted."}
+{"original": "most actresses weren't watched.", "sentence_good": "most actresses weren't watched.", "sentence_bad": "most actresses weren't smiled."}
+{"original": "stephen wasn't disgusted.", "sentence_good": "stephen wasn't disgusted.", "sentence_bad": "stephen wasn't spoken up."}
+{"original": "martin's dermatologists are hugged.", "sentence_good": "martin's dermatologists hugged.", "sentence_bad": "martin's dermatologists chatted."}
+{"original": "most children are hurt.", "sentence_good": "most children hurt.", "sentence_bad": "most children blinked."}
+{"original": "many granddaughters of laura were seen.", "sentence_good": "many granddaughters laura seen.", "sentence_bad": "many granddaughters laura shrugged."}
+{"original": "many actresses' ex-husband isn't disliked.", "sentence_good": "many actresses' ex-husband isn't disliked.", "sentence_bad": "many actresses' ex-husband isn't suffered."}
+{"original": "emily wasn't watched.", "sentence_good": "emily wasn't watched.", "sentence_bad": "emily wasn't talked."}
+{"original": "guy was astounded.", "sentence_good": "guy astounded.", "sentence_bad": "guy chuckled."}
+{"original": "the impressionists weren't admired.", "sentence_good": "impressionists weren't admired.", "sentence_bad": "impressionists weren't conferred."}
+{"original": "granddaughters of heidi are forgotten.", "sentence_good": "granddaughters heidi forgotten.", "sentence_bad": "granddaughters heidi laughed."}
+{"original": "those guests are confused.", "sentence_good": "guests confused.", "sentence_bad": "guests conferred."}
+{"original": "carrie isn't irritated.", "sentence_good": "carrie isn't irritated.", "sentence_bad": "carrie isn't wept."}
+{"original": "jennifer's grandfathers are respected.", "sentence_good": "jennifer's grandfathers respected.", "sentence_bad": "jennifer's grandfathers talked."}
+{"original": "brad's employees aren't discussed.", "sentence_good": "brad's employees aren't discussed.", "sentence_bad": "brad's employees aren't coped."}
+{"original": "beth's classmates aren't impressed.", "sentence_good": "beth's classmates aren't impressed.", "sentence_bad": "beth's classmates aren't clashed."}
+{"original": "the grandfather of these guys wasn't hired.", "sentence_good": "grandfather guys wasn't hired.", "sentence_bad": "grandfather guys wasn't shouted."}
+{"original": "wendy's dentists are concealed.", "sentence_good": "wendy's dentists concealed.", "sentence_bad": "wendy's dentists testified."}
+{"original": "jerry was upset.", "sentence_good": "jerry upset.", "sentence_bad": "jerry screamed."}
+{"original": "some spinach is sold.", "sentence_good": "some spinach sold.", "sentence_bad": "some spinach rotted."}

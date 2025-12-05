@@ -36,17 +36,18 @@ for w in FUNCTION_WORDS:
         compact_function_words[w] ='at'
 
 
+# Pseudowords mapping
 pesudo_class = {x:[x] for x in FUNCTION_WORDS}
-# pesudo_words = Path('function_word_pseudowords.txt').read_text().strip().split('\n')
-# all_pesudo_words = []
-# for line in pesudo_words:
-#     word, pseudo = line.strip().split('\t')
-#     all_pesudo_words.append(pseudo)
-#     pesudo_class[word].append(pseudo)
-#
-# for c, p in pesudo_class.items():
-#     if len(pesudo_class[c])==1:
-#         pesudo_class[c] = random.sample(all_pesudo_words, 10)
+pesudo_words = Path('function_word_pseudowords.txt').read_text().strip().split('\n')
+all_pesudo_words = []
+for line in pesudo_words:
+    word, pseudo = line.strip().split('\t')
+    all_pesudo_words.append(pseudo)
+    pesudo_class[word].append(pseudo)
+
+for c, p in pesudo_class.items():
+    if len(pesudo_class[c])==1:
+        pesudo_class[c] = random.sample(all_pesudo_words, 10)
 
 
 #===============================================================
@@ -104,20 +105,47 @@ def random_function_words(words):
             words[i] = random.choice(list(FUNCTION_WORDS))
     return words
 
-def within_boundary(words, tree):
-    pass
+def within_boundary(tree_lines):
+    tree = list(tree_lines)
+    for i in range(len(tree) - 1, -1, -1):
+        line = tree[i].strip()
+        if not line or line.startswith("#"):
+            continue
+
+        cols = line.split("\t")
+        if len(cols) <= 4:
+            continue
+        try:
+            word_id = int(cols[0])
+            word = cols[1].lower()
+            head = int(cols[4])
+        except ValueError:
+            print('ValueError in line:', line)
+            continue
+
+        if word not in FUNCTION_WORDS or head <= 0:
+            continue
+        if abs(head - word_id) == 1:
+            continue
+
+        target_idx = head - 1
+        line_moved = tree.pop(i)
+
+        if i < target_idx:
+            target_idx -= 1
+        tree.insert(target_idx, line_moved)
+
+    return tree
 
 
 def get_split_sent(conll):
     words = [x.split('\t')[1] for x in conll.strip().split('\n') if not x.startswith('#') and '-' not in x.split('\t')[0] and '.' not in x.split('\t')[0]]
     return words
 
-exp_name = 'crossphrase_function'
-os.makedirs(f'/Users/xiulinyang/Desktop/conll/data/{exp_name}', exist_ok=True)
+def get_split_tree(conll):
+    tree_lines = [x for x in conll.strip().split('\n') if not x.startswith('#') and '-' not in x.split('\t')[0] and '.' not in x.split('\t')[0]]
+    return tree_lines
 
-train = Path('/Users/xiulinyang/Desktop/conll/train.conll').read_text(encoding='utf-8').strip().split('\n\n')
-dev = Path('/Users/xiulinyang/Desktop/conll/dev.conll').read_text(encoding='utf-8').strip().split('\n\n')
-test = Path('/Users/xiulinyang/Desktop/conll/test.conll').read_text(encoding='utf-8').strip().split('\n\n')
 
 def convert_text(function_name):
     if function_name =='bigram_function':
@@ -138,6 +166,10 @@ def convert_text(function_name):
                 filtered_text = reduce_function_words(text)
             elif function_name =='random_function':
                 filtered_text = random_function_words(text)
+            elif function_name == 'within_boundary':
+                tree_lines = get_split_tree(sent)
+                modified_tree = within_boundary(tree_lines)
+                filtered_text = [line.split('\t')[1] for line in modified_tree]
             f_train.write(' '.join(filtered_text).lower())
             f_train.write('\n')
 
@@ -153,6 +185,10 @@ def convert_text(function_name):
                 filtered_text = reduce_function_words(text)
             elif function_name =='random_function':
                 filtered_text = random_function_words(text)
+            elif function_name == 'within_boundary':
+                tree_lines = get_split_tree(sent)
+                modified_tree = within_boundary(tree_lines)
+                filtered_text = [line.split('\t')[1] for line in modified_tree]
             f_dev.write(' '.join(filtered_text).lower())
             f_dev.write('\n')
 
@@ -168,8 +204,19 @@ def convert_text(function_name):
                 filtered_text = reduce_function_words(text)
             elif function_name =='random_function':
                 filtered_text = random_function_words(text)
+            elif function_name == 'within_boundary':
+                tree_lines = get_split_tree(sent)
+                modified_tree = within_boundary(tree_lines)
+                filtered_text = [line.split('\t')[1] for line in modified_tree]
             f_test.write(' '.join(filtered_text).lower())
             f_test.write('\n')
 
+if __name__ == '__main__':
+    exp_name = 'within_boundary'  # no_function, bigram_function, more_function, five_function, random_function, within_boundary
+    os.makedirs(f'/Users/xiulinyang/Desktop/conll/data/{exp_name}', exist_ok=True)
 
-convert_text(exp_name)
+    train = Path('/Users/xiulinyang/Desktop/conll/train.conll').read_text(encoding='utf-8').strip().split('\n\n')
+    dev = Path('/Users/xiulinyang/Desktop/conll/dev.conll').read_text(encoding='utf-8').strip().split('\n\n')
+    test = Path('/Users/xiulinyang/Desktop/conll/test.conll').read_text(encoding='utf-8').strip().split('\n\n')
+
+    convert_text(exp_name)
