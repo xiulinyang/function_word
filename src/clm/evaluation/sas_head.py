@@ -133,7 +133,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-m', '--model-name', type=str, default=None,
                         help='model name whose SAS head scores will be computed. default=None')
-    parser.add_argument('-f', '--function_setting', help='language', choices=['ENG', 'EN','FI', 'DE','AR', 'ZH', 'EN', 'FR', 'TR', 'PL','KO', 'RU'], default='EN')
+    parser.add_argument('-f', '--function_setting', help='language')
     args = parser.parse_args()
     function_setting = args.function_setting
     fun_json = f'{function_setting}_blimp/adjunct_island.jsonl'
