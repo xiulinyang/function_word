@@ -71,10 +71,7 @@ def get_by_head_acc(data_fp, pred_data):
 
     for (sent_id, wid), layer_preds in pred_data:
         sent_id = int(sent_id)
-        sent = sents_all[sent_id]
-        print(func_all)
         functions = func_all[sent_id]
-        print(functions)
         gold_functions = [x[1] for x in functions]
         for l in range(L):
             for h in range(H):
@@ -147,7 +144,7 @@ def main():
         fns = [fn for fn in os.listdir(SAS_PREDS_DIR) if model_name in fn]
     else:
         fns = [fn for fn in os.listdir(SAS_PREDS_DIR)]
-    for fn in fns:
+    for fn in tqdm(fns):
         model_name = fn.split('@')[0]
         # get prediction data
         preds = read_sas_preds(f'{SAS_PREDS_DIR}/{fn}')
