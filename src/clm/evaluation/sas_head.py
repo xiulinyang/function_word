@@ -10,8 +10,8 @@ import numpy as np
 import json
 # ROOT_DIR = pathlib.Path(__file__).parent.resolve()
 ROOT_DIR = pathlib.Path(os.getcwd()).resolve()
-DATA_DIR = os.path.join(ROOT_DIR, 'pud')
-SAS_PREDS_DIR = os.path.join(ROOT_DIR, 'usa_probing_results')
+DATA_DIR = os.path.join(ROOT_DIR, 'blimp')
+SAS_PREDS_DIR = os.path.join(ROOT_DIR, 'sas_prob')
 
 OUTPUT_DIR='uas_results'
 DET = ["the","this","a","an","no","all","another","each","that","any","those","these","both","every","either","neither"]
@@ -60,8 +60,8 @@ def read_sas_preds(pred_path):
             data.append(((sent_id, wid), layer_preds))
     return data
 
-def get_by_head_acc(gold_heads, pred_data):
-
+def get_by_head_acc(data_fp, pred_data):
+    sents_all, func_all = get_data(data_fp)
     _, first_layers = pred_data[0]
     L = len(first_layers)
     H = len(first_layers[0])
@@ -70,17 +70,14 @@ def get_by_head_acc(gold_heads, pred_data):
     total = torch.zeros(L, H, dtype=torch.long)
 
     for (sent_id, wid), layer_preds in pred_data:
-        key = '-'.join([sent_id, str(wid)])
-        if key not in gold_heads:
-            print(gold_heads)
-            raise ValueError(f"Key {key} not found in gold heads")
-        gold = gold_heads[key]
+        sent = sents_all[sent_id]
+        functions = func_all[sent_id][0]
+        gold_functions = [x[1] for x in functions]
         for l in range(L):
             for h in range(H):
                 pred_head = layer_preds[l][h]
-
                 total[l, h] += 1
-                if pred_head == gold:
+                if pred_head in gold_functions:
                     correct[l, h] += 1
 
     uas = correct.float() / total.clamp_min(1)
@@ -91,44 +88,44 @@ def get_by_head_acc(gold_heads, pred_data):
 
     return uas, best_layer.item(), best_head.item(), best_uas.item()
 
-
-def get_per_relation_acc(gold_rels, gold_heads, pred_data):
-    by_rel_results = {}
-    _, first_layers = pred_data[0]
-    L = len(first_layers)
-    H = len(first_layers[0])
-    assert L == 12 and H == 12, "Expected 12 layers and 12 heads"
-
-    for rel in tqdm(REL_NAMES):
-        correct = torch.zeros(L, H, dtype=torch.long)
-        total = torch.zeros(L, H, dtype=torch.long)
-
-        for (sid, wid), layer_preds in pred_data:
-            key = f"{sid}-{wid}"
-            if gold_rels[key] != rel:
-                continue
-
-            gold = gold_heads[key]
-            for l in range(L):
-                for h in range(H):
-                    pred_head = layer_preds[l][h]
-                    total[l, h] += 1
-                    if pred_head == gold:
-                        correct[l, h] += 1
-
-        uas = correct.float() / total.clamp_min(1)
-        best_uas, best_idx = torch.max(uas.view(-1), dim=0)
-        best_layer = best_idx // H
-        best_head = best_idx % H
-
-        by_rel_results[rel] = {
-            'best_uas': best_uas.item(),
-            'best_layer': best_layer.item(),
-            'best_head': best_head.item(),
-            'uas': uas,  # L×H tensor
-        }
-
-    return by_rel_results
+#
+# def get_per_relation_acc(gold_rels, gold_heads, pred_data):
+#     by_rel_results = {}
+#     _, first_layers = pred_data[0]
+#     L = len(first_layers)
+#     H = len(first_layers[0])
+#     assert L == 12 and H == 12, "Expected 12 layers and 12 heads"
+#
+#     for rel in tqdm(FUNCTION_WORDS):
+#         correct = torch.zeros(L, H, dtype=torch.long)
+#         total = torch.zeros(L, H, dtype=torch.long)
+#
+#         for (sid, wid), layer_preds in pred_data:
+#             key = f"{sid}-{wid}"
+#             if gold_rels[key] != rel:
+#                 continue
+#
+#             gold = gold_heads[key]
+#             for l in range(L):
+#                 for h in range(H):
+#                     pred_head = layer_preds[l][h]
+#                     total[l, h] += 1
+#                     if pred_head == gold:
+#                         correct[l, h] += 1
+#
+#         uas = correct.float() / total.clamp_min(1)
+#         best_uas, best_idx = torch.max(uas.view(-1), dim=0)
+#         best_layer = best_idx // H
+#         best_head = best_idx % H
+#
+#         by_rel_results[rel] = {
+#             'best_uas': best_uas.item(),
+#             'best_layer': best_layer.item(),
+#             'best_head': best_head.item(),
+#             'uas': uas,  # L×H tensor
+#         }
+#
+#     return by_rel_results
 
 
 def main():
@@ -136,12 +133,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-m', '--model-name', type=str, default=None,
                         help='model name whose SAS head scores will be computed. default=None')
-    parser.add_argument('-l', '--lang', help='language', choices=['ENG', 'EN','FI', 'DE','AR', 'ZH', 'EN', 'FR', 'TR', 'PL','KO', 'RU'], default='EN')
+    parser.add_argument('-f', '--function_setting', help='language', choices=['ENG', 'EN','FI', 'DE','AR', 'ZH', 'EN', 'FR', 'TR', 'PL','KO', 'RU'], default='EN')
     args = parser.parse_args()
-    lang_lower = args.lang.lower()
-    lang_conllu = f'{lang_lower}_pud-ud-test.conllu'
-    PUD_FP = os.path.join(DATA_DIR, lang_conllu)
-    gold_rels, gold_heads = get_data(PUD_FP)
+    function_setting = args.function_setting
+    fun_json = f'{function_setting}_blimp/adjunct_island.jsonl'
+    PUD_FP = os.path.join(DATA_DIR, fun_json)
 
     if args.model_name:
         model_name = args.model_name.split('/')[-1]
@@ -152,8 +148,8 @@ def main():
         model_name = fn.split('@')[0]
         # get prediction data
         preds = read_sas_preds(f'{SAS_PREDS_DIR}/{fn}')
-        by_head_results, best_layer, best_head, best_uas = get_by_head_acc(gold_heads, preds)
-        by_rel_results = get_per_relation_acc(gold_rels, gold_heads,preds)
+        by_head_results, best_layer, best_head, best_uas = get_by_head_acc(PUD_FP, preds)
+        # by_rel_results = get_per_relation_acc(gold_rels, gold_heads,preds)
         # write UAS
         os.makedirs(OUTPUT_DIR, exist_ok=True)
         with open(os.path.join(OUTPUT_DIR, f'results_by_head_{model_name}.tsv'), 'w') as f:
@@ -170,11 +166,11 @@ def main():
             df.to_csv(f, sep='\t', index=False)
 
 
-        with open(os.path.join(OUTPUT_DIR, f'results_by_rel_{model_name}.tsv'), 'w') as f:
-            f.write('relation\tbest_layer\tbest_head\tbest_uas\n')
-            for rel in REL_NAMES:
-                rel_info = by_rel_results[rel]
-                f.write(f"{rel}\t{rel_info['best_layer']}\t{rel_info['best_head']}\t{rel_info['best_uas']}\n")
+        # with open(os.path.join(OUTPUT_DIR, f'results_by_rel_{model_name}.tsv'), 'w') as f:
+        #     f.write('relation\tbest_layer\tbest_head\tbest_uas\n')
+        #     for rel in REL_NAMES:
+        #         rel_info = by_rel_results[rel]
+        #         f.write(f"{rel}\t{rel_info['best_layer']}\t{rel_info['best_head']}\t{rel_info['best_uas']}\n")
 
 
 main()
