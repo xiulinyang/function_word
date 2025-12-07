@@ -150,15 +150,10 @@ class WordLevelIO:
                 print(words)
                 raise ValueError(f"Cannot find word for token {tid} with offset ({tok_start}, {tok_end})")
 
-            if self.tokenizer_type in ['bpe', 'unigram']:
-                assert anchor_wid.__len__() == 1, "Token {tid} maps to multiple words {anchor_wid} with tokenizer type {self.tokenizer_type}"
-                tok2word[tid] = anchor_wid[0]
-                word2tok[anchor_wid[0]].append(tid)
-            else:
-                tok2word[tid] = anchor_wid
-                for a_w in anchor_wid:
-                    word2tok[a_w].append(tid)
 
+            assert anchor_wid.__len__() == 1, "Token {tid} maps to multiple words {anchor_wid}"
+            tok2word[tid] = anchor_wid[0]
+            word2tok[anchor_wid[0]].append(tid)
 
         # print(tok2word, word2tok)
         if not tok2word:
@@ -169,7 +164,7 @@ class WordLevelIO:
     # original: (num_batches, layer, batch_size, head, source, target)
     # reshaped: (num_sequences=num_batch*batch_size, layer, head, source, target)
 
-    def _to_word_level_attentions(self, att, tok2word, tokenizer_type, device):
+    def _to_word_level_attentions(self, att, tok2word, device):
         """
             - bpe/unigram: tid -> wid
             - superbpe:    tid -> List[wid]
@@ -255,7 +250,7 @@ class WordLevelIO:
                     words, offsets_b
                 )
                 word_attn_b = self._to_word_level_attentions(
-                    att_b, tok2word, self.tokenizer_type, self.device
+                    att_b, tok2word, self.device
                 )
                 # visualize_token_level(word_attn_b,batch_sents[0], self.tokenizer, 6, 2, unit='word')
                 all_word_attn.append(word_attn_b.cpu())
