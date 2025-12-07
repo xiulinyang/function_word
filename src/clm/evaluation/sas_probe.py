@@ -99,7 +99,7 @@ def main():
         config.output_attentions = True
         config.use_cache = False
         config.output_attentions = True
-        model = AutoModelForCausalLM.from_pretrained(model_dir, config=config, revision=f'checkpoint-{ckpt}').to(device)
+        model = AutoModelForCausalLM.from_pretrained(model_dir, config=config, revision=f'epoch-{ckpt}').to(device)
         get_and_write_by_head_predictions(data_fp=data_fp, model=model, tokenizer=tokenizer, batch_size=batch_size, scale=scale, device=device,output_dir=output_dir, model_dir=model_dir, ckpt=ckpt)
 
 
