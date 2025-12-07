@@ -88,12 +88,12 @@ if __name__=='__main__':
     tokenizer = AutoTokenizer.from_pretrained("xiulinyang/GPT2_natural_function_53",revision='epoch-10')
     model = AutoModelForCausalLM.from_pretrained("xiulinyang/GPT2_natural_function_53",revision='epoch-10')
     BLIMP_DIR = "blimp/natural_function_blimp/"
-    OUT_PREFIX = "blimp_ablation_epoch10"
+    OUT_PREFIX = "blimp_ablation_epoch10_3head"
     os.makedirs(OUT_PREFIX, exist_ok=True)
     test_set = read_data(BLIMP_DIR)
     model.eval()
     results={}
-    hooks = register_head_ablation_hooks(model, [(4, 7)])
+    hooks = register_head_ablation_hooks(model, [(4, 7),(3,6),(1,5)])
     ilm_model = scorer.IncrementalLMScorer(model, device='cpu', tokenizer=tokenizer)
     acc, dist = eval_sent_pair(ilm_model, tokenizer,test_set)
 
