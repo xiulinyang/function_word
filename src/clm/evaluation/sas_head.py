@@ -72,16 +72,12 @@ def get_by_head_acc(data_fp, pred_data):
     for (sent_id, wid), layer_preds in pred_data:
         sent_id = int(sent_id)
         functions = func_all[sent_id]
-        gold_functions = [x[1] for x in functions]
+        gold_functions = [x[0] for x in functions]
         for l in range(L):
             for h in range(H):
                 pred_head = layer_preds[l][h]
                 total[l, h] += 1
-                print(int(pred_head))
-                print(gold_functions)
                 if int(pred_head) in gold_functions:
-                    print(pred_head)
-                    print(gold_functions)
                     correct[l, h] += 1
 
     uas = correct.float() / total.clamp_min(1)
