@@ -8,7 +8,7 @@ print(f"cuda available: {torch.cuda.is_available()}")
 print(f"number of gpus: {torch.cuda.device_count()}")
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 torch.cuda.empty_cache()
-CHECKPOINTS= range(1,11)
+CHECKPOINTS= [10]
 
 empty_categories = ['superlative_quantifiers_1', 'determiner_noun_agreement_irregular_2',
                                 'determiner_noun_agreement_with_adj_2', 'superlative_quantifiers_2',
