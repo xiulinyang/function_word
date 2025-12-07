@@ -43,7 +43,7 @@ if not os.path.isdir(OUTPUT_DIR):
 def read_sas_preds(pred_path):
     data = []
     with open(pred_path, encoding="utf-8") as f:
-        for line in f:
+        for line in tqdm(f):
             line = line.rstrip("\n")
             if not line:
                 continue
@@ -77,7 +77,7 @@ def get_by_head_acc(data_fp, pred_data):
             for h in range(H):
                 pred_head = layer_preds[l][h]
                 total[l, h] += 1
-                if pred_head in gold_functions:
+                if int(pred_head) in gold_functions:
                     correct[l, h] += 1
 
     uas = correct.float() / total.clamp_min(1)
