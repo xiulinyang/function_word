@@ -70,6 +70,7 @@ def get_by_head_acc(data_fp, pred_data):
     total = torch.zeros(L, H, dtype=torch.long)
 
     for (sent_id, wid), layer_preds in pred_data:
+        sent_id = int(sent_id)
         sent = sents_all[sent_id]
         functions = func_all[sent_id][0]
         gold_functions = [x[1] for x in functions]
