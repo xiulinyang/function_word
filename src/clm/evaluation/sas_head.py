@@ -78,6 +78,8 @@ def get_by_head_acc(data_fp, pred_data):
                 pred_head = layer_preds[l][h]
                 total[l, h] += 1
                 if int(pred_head) in gold_functions:
+                    print(pred_head)
+                    print(gold_functions)
                     correct[l, h] += 1
 
     uas = correct.float() / total.clamp_min(1)
