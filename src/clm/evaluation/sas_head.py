@@ -148,6 +148,7 @@ def main():
     fun_json = f'{function_setting}_blimp/adjunct_island.jsonl'
     PUD_FP = os.path.join(DATA_DIR, fun_json)
     function_w = list(FUNCTION_WORDS)+all_pesudo_words
+    print(function_w)
     if args.model_name:
         model_name = args.model_name.split('/')[-1]
         fns = [fn for fn in os.listdir(SAS_PREDS_DIR) if model_name in fn]
