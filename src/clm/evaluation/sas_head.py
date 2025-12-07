@@ -77,6 +77,8 @@ def get_by_head_acc(data_fp, pred_data):
             for h in range(H):
                 pred_head = layer_preds[l][h]
                 total[l, h] += 1
+                print(int(pred_head))
+                print(gold_functions)
                 if int(pred_head) in gold_functions:
                     print(pred_head)
                     print(gold_functions)
