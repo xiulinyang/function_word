@@ -73,7 +73,7 @@ def get_by_head_acc(data_fp, pred_data):
         sent_id = int(sent_id)
         sent = sents_all[sent_id]
         print(func_all)
-        functions = func_all[sent_id][0]
+        functions = func_all[sent_id]
         print(functions)
         gold_functions = [x[1] for x in functions]
         for l in range(L):
