@@ -1,4 +1,5 @@
 import os
+from glob import glob
 import torch, pathlib, argparse, sys
 from tqdm import tqdm
 from word_level_input_output import WordLevelIO
@@ -61,9 +62,9 @@ def get_and_write_by_head_predictions(
             lines.append(line)
 
     out = '\n'.join(lines)
-
+    data_name = data_fp.split('/')[-1].split('.')[0]
     # write to a file
-    model_name = model_dir.split(os.path.sep)[-1]+f'-ckpt-{ckpt}'  # model_name/checkpoint
+    model_name = data_name+'_'+model_dir.split(os.path.sep)[-1]+f'-ckpt-{ckpt}'  # model_name/checkpoint
     suffix = '@scaled' if scale else '@unscaled'
     fn = f"{model_name}-sas_preds{suffix}.tsv"
     with open(os.path.join(output_dir, fn), 'w') as f:
@@ -100,7 +101,8 @@ def main():
         config.use_cache = False
         config.output_attentions = True
         model = AutoModelForCausalLM.from_pretrained(model_dir, config=config, revision=f'epoch-{ckpt}').to(device)
-        get_and_write_by_head_predictions(data_fp=data_fp, model=model, tokenizer=tokenizer, batch_size=batch_size, scale=scale, device=device,output_dir=output_dir, model_dir=model_dir, ckpt=ckpt)
+        for p in glob(f'{data_fp}/*.jsonl'):
+            get_and_write_by_head_predictions(data_fp=p, model=model, tokenizer=tokenizer, batch_size=batch_size, scale=scale, device=device,output_dir=output_dir, model_dir=model_dir, ckpt=ckpt)
 
 
 if __name__ == "__main__":
