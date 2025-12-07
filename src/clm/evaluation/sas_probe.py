@@ -57,7 +57,7 @@ def get_and_write_by_head_predictions(
                 '-'.join(str(idx) for idx in layer)
                 for layer in word
             ]
-            line = f"{sid}\t{w_idx}\t" + '\t'.join(cols)
+            line = f"{sid}\t{w_idx}\t{word}\t" + '\t'.join(cols)
             lines.append(line)
 
     out = '\n'.join(lines)
