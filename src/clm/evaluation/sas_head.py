@@ -5,7 +5,7 @@ import argparse
 from pathlib import Path
 import pandas as pd
 import torch
-
+import random
 import numpy as np
 import json
 # ROOT_DIR = pathlib.Path(__file__).parent.resolve()
@@ -22,13 +22,16 @@ ADP = ["at","in","of","near","for","by","to","with","on","from","behind","into",
 FUNCTION_WORDS = set(DET + CCONJ + SCONJ + AUX + ADP)
 
 
-def get_data(data_fp):
+
+
+
+def get_data(data_fp, function_list):
     sents = Path(data_fp).read_text().strip().split('\n')
     sents_all = []
     func_words_all = []
     for sent in sents:
         sentence = json.loads(sent)['sentence_good'][:-1].split()
-        function_words = [(i, x) for i, x in enumerate(sentence) if x in FUNCTION_WORDS]
+        function_words = [(i, x) for i, x in enumerate(sentence) if x in function_list]
         punct = json.loads(sent)['sentence_good'][-1]
         sentence+=[punct]
         function_words_all = function_words*len(sentence)
@@ -60,8 +63,8 @@ def read_sas_preds(pred_path):
             data.append(((sent_id, wid), layer_preds))
     return data
 
-def get_by_head_acc(data_fp, pred_data):
-    sents_all, func_all = get_data(data_fp)
+def get_by_head_acc(data_fp, pred_data, function_list):
+    sents_all, func_all = get_data(data_fp,function_list)
     _, first_layers = pred_data[0]
     L = len(first_layers)
     H = len(first_layers[0])
@@ -136,9 +139,15 @@ def main():
     parser.add_argument('-f', '--function_setting', help='language')
     args = parser.parse_args()
     function_setting = args.function_setting
+    all_pesudo_words = []
+    if function_setting =='more_function':
+        pesudo_words = Path('function_word_pseudowords.txt').read_text().strip().split('\n')
+        for line in pesudo_words:
+            word, pseudo = line.strip().split('\t')
+            all_pesudo_words.append(pseudo)
     fun_json = f'{function_setting}_blimp/adjunct_island.jsonl'
     PUD_FP = os.path.join(DATA_DIR, fun_json)
-
+    function_w = list(FUNCTION_WORDS)+all_pesudo_words
     if args.model_name:
         model_name = args.model_name.split('/')[-1]
         fns = [fn for fn in os.listdir(SAS_PREDS_DIR) if model_name in fn]
@@ -148,7 +157,7 @@ def main():
         model_name = fn.split('@')[0]
         # get prediction data
         preds = read_sas_preds(f'{SAS_PREDS_DIR}/{fn}')
-        by_head_results, best_layer, best_head, best_uas = get_by_head_acc(PUD_FP, preds)
+        by_head_results, best_layer, best_head, best_uas = get_by_head_acc(PUD_FP, preds,function_w)
         # by_rel_results = get_per_relation_acc(gold_rels, gold_heads,preds)
         # write UAS
         os.makedirs(OUTPUT_DIR, exist_ok=True)
