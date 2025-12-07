@@ -10,6 +10,12 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 torch.cuda.empty_cache()
 CHECKPOINTS= range(1,11)
 
+empty_categories = ['superlative_quantifiers_1', 'determiner_noun_agreement_irregular_2',
+                                'determiner_noun_agreement_with_adj_2', 'superlative_quantifiers_2',
+                                'determiner_noun_agreement_with_adj_irregular_2', 'determiner_noun_agreement_2',
+                                'matrix_npi']
+
+
 def head_probe(wlio, scale=True):
     """
     x_i -> x_j attention and x_i <- x_j attention
@@ -102,6 +108,9 @@ def main():
         config.output_attentions = True
         model = AutoModelForCausalLM.from_pretrained(model_dir, config=config, revision=f'epoch-{ckpt}').to(device)
         for p in glob(f'{data_fp}/*.jsonl'):
+            p_name = p.split('/')[-1].split('.')[0]
+            if p_name in empty_categories:
+                continue
             get_and_write_by_head_predictions(data_fp=p, model=model, tokenizer=tokenizer, batch_size=batch_size, scale=scale, device=device,output_dir=output_dir, model_dir=model_dir, ckpt=ckpt)
 
 
