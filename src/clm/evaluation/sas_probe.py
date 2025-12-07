@@ -52,6 +52,7 @@ def get_and_write_by_head_predictions(
     lines = []
     for i, sent in enumerate(predictions):
         sid = wlio.sent_ids[i]
+        print(sent)
         for w_idx, word in enumerate(sent):
             cols = [
                 '-'.join(str(idx) for idx in layer)
