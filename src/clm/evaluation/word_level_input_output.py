@@ -93,12 +93,12 @@ class WordLevelIO:
         words = []
         sent_id = []
         for i, sent in enumerate(sents):
-            sent = json.loads(sent)['sentence_good'][:-1].split()
             punct = json.loads(sent)['sentence_good'][-1]
+            sent = json.loads(sent)['sentence_good'][:-1].split()
             sent_p = sent+[punct]
             words.append(sent_p)
             sent_id.append(i)
-        return sent_id, words,
+        return sent_id, words
 
     def _encode_batch(self, sentences: List[List[str]], tokenizer):
         texts = [" ".join(words) for words in sentences]
