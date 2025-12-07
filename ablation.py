@@ -86,7 +86,7 @@ def eval_sent_pair(ilm_model, tokenizer, test_set):
 
 if __name__=='__main__':
     tokenizer = AutoTokenizer.from_pretrained("xiulinyang/GPT2_natural_function_53",revision='epoch-10')
-    model = AutoModelForCausalLM.from_pretrained("xiulinyang/GPT2_natural_function_53")
+    model = AutoModelForCausalLM.from_pretrained("xiulinyang/GPT2_natural_function_53",revision='epoch-10')
     BLIMP_DIR = "blimp/natural_function_blimp/"
     OUT_PREFIX = "blimp_ablation_epoch10"
     os.makedirs(OUT_PREFIX, exist_ok=True)
