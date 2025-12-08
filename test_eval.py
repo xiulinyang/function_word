@@ -28,15 +28,17 @@ def eval_sent_pair(ilm_model, tokenizer, lang,test_set):
     for sent in tqdm(test_set):
         ppls={}
         for k, v in sent.items():
-            tokenized = tokenizer.encode(v,add_special_tokens=False,truncation=True,max_length=128)
-            num_token= len(tokenized)
-            if num_token>127:
-                continue
-            v_trun = tokenizer.decode(tokenized)
+            try:
+                tokenized = tokenizer.encode(v,add_special_tokens=False,truncation=True,max_length=128)
+                num_token= len(tokenized)
 
-            nll = ilm_model.sequence_score(v_trun,reduction=lambda x: -x.sum(0).item())[0]
-            ppl = nll/num_token
-            ppls[k]=ppl
+                v_trun = tokenizer.decode(tokenized)
+
+                nll = ilm_model.sequence_score(v_trun,reduction=lambda x: -x.sum(0).item())[0]
+                ppl = nll/num_token
+                ppls[k]=ppl
+            except IndexError:
+                continue
         if len(list(ppls.keys()))<len(functions):
             e+=1
             print(e)
