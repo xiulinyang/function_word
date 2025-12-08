@@ -25,22 +25,18 @@ def eval_sent_pair(ilm_model, tokenizer, lang,test_set):
     results = []
     correct=0
     for sent in tqdm(test_set):
-        try:
-            ppls={}
-            for k, v in sent.items():
-                num_token= len(tokenizer.encode(v,add_special_tokens=False,truncation=True,max_length=128))
-                v = tokenizer.decode(tokenizer.encode(v,add_special_tokens=False,truncation=True,max_length=128))
-                nll = ilm_model.sequence_score(v,reduction=lambda x: -x.sum(0).item())[0]
-                ppl = nll/num_token
-                ppls[k]=ppl
+        ppls={}
+        for k, v in sent.items():
+            num_token= len(tokenizer.encode(v,add_special_tokens=False,truncation=True,max_length=128))
+            v = tokenizer.decode(tokenizer.encode(v,add_special_tokens=False,truncation=True,max_length=128)[:127])
+            nll = ilm_model.sequence_score(v,reduction=lambda x: -x.sum(0).item())[0]
+            ppl = nll/num_token
+            ppls[k]=ppl
 
-            best_lang = min(ppls, key=ppls.get)
-            if best_lang == lang:
-                correct += 1
-            results.append(ppls)
-        except:
-            print(v)
-            continue
+        best_lang = min(ppls, key=ppls.get)
+        if best_lang == lang:
+            correct += 1
+        results.append(ppls)
     acc = correct/len(test_set)
     print(len(test_set))
     return results,acc
