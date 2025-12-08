@@ -49,43 +49,43 @@ def register_function_token_mask_hooks(model, function_token_ids, mask_value=-1e
     ctx = {"func_mask": None}
     function_token_ids = set(function_token_ids)
 
-    def embed_pre_hook(module, inputs):
-        input_ids = inputs[0]
+    def embed_pre_hook(module, args, kwargs):
+        input_ids = args[0]
         with torch.no_grad():
             mask = torch.zeros_like(input_ids, dtype=torch.bool)
             for tid in function_token_ids:
-                mask |= input_ids == tid
+                mask |= (input_ids == tid)
         ctx["func_mask"] = mask
+        return args, kwargs
 
-    emb_hook = model.transformer.wte.register_forward_pre_hook(embed_pre_hook)
+    emb_hook = model.transformer.wte.register_forward_pre_hook(
+        embed_pre_hook, with_kwargs=True
+    )
     hooks.append(emb_hook)
 
     def make_attn_pre_hook(layer_idx):
-        def attn_pre_hook(module, inputs):
-            hidden_states = inputs[0]
-            layer_past = inputs[1] if len(inputs) > 1 else None
-            attention_mask = inputs[2] if len(inputs) > 2 else None
-            others = list(inputs[3:])
-
+        def attn_pre_hook(module, args, kwargs):
+            attention_mask = kwargs.get("attention_mask", None)
             func_mask = ctx.get("func_mask", None)
+
             if func_mask is not None:
-                fw_mask = func_mask.to(hidden_states.device).unsqueeze(1).unsqueeze(1)
+                fw_mask = func_mask.to(module.c_attn.weight.device).unsqueeze(1).unsqueeze(1)
                 fw_mask = fw_mask * mask_value
                 if attention_mask is None:
                     attention_mask_new = fw_mask
                 else:
                     attention_mask_new = attention_mask + fw_mask
-            else:
-                attention_mask_new = attention_mask
+                kwargs["attention_mask"] = attention_mask_new
 
-            new_inputs = (hidden_states, layer_past, attention_mask_new, *others)
-            return new_inputs
+            return args, kwargs
 
         return attn_pre_hook
 
     for layer_idx, block in enumerate(model.transformer.h):
         attn_mod = block.attn
-        h = attn_mod.register_forward_pre_hook(make_attn_pre_hook(layer_idx))
+        h = attn_mod.register_forward_pre_hook(
+            make_attn_pre_hook(layer_idx), with_kwargs=True
+        )
         hooks.append(h)
 
     return hooks
