@@ -27,7 +27,7 @@ def eval_sent_pair(ilm_model, tokenizer, lang,test_set):
     for sent in tqdm(test_set):
         ppls={}
         for k, v in sent.items():
-            num_token= len(tokenizer.encode(v,add_special_tokens=False))
+            num_token= len(tokenizer.encode(v,add_special_tokens=False,truncation=True,max_length=128))
             nll = ilm_model.sequence_score(v, reduction=lambda x: -x.sum(0).item())[0]
             ppl = nll/num_token
             ppls[k]=ppl
@@ -51,7 +51,7 @@ if __name__ == '__main__':
     results = {}
     print(model_name)
     checkpoint='epoch-10'
-    ilm_model = scorer.IncrementalLMScorer(model_name, 'cuda',revision=checkpoint)
+    ilm_model = scorer.IncrementalLMScorer(model_name, 'cuda',revision=checkpoint,trucation=True, max_length=128)
     tokenizer = AutoTokenizer.from_pretrained(model_name, revision=checkpoint)
     ppl, acc = eval_sent_pair(ilm_model, tokenizer, args.lang, test)
     pd.DataFrame(ppl).to_csv(f'test_results/results_{model_name_name}_{checkpoint}.csv')
