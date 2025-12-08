@@ -27,17 +27,18 @@ def eval_sent_pair(ilm_model, tokenizer, lang,test_set):
     for sent in tqdm(test_set):
         ppls={}
         for k, v in sent.items():
-            tokenized = tokenizer.encode(v,add_special_tokens=False,truncation=True,max_length=128)
+            tokenized = tokenizer.encode(v,add_special_tokens=False,truncation=True,max_length=127)
             num_token= len(tokenized)
-            if num_token>127:
-                continue
-            v = tokenizer.decode(tokenized)
-            
-            nll = ilm_model.sequence_score(v,reduction=lambda x: -x.sum(0).item())[0]
+            # if num_token>127:
+            #     continue
+            print(num_token)
+            v_trun = tokenizer.decode(tokenized)
+
+            nll = ilm_model.sequence_score(v_trun,reduction=lambda x: -x.sum(0).item())[0]
             ppl = nll/num_token
             ppls[k]=ppl
-        if len(list(ppls.keys()))<len(functions):
-            continue
+        # if len(list(ppls.keys()))<len(functions):
+        #     continue
         best_lang = min(ppls, key=ppls.get)
         if best_lang == lang:
             correct += 1
