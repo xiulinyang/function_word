@@ -32,7 +32,6 @@ def eval_sent_pair(ilm_model, tokenizer, lang,test_set):
             num_token= len(tokenized)
             if num_token>127:
                 continue
-            print(num_token)
             v_trun = tokenizer.decode(tokenized)
 
             nll = ilm_model.sequence_score(v_trun,reduction=lambda x: -x.sum(0).item())[0]
