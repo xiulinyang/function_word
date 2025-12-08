@@ -8,6 +8,7 @@ from minicons import scorer
 from tqdm import tqdm
 import pandas as pd
 from glob import glob
+import argparse
 
 empty_categories = [
     "superlative_quantifiers_1",
@@ -128,9 +129,13 @@ def eval_sent_pair(ilm_model, tokenizer, test_set):
 
 
 if __name__ == "__main__":
-    tokenizer = AutoTokenizer.from_pretrained("xiulinyang/GPT2_natural_function_53", revision="epoch-10")
-    model = AutoModelForCausalLM.from_pretrained("xiulinyang/GPT2_natural_function_53", revision="epoch-10")
-    BLIMP_DIR = "blimp/natural_function_blimp/"
+    args = argparse.ArgumentParser('eval language models')
+    args.add_argument('model_name', type=str, help='model name')
+    args = args.parse_args()
+    lang_name = args.model_name
+    tokenizer = AutoTokenizer.from_pretrained(f"xiulinyang/GPT2_{lang_name}_53", revision="epoch-10")
+    model = AutoModelForCausalLM.from_pretrained(f"xiulinyang/GPT2_{lang_name}_53", revision="epoch-10")
+    BLIMP_DIR = f"blimp/{lang_name}_blimp/"
     OUT_PREFIX = "blimp_ablation_epoch10_fw_mask"
     os.makedirs(OUT_PREFIX, exist_ok=True)
     test_set = read_data(BLIMP_DIR)
@@ -141,6 +146,6 @@ if __name__ == "__main__":
     results = {}
     acc, dist = eval_sent_pair(ilm_model, tokenizer, test_set)
     results["epoch-10"] = acc
-    pd.DataFrame(results).to_csv(f"{OUT_PREFIX}/results_GPT2_natural_function_53_epoch-10.csv")
+    pd.DataFrame(results).to_csv(f"{OUT_PREFIX}/results_GPT2_{lang_name}_53_epoch-10.csv")
     for h in hooks:
         h.remove()
