@@ -54,7 +54,7 @@ if __name__ == '__main__':
     results = {}
     print(model_name)
     checkpoint='epoch-10'
-    ilm_model = scorer.IncrementalLMScorer(model_name, 'cuda',revision=checkpoint)
+    ilm_model = scorer.IncrementalLMScorer(model_name, 'cpu',revision=checkpoint)
     tokenizer = AutoTokenizer.from_pretrained(model_name, revision=checkpoint)
     ppl, acc = eval_sent_pair(ilm_model, tokenizer, args.lang, test)
     pd.DataFrame(ppl).to_csv(f'test_results/results_{model_name_name}_{checkpoint}.csv')
