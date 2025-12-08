@@ -9,7 +9,7 @@ from tqdm import tqdm
 import pandas as pd
 from glob import glob
 import argparse
-
+from pathlib import Path
 empty_categories = [
     "superlative_quantifiers_1",
     "determiner_noun_agreement_irregular_2",
@@ -32,9 +32,14 @@ ADP = ["at","in","of","near","for","by","to","with","on","from","behind","into",
        "upon","via","beneath","unto","beyond","per","below","amongst","till","beside","amid","onto","towards",
        "underneath","alongside"]
 
-FUNCTION_WORDS = set(DET + CCONJ + SCONJ + AUX + ADP)
 
 
+pesudo_words = Path('function_word_pseudowords.txt').read_text().strip().split('\n')
+all_pesudo_words = []
+for line in pesudo_words:
+    word, pseudo = line.strip().split('\t')
+    all_pesudo_words.append(pseudo)
+FUNCTION_WORDS = set(DET + CCONJ + SCONJ + AUX + ADP + all_pesudo_words)
 def build_function_token_ids(tokenizer):
     func_ids = set()
     vocab_size = tokenizer.vocab_size
