@@ -27,7 +27,7 @@ def eval_sent_pair(ilm_model, tokenizer, lang,test_set):
     for sent in tqdm(test_set):
         ppls={}
         for k, v in sent.items():
-            tokenized = tokenizer.encode(v,add_special_tokens=False,truncation=True,max_length=127)
+            tokenized = tokenizer.encode(v,add_special_tokens=False,truncation=True,max_length=125)
             num_token= len(tokenized)
             # if num_token>127:
             #     continue
