@@ -29,6 +29,7 @@ def eval_sent_pair(ilm_model, tokenizer, lang,test_set):
         for k, v in sent.items():
             num_token= len(tokenizer.encode(v,add_special_tokens=False))
             nll = ilm_model.sequence_score(v, reduction=lambda x: -x.sum(0).item())
+            print(nll)
             ppl = nll/num_token
             ppls[k]=ppl
         best_lang = min(ppls, key=ppls.get)
