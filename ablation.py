@@ -10,7 +10,7 @@ empty_categories = ['superlative_quantifiers_1', 'determiner_noun_agreement_irre
                     'determiner_noun_agreement_with_adj_irregular_2','determiner_noun_agreement_2',
                     'matrix_npi']
 
-NATURAL_FUNCTION_HEADS = [(4, 7)]
+NATURAL_FUNCTION_HEADS = [(4, 7),(0,0),(11,1), (1,5), (3,6)]
 def register_head_ablation_hooks(model, heads_to_ablate):
     hooks = []
     layer2heads = {}
@@ -85,20 +85,20 @@ def eval_sent_pair(ilm_model, tokenizer, test_set):
 
 
 if __name__=='__main__':
-    tokenizer = AutoTokenizer.from_pretrained("xiulinyang/GPT2_natural_function_53",revision='epoch-10')
-    model = AutoModelForCausalLM.from_pretrained("xiulinyang/GPT2_natural_function_53",revision='epoch-10')
-    BLIMP_DIR = "blimp/natural_function_blimp/"
+    tokenizer = AutoTokenizer.from_pretrained("xiulinyang/GPT2_within_boundary_53",revision='epoch-10')
+    model = AutoModelForCausalLM.from_pretrained("xiulinyang/GPT2_within_boundary_53",revision='epoch-10')
+    BLIMP_DIR = "blimp/within_boundary_blimp/"
     OUT_PREFIX = "blimp_ablation_epoch10_5head_content"
     os.makedirs(OUT_PREFIX, exist_ok=True)
     test_set = read_data(BLIMP_DIR)
     model.eval()
     results={}
-    hooks = register_head_ablation_hooks(model, [(0, 0),(1,0),(2,0),(3,0),(4,0)])
+    hooks = register_head_ablation_hooks(model, NATURAL_FUNCTION_HEADS)
     ilm_model = scorer.IncrementalLMScorer(model, device='cpu', tokenizer=tokenizer)
     acc, dist = eval_sent_pair(ilm_model, tokenizer,test_set)
 
     results['epoch-10'] = acc
-    pd.DataFrame(results).to_csv(f'{OUT_PREFIX}/results_GPT2_natural_function_53_epoch-10.csv')
+    pd.DataFrame(results).to_csv(f'{OUT_PREFIX}/results_GPT2_within_boundary_53_epoch-10.csv')
 
     for h in hooks:
         h.remove()
