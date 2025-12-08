@@ -85,9 +85,9 @@ def eval_sent_pair(ilm_model, tokenizer, test_set):
 
 
 if __name__=='__main__':
-    tokenizer = AutoTokenizer.from_pretrained("xiulinyang/GPT2_within_boundary_53",revision='epoch-10')
-    model = AutoModelForCausalLM.from_pretrained("xiulinyang/GPT2_within_boundary_53",revision='epoch-10')
-    BLIMP_DIR = "blimp/within_boundary_blimp/"
+    tokenizer = AutoTokenizer.from_pretrained("xiulinyang/GPT2_five_function_53",revision='epoch-10')
+    model = AutoModelForCausalLM.from_pretrained("xiulinyang/GPT2_five_function_53",revision='epoch-10')
+    BLIMP_DIR = "blimp/five_function_blimp/"
     OUT_PREFIX = "blimp_ablation_epoch10_5head_content"
     os.makedirs(OUT_PREFIX, exist_ok=True)
     test_set = read_data(BLIMP_DIR)
@@ -98,7 +98,7 @@ if __name__=='__main__':
     acc, dist = eval_sent_pair(ilm_model, tokenizer,test_set)
 
     results['epoch-10'] = acc
-    pd.DataFrame(results).to_csv(f'{OUT_PREFIX}/results_GPT2_within_boundary_53_epoch-10.csv')
+    pd.DataFrame(results).to_csv(f'{OUT_PREFIX}/results_GPT2_five_function_53_epoch-10.csv')
 
     for h in hooks:
         h.remove()
