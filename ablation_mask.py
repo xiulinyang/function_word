@@ -32,14 +32,14 @@ ADP = ["at","in","of","near","for","by","to","with","on","from","behind","into",
        "upon","via","beneath","unto","beyond","per","below","amongst","till","beside","amid","onto","towards",
        "underneath","alongside"]
 
+FUNCTION_WORDS = set(DET + CCONJ + SCONJ + AUX + ADP )
 
-
-pesudo_words = Path('function_word_pseudowords.txt').read_text().strip().split('\n')
-all_pesudo_words = []
-for line in pesudo_words:
-    word, pseudo = line.strip().split('\t')
-    all_pesudo_words.append(pseudo)
-FUNCTION_WORDS = set(DET + CCONJ + SCONJ + AUX + ADP + all_pesudo_words)
+# pesudo_words = Path('function_word_pseudowords.txt').read_text().strip().split('\n')
+# all_pesudo_words = []
+# for line in pesudo_words:
+#     word, pseudo = line.strip().split('\t')
+#     all_pesudo_words.append(pseudo)
+# FUNCTION_WORDS = set(DET + CCONJ + SCONJ + AUX + ADP + all_pesudo_words)
 def build_function_token_ids(tokenizer):
     func_ids = set()
     vocab_size = tokenizer.vocab_size
@@ -138,10 +138,10 @@ if __name__ == "__main__":
     args.add_argument('model_name', type=str, help='model name')
     args = args.parse_args()
     lang_name = args.model_name
-    tokenizer = AutoTokenizer.from_pretrained(f"xiulinyang/GPT2_{lang_name}_53", revision="epoch-10")
-    model = AutoModelForCausalLM.from_pretrained(f"xiulinyang/GPT2_{lang_name}_53", revision="epoch-10")
+    tokenizer = AutoTokenizer.from_pretrained(f"xiulinyang/GPT2_{lang_name}_53", revision="epoch-1")
+    model = AutoModelForCausalLM.from_pretrained(f"xiulinyang/GPT2_{lang_name}_53", revision="epoch-1")
     BLIMP_DIR = f"blimp/{lang_name}_blimp/"
-    OUT_PREFIX = "blimp_ablation_epoch10_fw_mask"
+    OUT_PREFIX = "blimp_ablation_epoch1_fw_mask"
     os.makedirs(OUT_PREFIX, exist_ok=True)
     test_set = read_data(BLIMP_DIR)
     model.eval()
