@@ -79,6 +79,7 @@ if __name__ == '__main__':
         df_dist.index.name = 'phenomenon'
         df_dist.to_csv(f'{dataset}_results/distributions_{model_name_name}_best.csv')
     else:
+        checkpoints = ['epoch-10']
         for checkpoint in checkpoints:
             results = {}
             print(model_name, checkpoint)
