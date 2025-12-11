@@ -21,7 +21,6 @@ def read_data(data_path):
         phenomenon_n = p.split('/')[-1].split('.')[0]
         if phenomenon_n in empty_categories:
             continue
-        print(phenomenon_n)
         phenomenon = pd.read_json(p, lines=True).to_dict(orient='records')
         sent_pair = [(x['sentence_bad'], x['sentence_good']) for x in phenomenon]
         test_set[phenomenon_n] = sent_pair
@@ -54,7 +53,7 @@ def eval_sent_pair(ilm_model, tokenizer, test_set):
 if __name__ == '__main__':
     args = argparse.ArgumentParser('eval language models')
     args.add_argument('model_name', type=str, help='model name')
-    args.add_argument('eval_dataset', type=str, help='dataset name', default='posh')
+    args.add_argument('eval_dataset', type=str, help='dataset name')
     args.add_argument('--best_checkpoint', action='store_true')
 
     args = args.parse_args()
