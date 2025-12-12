@@ -136,10 +136,12 @@ def eval_sent_pair(ilm_model, tokenizer, test_set):
 if __name__ == "__main__":
     args = argparse.ArgumentParser('eval language models')
     args.add_argument('model_name', type=str, help='model name')
+    args.add_argument('random_seed', type=int, help='random seed')
     args = args.parse_args()
     lang_name = args.model_name
-    tokenizer = AutoTokenizer.from_pretrained(f"xiulinyang/GPT2_{lang_name}_53", revision="epoch-1")
-    model = AutoModelForCausalLM.from_pretrained(f"xiulinyang/GPT2_{lang_name}_53", revision="epoch-1")
+    seed = args.random_seed
+    tokenizer = AutoTokenizer.from_pretrained(f"xiulinyang/GPT2_{lang_name}_{seed}", revision="epoch-1")
+    model = AutoModelForCausalLM.from_pretrained(f"xiulinyang/GPT2_{lang_name}_{seed}", revision="epoch-1")
     BLIMP_DIR = f"blimp/{lang_name}_blimp/"
     OUT_PREFIX = "blimp_ablation_epoch1_fw_mask"
     os.makedirs(OUT_PREFIX, exist_ok=True)
@@ -151,6 +153,6 @@ if __name__ == "__main__":
     results = {}
     acc, dist = eval_sent_pair(ilm_model, tokenizer, test_set)
     results["epoch-10"] = acc
-    pd.DataFrame(results).to_csv(f"{OUT_PREFIX}/results_GPT2_{lang_name}_53_epoch-10.csv")
+    pd.DataFrame(results).to_csv(f"{OUT_PREFIX}/results_GPT2_{lang_name}_{seed}_epoch-10.csv")
     for h in hooks:
         h.remove()

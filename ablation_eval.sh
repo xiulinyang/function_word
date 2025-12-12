@@ -1,8 +1,8 @@
 #!/bin/bash
 
-bash benchmark_eval.py xiulinyang/GPT2_natural_function_53 no_function --best
-bash benchmark_eval.py xiulinyang/GPT2_natural_function_53 five_function --best
-bash benchmark_eval.py xiulinyang/GPT2_natural_function_53 more_function --best
-bash benchmark_eval.py xiulinyang/GPT2_natural_function_53 within_boundary --best
-bash benchmark_eval.py xiulinyang/GPT2_natural_function_53 random_function --best
-bash benchmark_eval.py xiulinyang/GPT2_natural_function_53 bigram_function --best
+python ablation_mask.py no_function 42
+python ablation_mask.py five_function 42
+python ablation_mask.py natural_function 42
+python ablation_mask.py within_boundary 42
+python ablation_mask.py random_function 42
+python ablation_mask.py bigram_function 42
