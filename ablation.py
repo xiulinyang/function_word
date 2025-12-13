@@ -10,9 +10,9 @@ empty_categories = ['superlative_quantifiers_1', 'determiner_noun_agreement_irre
                     'determiner_noun_agreement_with_adj_irregular_2','determiner_noun_agreement_2',
                     'matrix_npi']
 
-# NATURAL_FUNCTION_HEADS = [(4, 7),(0,0),(11,1), (1,5), (3,6)]
+NATURAL_FUNCTION_HEADS = [(4, 7),(0,0),(11,1), (1,5), (3,6)]
 
-NATURAL_FUNCTION_HEADS = [(6, 7),(5,3),(1,11), (2,9), (10,10)]
+# NATURAL_FUNCTION_HEADS = [(6, 7),(5,3),(1,11), (2,9), (10,10)]
 def register_head_ablation_hooks(model, heads_to_ablate):
     hooks = []
     layer2heads = {}
@@ -90,13 +90,13 @@ if __name__=='__main__':
     tokenizer = AutoTokenizer.from_pretrained("xiulinyang/GPT2_natural_function_53",revision='epoch-10')
     model = AutoModelForCausalLM.from_pretrained("xiulinyang/GPT2_natural_function_53",revision='epoch-10')
     BLIMP_DIR = "blimp/natural_function_blimp/"
-    OUT_PREFIX = "blimp_ablation_epoch10_5head_content"
+    OUT_PREFIX = "blimp_ablation_epoch10_5head_function"
     os.makedirs(OUT_PREFIX, exist_ok=True)
     test_set = read_data(BLIMP_DIR)
     model.eval()
     results={}
     hooks = register_head_ablation_hooks(model, NATURAL_FUNCTION_HEADS)
-    ilm_model = scorer.IncrementalLMScorer(model, device='cpu', tokenizer=tokenizer)
+    ilm_model = scorer.IncrementalLMScorer(model, device='cuda', tokenizer=tokenizer)
     acc, dist = eval_sent_pair(ilm_model, tokenizer,test_set)
 
     results['epoch-10'] = acc
