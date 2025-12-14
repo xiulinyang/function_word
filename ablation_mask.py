@@ -144,11 +144,13 @@ if __name__ == "__main__":
     model.eval()
     all_pesudo_words = []
     if 'more_function' in lang_name:
+        print('this is more function!')
         pesudo_words = Path('function_word_pseudowords.txt').read_text().strip().split('\n')
         for line in pesudo_words:
             word, pseudo = line.strip().split('\t')
             all_pesudo_words.append(pseudo)
     func_l = set(DET + CCONJ + SCONJ + AUX + ADP + all_pesudo_words)
+    print(len(func_l))
     func_ids = build_function_token_ids(tokenizer,func_l)
     hooks = register_function_token_mask_hooks(model, func_ids)
     ilm_model = scorer.IncrementalLMScorer(model, device="cpu", tokenizer=tokenizer)
