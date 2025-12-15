@@ -11,9 +11,9 @@ empty_categories = ['superlative_quantifiers_1', 'determiner_noun_agreement_irre
                     'matrix_npi']
 
 # 53
-NATURAL_FUNCTION_HEADS = [(4, 7),(0,0),(11,1), (1,5), (3,6)]
+#NATURAL_FUNCTION_HEADS = [(4, 7),(0,0),(11,1), (1,5), (3,6)]
 # 42
-# NATURAL_FUNCTION_HEADS = [(5, 1),(1,7),(3,6), (11,6), (8,8)]
+NATURAL_FUNCTION_HEADS = [(5, 1),(1,7),(3,6), (11,6), (8,8)]
 # 53 content
 # NATURAL_FUNCTION_HEADS = [(6, 7),(5,3),(1,11), (2,9), (10,10)]
 
@@ -93,8 +93,8 @@ def eval_sent_pair(ilm_model, tokenizer, test_set):
 
 
 if __name__=='__main__':
-    tokenizer = AutoTokenizer.from_pretrained("xiulinyang/GPT2_natural_function_53",revision='epoch-10')
-    model = AutoModelForCausalLM.from_pretrained("xiulinyang/GPT2_natural_function_53",revision='epoch-10')
+    tokenizer = AutoTokenizer.from_pretrained("xiulinyang/GPT2_natural_function_42",revision='epoch-10')
+    model = AutoModelForCausalLM.from_pretrained("xiulinyang/GPT2_natural_function_42",revision='epoch-10')
     BLIMP_DIR = "blimp/natural_function_blimp/"
     OUT_PREFIX = "blimp_ablation_epoch10_5head_function"
     os.makedirs(OUT_PREFIX, exist_ok=True)
@@ -106,7 +106,7 @@ if __name__=='__main__':
     acc, dist = eval_sent_pair(ilm_model, tokenizer,test_set)
 
     results['epoch-10'] = acc
-    pd.DataFrame(results).to_csv(f'{OUT_PREFIX}/results_GPT2_natural_function_53_epoch-10.csv')
+    pd.DataFrame(results).to_csv(f'{OUT_PREFIX}/results_GPT2_natural_function_42_epoch-10.csv')
 
     for h in hooks:
         h.remove()
