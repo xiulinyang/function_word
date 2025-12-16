@@ -135,10 +135,10 @@ if __name__ == "__main__":
     args = args.parse_args()
     lang_name = args.model_name
     seed = args.random_seed
-    tokenizer = AutoTokenizer.from_pretrained(f"xiulinyang/GPT2_{lang_name}_{seed}", revision="epoch-10")
-    model = AutoModelForCausalLM.from_pretrained(f"xiulinyang/GPT2_{lang_name}_{seed}", revision="epoch-10")
+    tokenizer = AutoTokenizer.from_pretrained(f"xiulinyang/GPT2_{lang_name}_{seed}", revision="epoch-1")
+    model = AutoModelForCausalLM.from_pretrained(f"xiulinyang/GPT2_{lang_name}_{seed}", revision="epoch-1")
     BLIMP_DIR = f"blimp/{lang_name}_blimp/"
-    OUT_PREFIX = "blimp_ablation_epoch10_fw_mask"
+    OUT_PREFIX = "blimp_ablation_epoch1_fw_mask"
     os.makedirs(OUT_PREFIX, exist_ok=True)
     test_set = read_data(BLIMP_DIR)
     model.eval()
@@ -156,7 +156,7 @@ if __name__ == "__main__":
     ilm_model = scorer.IncrementalLMScorer(model, device="cpu", tokenizer=tokenizer)
     results = {}
     acc, dist = eval_sent_pair(ilm_model, tokenizer, test_set)
-    results["epoch-10"] = acc
-    pd.DataFrame(results).to_csv(f"{OUT_PREFIX}/results_GPT2_{lang_name}_{seed}_epoch-10.csv")
+    results["epoch-1"] = acc
+    pd.DataFrame(results).to_csv(f"{OUT_PREFIX}/results_GPT2_{lang_name}_{seed}_epoch-1.csv")
     for h in hooks:
         h.remove()

@@ -79,11 +79,11 @@ if __name__ == '__main__':
         df_dist.index.name = 'phenomenon'
         df_dist.to_csv(f'{dataset}_results/distributions_{model_name_name}_best.csv')
     else:
-        checkpoints = ['epoch-10']
+        checkpoints = ['epoch-1']
         for checkpoint in checkpoints:
             results = {}
             print(model_name, checkpoint)
-            ilm_model = scorer.IncrementalLMScorer(model_name, 'cpu',revision=checkpoint)
+            ilm_model = scorer.IncrementalLMScorer(model_name, 'cuda',revision=checkpoint)
             tokenizer = AutoTokenizer.from_pretrained(model_name)
             acc, dist = eval_sent_pair(ilm_model, tokenizer, test)
             results[checkpoint] = acc
