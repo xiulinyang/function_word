@@ -96,7 +96,8 @@ def register_function_word_span_mask_hooks(model, tokenizer, func_words, mask_va
         def attn_pre_hook(module, args, kwargs):
             attention_mask = kwargs.get("attention_mask", None)
             func_mask = ctx.get("func_mask", None)
-            print(func_mask)
+            # #debug
+            # print(func_mask)
             if attention_mask is None and len(args) >= 3:
                 attention_mask = args[2]
 
