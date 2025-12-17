@@ -127,7 +127,7 @@ def read_data(data_path):
     phenomenon_paths = glob(f"{data_path}/*.jsonl")
     for p in tqdm(phenomenon_paths):
         phenomenon_n = p.split("/")[-1].split(".")[0]
-        if 'determiner' in phenomenon_n or 'quantifier' in phenomenon_n:
+        if phenomenon_n in empty_categories or 'quantifier' in phenomenon_n:
             continue
         phenomenon = pd.read_json(p, lines=True).to_dict(orient="records")
         sent_pair = [(x["sentence_bad"], x["sentence_good"]) for x in phenomenon]
