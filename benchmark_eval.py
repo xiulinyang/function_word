@@ -63,7 +63,7 @@ if __name__ == '__main__':
     best_checkpoint = args.best_checkpoint
     refs = list_repo_refs(model_name, repo_type="model")
     num_checkpoints = refs.branches
-    checkpoints = sorted([x.name for x in num_checkpoints if 'main' not in x.name], key=lambda x: int(x.split('-')[-1]))
+    checkpoints = range(2,11)
     test = read_data(f'blimp/{dataset}')
 
     model_name_name = model_name.split('/')[-1]
@@ -79,8 +79,9 @@ if __name__ == '__main__':
         df_dist.index.name = 'phenomenon'
         df_dist.to_csv(f'{dataset}_results/distributions_{model_name_name}_best.csv')
     else:
-        checkpoints = ['epoch-1']
+
         for checkpoint in checkpoints:
+            checkpoint ='epoch-'+str(checkpoint)
             results = {}
             print(model_name, checkpoint)
             ilm_model = scorer.IncrementalLMScorer(model_name, 'cuda',revision=checkpoint)
