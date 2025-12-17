@@ -1,15 +1,13 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 import os
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from minicons import scorer
 from tqdm import tqdm
 import pandas as pd
 from glob import glob
 import argparse
 from pathlib import Path
+from minicons import scorer
+
 empty_categories = [
     "superlative_quantifiers_1",
     "determiner_noun_agreement_irregular_2",
@@ -33,60 +31,91 @@ ADP = ["at","in","of","near","for","by","to","with","on","from","behind","into",
        "underneath","alongside"]
 
 FUNCTION_WORDS = set(DET + CCONJ + SCONJ + AUX + ADP )
+def build_function_token_spans(tokenizer, func_words):
+    spans = set()
+    for w in func_words:
+        w = w.strip().lower()
+        if not w:
+            continue
+        ids1 = tokenizer.encode(w, add_special_tokens=False)
+        if ids1:
+            spans.add(tuple(ids1))
+
+        ids2 = tokenizer.encode(" " + w, add_special_tokens=False)
+        if ids2:
+            spans.add(tuple(ids2))
+
+    spans = sorted(spans, key=len, reverse=True)
+    return spans
 
 
-def build_function_token_ids(tokenizer,func_list):
-    func_ids = set()
-    vocab_size = tokenizer.vocab_size
-    for tid in range(vocab_size):
-        txt = tokenizer.decode([tid]).strip().lower()
-        if txt in func_list:
-            func_ids.add(tid)
-    return func_ids
+def mark_spans(input_ids, spans):
+    B, T = input_ids.shape
+    mask = torch.zeros((B, T), dtype=torch.bool, device=input_ids.device)
+
+    for b in range(B):
+        seq = input_ids[b].tolist()
+        for pat in spans:
+            m = len(pat)
+            if m == 0 or m > T:
+                continue
+            for i in range(T - m + 1):
+                if tuple(seq[i:i+m]) == pat:
+                    mask[b, i:i+m] = True
+    return mask
 
 
-def register_function_token_mask_hooks(model, function_token_ids, mask_value=-1e4):
+def register_function_word_span_mask_hooks(model, tokenizer, func_words, mask_value=-1e4):
     hooks = []
     ctx = {"func_mask": None}
-    function_token_ids = set(function_token_ids)
+    spans = build_function_token_spans(tokenizer, func_words)
+    print(f"[INFO] Built {len(spans)} unique function-word token spans.")
 
     def embed_pre_hook(module, args, kwargs):
-        input_ids = args[0]
+        input_ids = args[0]  # (B, T)
         with torch.no_grad():
-            mask = torch.zeros_like(input_ids, dtype=torch.bool)
-            for tid in function_token_ids:
-                mask |= (input_ids == tid)
-        ctx["func_mask"] = mask
+            func_mask = mark_spans(input_ids, spans)  # (B, T) bool
+            print('this is all func_mask ')
+            print(func_mask)
+        ctx["func_mask"] = func_mask
+
+        # if debug:
+        #   ids0 = input_ids[0]
+        #   m0 = func_mask[0]
+        #   toks_all = tokenizer.convert_ids_to_tokens(ids0.tolist())
+        #   toks_masked = [t for t, mm in zip(toks_all, m0.tolist()) if mm]
+        #   print("[DEBUG] full:", toks_all[:80])
+        #   print("[DEBUG] masked:", toks_masked[:80])
+
         return args, kwargs
 
-    emb_hook = model.transformer.wte.register_forward_pre_hook(
-        embed_pre_hook, with_kwargs=True
-    )
+    emb_hook = model.transformer.wte.register_forward_pre_hook(embed_pre_hook, with_kwargs=True)
     hooks.append(emb_hook)
 
-    def make_attn_pre_hook(layer_idx):
+    def make_attn_pre_hook():
         def attn_pre_hook(module, args, kwargs):
             attention_mask = kwargs.get("attention_mask", None)
             func_mask = ctx.get("func_mask", None)
+            print(func_mask)
+            if attention_mask is None and len(args) >= 3:
+                attention_mask = args[2]
 
-            if func_mask is not None:
-                fw_mask = func_mask.to(module.c_attn.weight.device).unsqueeze(1).unsqueeze(1)
-                fw_mask = fw_mask * mask_value
-                if attention_mask is None:
-                    attention_mask_new = fw_mask
-                else:
-                    attention_mask_new = attention_mask + fw_mask
-                kwargs["attention_mask"] = attention_mask_new
+            if func_mask is None:
+                return args, kwargs
+
+            fw_mask = func_mask.to(module.c_attn.weight.device).unsqueeze(1).unsqueeze(1)
+            fw_mask = fw_mask.to(dtype=torch.float32) * mask_value  # additive mask
+
+            if attention_mask is None:
+                kwargs["attention_mask"] = fw_mask
+            else:
+                kwargs["attention_mask"] = attention_mask + fw_mask
 
             return args, kwargs
-
         return attn_pre_hook
 
-    for layer_idx, block in enumerate(model.transformer.h):
-        attn_mod = block.attn
-        h = attn_mod.register_forward_pre_hook(
-            make_attn_pre_hook(layer_idx), with_kwargs=True
-        )
+    for block in model.transformer.h:
+        h = block.attn.register_forward_pre_hook(make_attn_pre_hook(), with_kwargs=True)
         hooks.append(h)
 
     return hooks
@@ -97,7 +126,7 @@ def read_data(data_path):
     phenomenon_paths = glob(f"{data_path}/*.jsonl")
     for p in tqdm(phenomenon_paths):
         phenomenon_n = p.split("/")[-1].split(".")[0]
-        if phenomenon_n in empty_categories:
+        if 'determiner' in phenomenon_n or 'quantifier' in phenomenon_n:
             continue
         phenomenon = pd.read_json(p, lines=True).to_dict(orient="records")
         sent_pair = [(x["sentence_bad"], x["sentence_good"]) for x in phenomenon]
@@ -115,7 +144,7 @@ def eval_sent_pair(ilm_model, tokenizer, test_set):
             sent = list(sent)
             num_token0 = len(tokenizer.encode(sent[0], add_special_tokens=False))
             num_token1 = len(tokenizer.encode(sent[1], add_special_tokens=False))
-            nll0, nll1 = ilm_model.sequence_score(sent, reduction=lambda x: -x.sum(0).item())
+            nll0, nll1 = ilm_model.sequence_score(sent,use_cache=False, reduction=lambda x: -x.sum(0).item())
             ppl0 = nll0 / num_token0
             ppl1 = nll1 / num_token1
             distribution.append(f"{sent[0]}\t{ppl0}\t{sent[1]}\t{ppl1}")
@@ -137,7 +166,7 @@ if __name__ == "__main__":
     seed = args.random_seed
     for i in range(1,11):
         tokenizer = AutoTokenizer.from_pretrained(f"xiulinyang/GPT2_{lang_name}_{seed}", revision=f"epoch-{i}")
-        model = AutoModelForCausalLM.from_pretrained(f"xiulinyang/GPT2_{lang_name}_{seed}", revision=f"epoch-{i}")
+        model = AutoModelForCausalLM.from_pretrained(f"xiulinyang/GPT2_{lang_name}_{seed}", attn_implementation="eager",revision=f"epoch-{i}")
         BLIMP_DIR = f"blimp/{lang_name}_blimp/"
         OUT_PREFIX = f"blimp_ablation_epoch{i}_fw_mask"
         os.makedirs(OUT_PREFIX, exist_ok=True)
@@ -152,8 +181,7 @@ if __name__ == "__main__":
                 all_pesudo_words.append(pseudo)
         func_l = set(DET + CCONJ + SCONJ + AUX + ADP + all_pesudo_words)
         print(len(func_l))
-        func_ids = build_function_token_ids(tokenizer,func_l)
-        hooks = register_function_token_mask_hooks(model, func_ids)
+        hooks = register_function_word_span_mask_hooks(model, tokenizer, func_l)
         ilm_model = scorer.IncrementalLMScorer(model, device="cpu", tokenizer=tokenizer)
         results = {}
         acc, dist = eval_sent_pair(ilm_model, tokenizer, test_set)
