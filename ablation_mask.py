@@ -144,7 +144,7 @@ def eval_sent_pair(ilm_model, tokenizer, test_set):
             sent = list(sent)
             num_token0 = len(tokenizer.encode(sent[0], add_special_tokens=False))
             num_token1 = len(tokenizer.encode(sent[1], add_special_tokens=False))
-            nll0, nll1 = ilm_model.sequence_score(sent,use_cache=False, reduction=lambda x: -x.sum(0).item())
+            nll0, nll1 = ilm_model.sequence_score(sent,reduction=lambda x: -x.sum(0).item())
             ppl0 = nll0 / num_token0
             ppl1 = nll1 / num_token1
             distribution.append(f"{sent[0]}\t{ppl0}\t{sent[1]}\t{ppl1}")
@@ -164,9 +164,9 @@ if __name__ == "__main__":
     args = args.parse_args()
     lang_name = args.model_name
     seed = args.random_seed
-    for i in range(1,11):
+    for i in [10]:
         tokenizer = AutoTokenizer.from_pretrained(f"xiulinyang/GPT2_{lang_name}_{seed}", revision=f"epoch-{i}")
-        model = AutoModelForCausalLM.from_pretrained(f"xiulinyang/GPT2_{lang_name}_{seed}", attn_implementation="eager",revision=f"epoch-{i}")
+        model = AutoModelForCausalLM.from_pretrained(f"xiulinyang/GPT2_{lang_name}_{seed}", use_cache=False,attn_implementation="eager",revision=f"epoch-{i}")
         BLIMP_DIR = f"blimp/{lang_name}_blimp/"
         OUT_PREFIX = f"blimp_ablation_epoch{i}_fw_mask"
         os.makedirs(OUT_PREFIX, exist_ok=True)
