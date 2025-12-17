@@ -75,8 +75,8 @@ def register_function_word_span_mask_hooks(model, tokenizer, func_words, mask_va
         input_ids = args[0]  # (B, T)
         with torch.no_grad():
             func_mask = mark_spans(input_ids, spans)  # (B, T) bool
-            print('this is all func_mask ')
-            print(func_mask)
+            # print('this is all func_mask ')
+            # print(func_mask)
         ctx["func_mask"] = func_mask
 
         # if debug:
