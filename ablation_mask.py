@@ -183,7 +183,7 @@ if __name__ == "__main__":
         func_l = set(DET + CCONJ + SCONJ + AUX + ADP + all_pesudo_words)
         print(len(func_l))
         hooks = register_function_word_span_mask_hooks(model, tokenizer, func_l)
-        ilm_model = scorer.IncrementalLMScorer(model, device="cpu", tokenizer=tokenizer)
+        ilm_model = scorer.IncrementalLMScorer(model, device="cuda", tokenizer=tokenizer)
         results = {}
         acc, dist = eval_sent_pair(ilm_model, tokenizer, test_set)
         results[f"epoch-{i}"] = acc
