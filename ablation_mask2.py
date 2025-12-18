@@ -159,34 +159,21 @@ def eval_sent_pair(ilm_model, tokenizer, test_set):
 
 
 if __name__ == "__main__":
-    args = argparse.ArgumentParser('eval language models')
-    args.add_argument('model_name', type=str, help='model name')
-    args.add_argument('random_seed', type=int, help='random seed')
-    args = args.parse_args()
-    lang_name = args.model_name
-    seed = args.random_seed
-    for i in range(1,10):
-        tokenizer = AutoTokenizer.from_pretrained(f"xiulinyang/GPT2_{lang_name}_{seed}", revision=f"epoch-{i}")
-        model = AutoModelForCausalLM.from_pretrained(f"xiulinyang/GPT2_{lang_name}_{seed}", use_cache=False,attn_implementation="eager",revision=f"epoch-{i}")
-        BLIMP_DIR = f"blimp/{lang_name}_blimp/"
-        OUT_PREFIX = f"blimp_ablation_epoch{i}_fw_mask"
-        os.makedirs(OUT_PREFIX, exist_ok=True)
-        test_set = read_data(BLIMP_DIR)
-        model.eval()
-        all_pesudo_words = []
-        if 'more_function' in lang_name:
-            print('this is more function!')
-            pesudo_words = Path('function_word_pseudowords.txt').read_text().strip().split('\n')
-            for line in pesudo_words:
-                word, pseudo = line.strip().split('\t')
-                all_pesudo_words.append(pseudo)
-        func_l = set(DET + CCONJ + SCONJ + AUX + ADP + all_pesudo_words)
-        print(len(func_l))
-        hooks = register_function_word_span_mask_hooks(model, tokenizer, func_l)
-        ilm_model = scorer.IncrementalLMScorer(model, device="cuda", tokenizer=tokenizer)
-        results = {}
-        acc, dist = eval_sent_pair(ilm_model, tokenizer, test_set)
-        results[f"epoch-{i}"] = acc
-        pd.DataFrame(results).to_csv(f"{OUT_PREFIX}/results_GPT2_{lang_name}_{seed}_epoch-{i}.csv")
-        for h in hooks:
-            h.remove()
+    tokenizer = AutoTokenizer.from_pretrained(f"GPT2")
+    model = AutoModelForCausalLM.from_pretrained(f"GPT2", use_cache=False,attn_implementation="eager")
+    BLIMP_DIR = f"blimp/natural_function_blimp/"
+    OUT_PREFIX = f"blimp_ablation_gpt2_fw_mask"
+    os.makedirs(OUT_PREFIX, exist_ok=True)
+    test_set = read_data(BLIMP_DIR)
+    model.eval()
+    all_pesudo_words = []
+    func_l = set(DET + CCONJ + SCONJ + AUX + ADP + all_pesudo_words)
+    print(len(func_l))
+    hooks = register_function_word_span_mask_hooks(model, tokenizer, func_l)
+    ilm_model = scorer.IncrementalLMScorer(model, device="cuda", tokenizer=tokenizer)
+    results = {}
+    acc, dist = eval_sent_pair(ilm_model, tokenizer, test_set)
+    results[f"best"] = acc
+    pd.DataFrame(results).to_csv(f"{OUT_PREFIX}/results_GPT2_best.csv")
+    for h in hooks:
+        h.remove()
