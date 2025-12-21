@@ -1,20 +1,23 @@
-import csv
-import os
-from collections import defaultdict
-from statistics import mean, pstdev
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-SEEDS = [42, 53, 67]
+import csv
+from collections import defaultdict
+import os
+
+
 EPOCH = 10
 
-p_d = {
-    "natural_function": "natural_function_blimp_results/",
-    "no_function": "no_function_blimp_results/",
-    "random_function": "random_function_blimp_results/",
-    "five_function": "five_function_blimp_results/",
-    "within_boundary": "within_boundary_blimp_results/",
-    "more_function": "more_function_blimp_results/",
-    "bigram_function": "bigram_function_blimp_results/",
-}
+
+
+baseline_natural_path = "natural_function_blimp_results/results_GPT2_natural_function_53_epoch-10.csv"
+
+baseline_within_boundary = "within_boundary_blimp_results/results_GPT2_natural_function_53_epoch-10.csv"
+baseline_no_function = "no_function_blimp_results/results_GPT2_natural_function_53_epoch-10.csv"
+# ablation_more_function = "blimp_ablation_epoch10_fw_mask/results_GPT2_more_function_53_epoch-10.csv"
+baseline_random_function = "random_function_blimp_results/results_GPT2_natural_function_53_epoch-10.csv"
+baseline_bigram_function = "bigram_function_blimp_results/results_GPT2_natural_function_53_epoch-10.csv"
+baseline_five_function = "five_function_blimp_results/results_GPT2_natural_function_53_epoch-10.csv"
 
 PHENOMENON_GROUPS = {
     "anaphor_agreement": [
@@ -110,115 +113,76 @@ PHENOMENON_GROUPS = {
     ],
 }
 
+# ===== UID → category 映射 =====
 UID2CAT = {}
 for cat, uids in PHENOMENON_GROUPS.items():
     for u in uids:
         UID2CAT[u] = cat
 
-
-def read_scores(csv_path):
+# ===== 读单个 CSV =====
+def read_epoch10(csv_path):
     out = {}
     with open(csv_path, "r") as f:
         reader = csv.reader(f)
-        next(reader)  # skip header
+        next(reader)
         for task, score in reader:
             uid = task.replace("blimp_", "")
             out[uid] = float(score)
     return out
 
+# ===== 三个条件读取 =====
+all_conditions = {
+    "baseline_natural": baseline_natural_path,
+    "baseline_no_function": baseline_no_function,
+    "baseline_within_boundary": baseline_within_boundary,
+    'baseline_random_function':baseline_random_function,
+    'baseline_bigram_function': baseline_bigram_function,
+'baseline_five_function': baseline_five_function
+}
 
 rows = []
-missing = []
 
-for cond, folder in p_d.items():
-    for seed in SEEDS:
-        fname = f"results_GPT2_{cond}_{seed}_epoch-{EPOCH}.csv"
-        csv_path = os.path.join(folder, fname)
-        if not os.path.exists(csv_path):
-            missing.append(csv_path)
+for cond_name, path in all_conditions.items():
+    scores = read_epoch10(path)
+
+    for uid, acc in scores.items():
+        cat = UID2CAT.get(uid, "unknown")
+
+        if cat == "determiner_noun_agreement":
             continue
 
-        scores = read_scores(csv_path)
-
-        for uid, acc in scores.items():
-            cat = UID2CAT.get(uid, "unknown")
-            if cat == "determiner_noun_agreement":
-                continue
-            if 'quantifier' in cat:
-                continue
-
-            rows.append(
-                {
-                    "condition": cond,
-                    "seed": seed,
-                    "category": cat,
-                    "uid": uid,
-                    "epoch": EPOCH,
-                    "accuracy": acc,
-                }
-            )
-
-
-by_cond_seed = defaultdict(list)  # (cond, seed) -> [acc...]
-for r in rows:
-    by_cond_seed[(r["condition"], r["seed"])].append(r["accuracy"])
-
-for (cond, seed), vals in by_cond_seed.items():
-    rows.append(
-        {
-            "condition": cond,
-            "seed": seed,
-            "category": "overall",
-            "uid": "overall",
-            "epoch": EPOCH,
-            "accuracy": mean(vals),
-        }
-    )
-
-
-bucket = defaultdict(list)
-for r in rows:
-    key = (r["condition"], r["category"], r["uid"], r["epoch"])
-    bucket[key].append(r["accuracy"])
-
-agg_rows = []
-for (cond, cat, uid, epoch), vals in bucket.items():
-    agg_rows.append(
-        {
-            "condition": cond,
+        rows.append({
+            "condition": cond_name,
             "category": cat,
             "uid": uid,
-            "epoch": epoch,
-            "n_seeds": len(vals),
-            "mean_acc": mean(vals),
-            "std_acc": pstdev(vals) if len(vals) > 1 else 0.0,
-        }
-    )
+            "epoch": EPOCH,
+            "accuracy": acc,
+        })
 
-os.makedirs("overall_results", exist_ok=True)
+# ===== 加 overall（每个 condition 单独算）=====
+by_condition = defaultdict(list)
+for r in rows:
+    by_condition[r["condition"]].append(float(r["accuracy"]))
 
-long_file = f"overall_results/blimp_long_epoch{EPOCH}.csv"
-with open(long_file, "w", newline="") as f:
+overall_rows = []
+for cond, vals in by_condition.items():
+    overall_rows.append({
+        "condition": cond,
+        "category": "overall",
+        "uid": "overall",
+        "epoch": EPOCH,
+        "accuracy": sum(vals) / len(vals),
+    })
+
+rows_extended = rows + overall_rows
+
+out_file = "blimp_natural_ablation_epoch10_53.csv"
+with open(out_file, "w", newline="") as f:
     writer = csv.DictWriter(
         f,
-        fieldnames=["condition", "seed", "category", "uid", "epoch", "accuracy"],
+        fieldnames=["condition", "category", "uid", "epoch", "accuracy"]
     )
     writer.writeheader()
-    writer.writerows(rows)
+    writer.writerows(rows_extended)
 
-agg_file = f"overall_results/blimp_agg_epoch{EPOCH}.csv"
-with open(agg_file, "w", newline="") as f:
-    writer = csv.DictWriter(
-        f,
-        fieldnames=["condition", "category", "uid", "epoch", "n_seeds", "mean_acc", "std_acc"],
-    )
-    writer.writeheader()
-    writer.writerows(agg_rows)
-
-print(f"Wrote long table: {long_file}  (rows={len(rows)})")
-print(f"Wrote agg table : {agg_file}   (rows={len(agg_rows)})")
-
-if missing:
-    print("\n[WARN] Missing files:")
-    for p in missing:
-        print("  -", p)
+print(f"Wrote {len(rows_extended)} rows to {out_file}")

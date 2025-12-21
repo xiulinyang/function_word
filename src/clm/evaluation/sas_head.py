@@ -23,8 +23,6 @@ FUNCTION_WORDS = set(DET + CCONJ + SCONJ + AUX + ADP)
 
 
 
-
-
 def get_data(data_fp, function_list):
     sents = Path(data_fp).read_text().strip().split('\n')
     sents_all = []
