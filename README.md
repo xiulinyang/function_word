@@ -30,19 +30,6 @@ conda activate function_word_env
 # Install required packages
 pip install -r requirements.txt
 pip install -e . --no-dependencies
-
-## To replicate experiments in the paper, please follow these steps:
-### 1. Clone this repository and install required packages
-```bash
-# Clone the repository
-git clone https://github.com/xiulinyang/function_word
-cd function_word
-# create and activate a virtual environment (optional but recommended)
-conda create -n function_word_env python=3.11
-conda activate function_word_env
-# Install required packages
-pip install -r requirements.txt
-pip install -e . --no-dependencies
 ```
 ### 2. Train language models
 ```bash
