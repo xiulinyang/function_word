@@ -3,7 +3,7 @@ from collections import Counter
 import pandas as pd
 
 p_d = {
-    "natural_function": "natural_function_blimp_results_b/",
+    "natural_function": "natural_function_blimp_results/",
     "random_function": "random_function_blimp_results/",
     "five_function": "five_function_blimp_results/",
     "within_boundary": "within_boundary_blimp_results/",

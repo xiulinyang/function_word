@@ -54,33 +54,33 @@ EPOCH = 10
 # }
 
 
+PATHS={
+"baseline_natural": "results/natural_function_blimp_results/results_GPT2_natural_function_{seed}_epoch-10.csv",
+"ablation_natural": "results/no_function_blimp_results/results_GPT2_natural_function_{seed}_epoch-10.csv",
+
+"baseline_five": "results/five_function_blimp_results/results_GPT2_five_function_{seed}_epoch-10.csv",
+"ablation_five": "results/no_function_blimp_results/results_GPT2_five_function_{seed}_epoch-10.csv",
+
+"baseline_more": "results/more_function_blimp_results/results_GPT2_more_function_{seed}_epoch-10.csv",
+"ablation_more": "results/no_function_blimp_results/results_GPT2_more_function_{seed}_epoch-10.csv",
+
+"baseline_random": "results/random_function_blimp_results/results_GPT2_random_function_{seed}_epoch-10.csv",
+"ablation_random": "results/no_function_blimp_results/results_GPT2_random_function_{seed}_epoch-10.csv",
+
+"baseline_boundary": "results/within_boundary_blimp_results/results_GPT2_within_boundary_{seed}_epoch-10.csv",
+"ablation_boundary": "results/no_function_blimp_results/results_GPT2_within_boundary_{seed}_epoch-10.csv",
+
+"baseline_bigram": "results/bigram_function_blimp_results/results_GPT2_bigram_function_{seed}_epoch-10.csv",
+"ablation_bigram": "results/no_function_blimp_results/results_GPT2_bigram_function_{seed}_epoch-10.csv",
+}
+
+
+
+# #paths for function head masking
 # PATHS={
 # "baseline_natural": "natural_function_blimp_results/results_GPT2_natural_function_{seed}_epoch-10.csv",
-# "ablation_natural": "no_function_blimp_results/results_GPT2_natural_function_{seed}_epoch-10.csv",
-#
-# "baseline_five": "five_function_blimp_results/results_GPT2_five_function_{seed}_epoch-10.csv",
-# "ablation_five": "no_function_blimp_results/results_GPT2_five_function_{seed}_epoch-10.csv",
-#
-# "baseline_more": "more_function_blimp_results/results_GPT2_more_function_{seed}_epoch-10.csv",
-# "ablation_more": "no_function_blimp_results/results_GPT2_more_function_{seed}_epoch-10.csv",
-#
-# "baseline_random": "random_function_blimp_results/results_GPT2_random_function_{seed}_epoch-10.csv",
-# "ablation_random": "no_function_blimp_results/results_GPT2_random_function_{seed}_epoch-10.csv",
-#
-# "baseline_boundary": "within_boundary_blimp_results/results_GPT2_within_boundary_{seed}_epoch-10.csv",
-# "ablation_boundary": "no_function_blimp_results/results_GPT2_within_boundary_{seed}_epoch-10.csv",
-#
-# "baseline_bigram": "bigram_function_blimp_results/results_GPT2_bigram_function_{seed}_epoch-10.csv",
-# "ablation_bigram": "no_function_blimp_results/results_GPT2_bigram_function_{seed}_epoch-10.csv",
+# "ablation_natural": "blimp_ablation_epoch10_5head_function/results_GPT2_natural_function_{seed}_epoch-10.csv",
 # }
-
-
-
-#paths for function head masking
-PATHS={
-"baseline_natural": "natural_function_blimp_results/results_GPT2_natural_function_{seed}_epoch-10.csv",
-"ablation_natural": "blimp_ablation_epoch10_5head_function/results_GPT2_natural_function_{seed}_epoch-10.csv",
-}
 
 # PATHS={
 # "baseline_natural": "natural_function_blimp_results/results_GPT2_natural_function_{seed}_epoch-10.csv",
@@ -272,7 +272,7 @@ for (seed, cond), vals in by_seed_cond.items():
 rows_extended = rows + overall_rows
 
 
-out_file = "blimp_function_word_head_epoch10.csv"
+out_file = "blimp_function_word_deletion_epoch10.csv"
 
 with open(out_file, "w", newline="") as f:
     writer = csv.DictWriter(

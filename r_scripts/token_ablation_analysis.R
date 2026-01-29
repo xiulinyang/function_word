@@ -1,6 +1,6 @@
 library(tidyverse)
 library(patchwork) 
-df <- read_csv("/Users/xiulinyang/Desktop/TODO/function_word/blimp_function_word_mask_epoch10.csv")
+df <- read_csv("blimp_function_word_mask_epoch10.csv")
 
 cat_seed <- df %>%
   group_by(seed, condition, category) %>%

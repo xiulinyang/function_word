@@ -1,6 +1,6 @@
 library(tidyverse)
 library(patchwork) 
-df <- read_csv("/Users/xiulinyang/Desktop/TODO/function_word/blimp_natural_ablation_epoch10_53.csv")
+df <- read_csv("blimp_natural_ablation_epoch10_53.csv")
 
 cat_means <- df %>%
   group_by(category, condition) %>%

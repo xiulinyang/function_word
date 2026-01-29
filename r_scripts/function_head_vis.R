@@ -1,6 +1,6 @@
 library(tidyverse)
 
-df <- read_csv("/Users/xiulinyang/Desktop/TODO/function_word/function_head_67.csv") %>%
+df <- read_csv("function_word/function_head_67.csv") %>%
   filter(freq > 0) %>%
   mutate(
     layer = as.numeric(layer),

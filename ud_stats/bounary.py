@@ -8,7 +8,7 @@ DATA_PATH = '/Users/xiulinyang/Downloads/ud-treebanks-v2.17/'
 OUTPUT_FILE = 'boundary_stats_open.tsv'
 
 # CLOSED_CLASS = {'ADP', 'DET', 'SCONJ', 'CCONJ'}
-CLOSED_CLASS = {'ADJ', 'ADV', 'INTJ', 'NUM'} # remove 'NOUN', 'PROPN', 'VERB'
+CLOSED_CLASS = {'ADJ', 'NUM'} # remove 'NOUN', 'PROPN', 'VERB'
 def get_subtree_indices(head_id, children_map, exclude_rels=None):
     indices = {head_id}
 

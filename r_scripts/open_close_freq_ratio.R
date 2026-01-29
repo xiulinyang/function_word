@@ -1,7 +1,7 @@
 library(tidyverse)
 
 df_fw <- read_tsv(
-  "/Users/xiulinyang/Desktop/TODO/function_word/ud_stats/close_vs_open_count.tsv",
+  "ud_stats/close_vs_open_count.tsv",
   show_col_types = FALSE
 )
 

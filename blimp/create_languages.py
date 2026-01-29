@@ -106,7 +106,7 @@ def random_function_words(words):
             words[i] = random.choice(list(FUNCTION_WORDS))
     return words
 
-def within_boundary(tree_lines):
+def within_boundary(tree_lines, change, overall):
     tree = list(tree_lines)
     for i in range(len(tree) - 1, -1, -1):
         line = tree[i].strip()
@@ -124,10 +124,15 @@ def within_boundary(tree_lines):
             print('ValueError in line:', line)
             continue
 
+        if word in FUNCTION_WORDS:
+            overall+=1
         if word not in FUNCTION_WORDS or head <= 0:
             continue
         if abs(head - word_id) == 1:
             continue
+
+
+        change+=1
 
         target_idx = head - 1
         line_moved = tree.pop(i)
@@ -136,7 +141,7 @@ def within_boundary(tree_lines):
             target_idx -= 1
         tree.insert(target_idx, line_moved)
 
-    return tree
+    return tree,change, overall
 
 
 def get_split_sent(conll):
@@ -155,6 +160,8 @@ def convert_text(function_name):
     with open(f'/Users/xiulinyang/Desktop/conll/data/{function_name}/train.txt', 'w', encoding='utf-8') as f_train, \
          open(f'/Users/xiulinyang/Desktop/conll/data/{function_name}/dev.txt', 'w', encoding='utf-8') as f_dev, \
          open(f'/Users/xiulinyang/Desktop/conll/data/{function_name}/test.txt', 'w', encoding='utf-8') as f_test:
+        overall=0
+        change=0
         for sent in tqdm(train):
             text = get_split_sent(sent)
             if function_name =='no_function':
@@ -169,57 +176,58 @@ def convert_text(function_name):
                 filtered_text = random_function_words(text)
             elif function_name == 'within_boundary':
                 tree_lines = get_split_tree(sent)
-                modified_tree = within_boundary(tree_lines)
+                modified_tree, change, overall = within_boundary(tree_lines, change,overall)
                 filtered_text = [line.split('\t')[1] for line in modified_tree]
             elif function_name =='natural_function':
                 filtered_text = text
             f_train.write(' '.join(filtered_text).lower())
             f_train.write('\n')
+        print("overall:", overall, "change:", change, 'rate:', change/overall)
 
-        for sent in tqdm(dev):
-            text = get_split_sent(sent)
-            if function_name =='no_function':
-                filtered_text = no_function_words(text)
-            elif function_name == 'bigram_function':
-                filtered_text = bigram_function_words(text, func_word_dict)
-            elif function_name =='more_function':
-                filtered_text = add_function_words(text)
-            elif function_name =='five_function':
-                filtered_text = reduce_function_words(text)
-            elif function_name =='random_function':
-                filtered_text = random_function_words(text)
-            elif function_name == 'within_boundary':
-                tree_lines = get_split_tree(sent)
-                modified_tree = within_boundary(tree_lines)
-                filtered_text = [line.split('\t')[1] for line in modified_tree]
-            elif function_name =='natural_function':
-                filtered_text = text
-            f_dev.write(' '.join(filtered_text).lower())
-            f_dev.write('\n')
-
-        for sent in tqdm(test):
-            text = get_split_sent(sent)
-            if function_name == 'no_function':
-                filtered_text = no_function_words(text)
-            elif function_name == 'bigram_function':
-                filtered_text = bigram_function_words(text, func_word_dict)
-            elif function_name =='more_function':
-                filtered_text = add_function_words(text)
-            elif function_name =='five_function':
-                filtered_text = reduce_function_words(text)
-            elif function_name =='random_function':
-                filtered_text = random_function_words(text)
-            elif function_name == 'within_boundary':
-                tree_lines = get_split_tree(sent)
-                modified_tree = within_boundary(tree_lines)
-                filtered_text = [line.split('\t')[1] for line in modified_tree]
-            elif function_name =='natural_function':
-                filtered_text = text
-            f_test.write(' '.join(filtered_text).lower())
-            f_test.write('\n')
+        # for sent in tqdm(dev):
+        #     text = get_split_sent(sent)
+        #     if function_name =='no_function':
+        #         filtered_text = no_function_words(text)
+        #     elif function_name == 'bigram_function':
+        #         filtered_text = bigram_function_words(text, func_word_dict)
+        #     elif function_name =='more_function':
+        #         filtered_text = add_function_words(text)
+        #     elif function_name =='five_function':
+        #         filtered_text = reduce_function_words(text)
+        #     elif function_name =='random_function':
+        #         filtered_text = random_function_words(text)
+        #     elif function_name == 'within_boundary':
+        #         tree_lines = get_split_tree(sent)
+        #         modified_tree = within_boundary(tree_lines)
+        #         filtered_text = [line.split('\t')[1] for line in modified_tree]
+        #     elif function_name =='natural_function':
+        #         filtered_text = text
+        #     f_dev.write(' '.join(filtered_text).lower())
+        #     f_dev.write('\n')
+        #
+        # for sent in tqdm(test):
+        #     text = get_split_sent(sent)
+        #     if function_name == 'no_function':
+        #         filtered_text = no_function_words(text)
+        #     elif function_name == 'bigram_function':
+        #         filtered_text = bigram_function_words(text, func_word_dict)
+        #     elif function_name =='more_function':
+        #         filtered_text = add_function_words(text)
+        #     elif function_name =='five_function':
+        #         filtered_text = reduce_function_words(text)
+        #     elif function_name =='random_function':
+        #         filtered_text = random_function_words(text)
+        #     elif function_name == 'within_boundary':
+        #         tree_lines = get_split_tree(sent)
+        #         modified_tree = within_boundary(tree_lines)
+        #         filtered_text = [line.split('\t')[1] for line in modified_tree]
+        #     elif function_name =='natural_function':
+        #         filtered_text = text
+        #     f_test.write(' '.join(filtered_text).lower())
+        #     f_test.write('\n')
 
 if __name__ == '__main__':
-    exp_name = 'natural_function'  # no_function, bigram_function, more_function, five_function, random_function, within_boundary
+    exp_name = 'within_boundary'  # no_function, bigram_function, more_function, five_function, random_function, within_boundary
     os.makedirs(f'/Users/xiulinyang/Desktop/conll/data/{exp_name}', exist_ok=True)
 
     train = Path('/Users/xiulinyang/Desktop/conll/train.conll').read_text(encoding='utf-8').strip().split('\n\n')

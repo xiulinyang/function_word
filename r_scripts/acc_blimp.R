@@ -1,7 +1,7 @@
 library(tidyverse)
 library(patchwork)
 
-df <- read_csv("/Users/xiulinyang/Desktop/TODO/function_word/overall_results/blimp_long_epoch10.csv")
+df <- read_csv("overall_results/blimp_long_epoch10.csv")
 
 cat_seed <- df %>%
   group_by(seed, condition, category) %>%
