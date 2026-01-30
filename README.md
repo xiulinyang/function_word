@@ -1,7 +1,7 @@
 # Function Words as Statistical Cues for Language Learning
 
 This repository contains code and resources for the paper:  
-*From Linear Input to Hierarchical Structure: Function Words as Statistical Cues for Language Learning*  
+[*From Linear Input to Hierarchical Structure: Function Words as Statistical Cues for Language Learning*](https://arxiv.org/abs/2601.21191)  
 by Xiulin Yang, Heidi Getz, and Ethan Gotlieb Wilcox
 
 ## Repository Structure
